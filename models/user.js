@@ -25,6 +25,11 @@ module.exports = function(sequelize, DataTypes) {
 			type: Sequelize.STRING,
 			field:'password',
 			allowNull: false
+		},
+		locationId:{
+			type: Sequelize.INTERGER,
+			field: 'locationId',
+			allowNull:false
 		}
 	},
 	tableName: 'users';
