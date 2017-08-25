@@ -4,7 +4,7 @@ var Sequelize = require("Sequelize");
 var bcrypt = require("bcrypt-nodejs");
 
 module.exports = function(sequelize, DataTypes) {
-	var user = sequelize.define('user', {
+	var model = sequelize.define('user', {
 		id:{
 			type: Sequelize.INTERGER,
 			field:'id',
@@ -42,5 +42,5 @@ module.exports = function(sequelize, DataTypes) {
 		}
 	}
 	});
-	return user;
+	return model;
 }

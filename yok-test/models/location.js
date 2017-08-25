@@ -1,5 +1,5 @@
 module.exports = function(sequelize, Sequelize){
-	var location = sequelize.define("location", {
+	var model = sequelize.define("location", {
 		id:{
 			type: Sequelize.INTERGER(11),
 			field: 'id',
@@ -20,6 +20,6 @@ module.exports = function(sequelize, Sequelize){
 		}
 	},
 	tableName: 'location');
-	return location;
+	return model;
 
 }
