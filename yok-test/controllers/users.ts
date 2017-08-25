@@ -1,9 +1,8 @@
-var passport = require("passport")
-
-// GET /signup
-function getSignup(request, response,next) {
-		response.render('signup.ejs',{ message:request.flash('signupMessage')});
-}
+var passport = require("passport");
+import { db } from '../models';
+var Comment = db.models.Comment;
+var Location = db.models.Location;
+var User = db.models.User;
 
 // POST /signup
 function postSignup(request, response, next) {
@@ -16,14 +15,6 @@ function postSignup(request, response, next) {
 
 	return signupStrategy(request, response, next);
 }
-
-function home(request, response, next) {
-	
-}
-// GET /login
-function getLogin(request, response, next) {
-    response.render('login.ejs', { message: request.flash('loginMessage') });
-  }
 
 // POST /login 
 function postLogin(request, response, next) {

@@ -1,5 +1,5 @@
 module.exports = function(sequelize, Sequelize){
-	var comment = sequelize.define("comment", {
+	var model = sequelize.define("comment", {
 		id:{
 			type: Sequelize.INTERGER(11),
 			field: 'id',
@@ -19,7 +19,7 @@ module.exports = function(sequelize, Sequelize){
 			type: sequelize.INTERGER(10)
 		}
 	},
-	tableName: 'location');
-	return location;
+	tableName: 'comments');
+	return model;
 
 }
