@@ -1,10 +1,10 @@
-import { YokelTestPage } from './app.po';
+import { YokTestPage } from './app.po';
 
-describe('yokel-test App', () => {
-  let page: YokelTestPage;
+describe('yok-test App', () => {
+  let page: YokTestPage;
 
   beforeEach(() => {
-    page = new YokelTestPage();
+    page = new YokTestPage();
   });
 
   it('should display welcome message', () => {

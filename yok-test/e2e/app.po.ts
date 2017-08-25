@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class YokelTestPage {
+export class YokTestPage {
   navigateTo() {
     return browser.get('/');
   }
