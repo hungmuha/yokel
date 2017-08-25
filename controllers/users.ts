@@ -17,6 +17,9 @@ function postSignup(request, response, next) {
 	return signupStrategy(request, response, next);
 }
 
+function home(request, response, next) {
+	
+}
 // GET /login
 function getLogin(request, response, next) {
     response.render('login.ejs', { message: request.flash('loginMessage') });

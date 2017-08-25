@@ -17,7 +17,7 @@ function authenticatedUser(req,res,next){
 }
 
 router.route('/')
-  .get(staticsController.home);
+  .get(usersController.home);
 
 router.route('/signup')
   .get(usersController.getSignup)

@@ -13,25 +13,25 @@ module.exports = function(passport){
 	});
 //sign up function
 	passport.use('local-signup', new LocalStrategy({
-		usernameField: 'email',
+		usernameField: 'username',
 		passwordField: 'password',
 		passReqToCallback: true
 	}, function(req,email,password,callback){
 		console.log("function ran");
 		//find a user given the email
-		User.findOne({'local.email':email} ,function(err,user){
+		User.findOne({'local.username':username} ,function(err,user){
 			if(err) return callback(err);
 				console.log('no mongo error!');
 			//if User already exists
 			if(user){
 				console.log('user exist');
-				return callback(null, false, req.flash('signupMessage','This email is already exist'));
+				return callback(null, false, {alert:'This email is already exist'});
 			}else{
 				console.log('user doesnt');
 				//user does not exist yet
 				//create it
 				let newUser = new User();
-				newUser.local.email = email;
+				newUser.local.username = username;
 				newUser.local.password = newUser.hash(password);
 
 				newUser.save(function(err) {
@@ -43,22 +43,22 @@ module.exports = function(passport){
 	}));
 
 	passport.use('local-login', new LocalStrategy({
-		usernameField:'email',
+		usernameField:'username',
 		passwordField:'password',
 		passReqToCallback:true
 	}, function(req,email,password,callback){
 		//search for a user with this email
-			User.findOne({ 'local.email' :email}, function(err,user) {
+			User.findOne({ 'local.username' :username}, function(err,user) {
 				if(err) {
 					return callback(err);
 				}
 				//if no user is found
 				if(!user) {
-					return callback(null,false, req.flash('loginMessage','No user found.'));
+					return callback(null,false, alert{'No user found.'});
 				}
 				////wrong password
 				if(!user.validPassword(password)) {
-					return callback(null, false, req.flash('loginMessage', 'OOps!Wrong password.'));
+					return callback(null, false, alert{'OOps!Wrong password.'});
 				}
 
 				return callback(null,user);
