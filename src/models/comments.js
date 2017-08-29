@@ -18,7 +18,6 @@ module.exports = function(sequelize, Sequelize){
 		userId: {
 			type: sequelize.INTERGER(10)
 		}
-	},
-	tableName: 'comments');
+	});
 	return model;
 };

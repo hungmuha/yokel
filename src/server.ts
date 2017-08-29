@@ -2,7 +2,7 @@ import 'reflect-metadata';
 import 'zone.js/dist/zone-node';
 import { platformServer, renderModuleFactory } from '@angular/platform-server';
 import { enableProdMode } from '@angular/core';
-import { AppServerModuleNgFactory } from '../dist/ngfactory/src/app/app-server-module.ngfactory';
+import { AppServerModuleNgFactory } from '../dist/ngfactory/src/app/app.server.module.ngfactory';
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import { readFileSync } from 'fs';
@@ -15,9 +15,12 @@ import {session} from 'express-session';
 
 import {passport} from 'passport';
 
-const routes = require('.config/routes/index');
-const home = require('.config/routes');
+import {routes} from'.config/index';
+const home = require('.config/main');
 
+const PORT = 3000;
+
+enableProdMode();
 // This will configure Passport to use Auth0
 const strategy = new Auth0Strategy(
   {
@@ -47,11 +50,9 @@ passport.deserializeUser(function(user, done) {
 });
 
 
-import { router as yokelRouter} from './config/routes';
+// import { router as yokelRouter} from './config/main';
 
-const PORT = 3000;
 
-enableProdMode();
 
 const app = express();
 
@@ -71,14 +72,14 @@ app.set('views', 'src')
 app.use(passport.initialize());
 app.use(passport.session());
 app.get('*.*', express.static(join(__dirname, '..', 'dist')));
-app.use(flash());
+
 
 //
-app.use(logger('dev'));
+
 
 app.use(bodyParser.json());
 
-app.use(yokelRouter);
+// app.use(yokelRouter);
 
 app.use(cookieParser());
 

@@ -30,8 +30,6 @@ module.exports = function(sequelize, DataTypes) {
 			field: 'locationId',
 			allowNull:false
 		}
-	},
-
-	tableName: 'users';
+	});
 	return model;
 };

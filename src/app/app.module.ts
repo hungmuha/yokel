@@ -31,10 +31,10 @@ const appRoutes: Routes = [
     LandingPageComponent
   ],
   imports: [
+  BrowserModule.withServerTransition({appId: 'cli-universal-demo'}),
   RouterModule.forRoot(
     appRoutes
     ),
-    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

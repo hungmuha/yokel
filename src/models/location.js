@@ -18,7 +18,6 @@ module.exports = function(sequelize, Sequelize){
 		userId: {
 			type: Sequelize.ARRAY(sequelize.INTERGER)
 		}
-	},
-	tableName: 'location');
+	});
 	return model;
 };
