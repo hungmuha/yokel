@@ -8,13 +8,6 @@ var passport = require("passport");
 var usersController = require('../controllers/users');
 var staticsController = require('../controllers/statics');
 
-// authenticated User
-function authenticatedUser(req,res,next){
-
-	if(req.isAuthenticated()) return next();
-
-	res.redirect('/locationHome');
-}
 
 router.route('/')
   .get(usersController.home);
@@ -29,3 +22,4 @@ router.route('/login')
 
 router.route("/logout")
   .get(usersController.getLogout)
+

@@ -1,24 +1,59 @@
 import 'reflect-metadata';
 import 'zone.js/dist/zone-node';
-import { platformServer, renderModuleFactory } from '@angular/platform-server'
-import { enableProdMode } from '@angular/core'
-import { AppServerModuleNgFactory } from '../dist/ngfactory/src/app/app-server-module.ngfactory'
+import { platformServer, renderModuleFactory } from '@angular/platform-server';
+import { enableProdMode } from '@angular/core';
+import { AppServerModuleNgFactory } from '../dist/ngfactory/src/app/app-server-module.ngfactory';
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-import { router as tunrRouter } from './config/routes';
+import {cookieParser} from 'cookie-parser';
+import {Auth0Strategy}  from 'passport-auth0';
+import {session} from 'express-session';
+
+
+import {passport} from 'passport';
+
+const routes = require('.config/routes/index');
+const home = require('.config/routes');
+
+// This will configure Passport to use Auth0
+const strategy = new Auth0Strategy(
+  {
+    domain: 'hungmuha.auth0.com',
+    clientID: 'znIJFscwW72J_60g2eoLhWKkwP4NozrU',
+    clientSecret: 'Y5iu8s8fs6h2pSFnH4Nf82biu7LHIyu7Ej9vjX7-D5J90XfcxhV9NFGLr_8igKUp',
+    callbackURL:'http://localhost:3000/callback'
+  },
+  function(accessToken, refreshToken, extraParams, profile, done) {
+    // accessToken is the token to call Auth0 API (not needed in the most cases)
+    // extraParams.id_token has the JSON Web Token
+    // profile has all the information from the user
+    return done(null, profile);
+  }
+);
+
+passport.use(strategy);
+
+//
+
+passport.serializeUser(function(user, done) {
+  done(null, routes);
+});
+
+passport.deserializeUser(function(user, done) {
+  done(null, routes);
+});
+
+
+import { router as yokelRouter} from './config/routes';
 
 const PORT = 3000;
 
 enableProdMode();
 
 const app = express();
-
-app.use(bodyParser.json());
-
-app.use(tunrRouter);
 
 let template = readFileSync(join(__dirname, '..', 'dist', 'index.html')).toString();
 
@@ -29,11 +64,47 @@ app.engine('html', (_, options, callback) => {
     .then(html => callback(null, html));
 });
 
-
+//view engine setup
 app.set('view engine', 'html');
 app.set('views', 'src')
 
+app.use(passport.initialize());
+app.use(passport.session());
 app.get('*.*', express.static(join(__dirname, '..', 'dist')));
+app.use(flash());
+
+//
+app.use(logger('dev'));
+
+app.use(bodyParser.json());
+
+app.use(yokelRouter);
+
+app.use(cookieParser());
+
+
+// Handle auth failure error messages
+app.use(function(req, res, next) {
+ if (req && req.query && req.query.error) {
+   req.flash("error", req.query.error);
+ }
+ if (req && req.query && req.query.error_description) {
+   req.flash("error_description", req.query.error_description);
+ }
+ next();
+});
+
+// Check logged in
+app.use(function(req, res, next) {
+  res.locals.loggedIn = false;
+  if (req.session.passport && typeof req.session.passport.user != 'undefined') {
+    res.locals.loggedIn = true;
+  }
+  next();
+});
+
+app.use('/', routes);
+app.use('/home', home);
 
 app.get('*', (req, res) => {
   res.render('index', { req });
