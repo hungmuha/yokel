@@ -5,6 +5,44 @@ body	{
   /*width: 50%;*/
 }
 
+/*--- LANDING PAGE ---*/
+body.landing	{
+	background: url(/assets/landing.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+p.landing {
+	color: #fff;
+	font-size: 16px;
+	max-width: 370px;
+	line-height: 26px;
+}
+
+.container-footer-landing {
+	background-color: #e4f7ee;
+	padding-top: 20px;
+	padding-left: 12%;
+	margin-top: 75px;
+}
+
+button.btn.btn-primary.btn-lg.landing	{
+	background-color: #fff;
+	color: #5EC295;
+	font-style: bold;
+	border: none;
+	margin: 10px;
+}
+
+button.btn.btn-primary.btn-lg.landing:hover {
+	background-color: #e4f7ee ;
+}
+
+/*////////////////////////////////*/
+
+
 .input-group	{
     padding-bottom: 30px;
 }
@@ -15,6 +53,13 @@ h1 {
 	font-size: 72px;
 	margin-bottom: 10px;
 } 
+
+h1.landing {
+	font-family: 'Questrial', sans-serif;
+	color: #fff;
+	font-size: 72px;
+	margin-bottom: 10px;
+}
 
 h2 {
 	font-family: 'Questrial', sans-serif;
@@ -179,5 +224,3 @@ li.container-footer {
 	/*float: left;*/
 	max-width: 1000px;
 }
-
-

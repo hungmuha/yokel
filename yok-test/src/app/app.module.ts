@@ -1,13 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule, Routes } from '@angular/router'
 import { AppComponent } from './app.component';
 import { UsersPageComponent } from './users-page/users-page.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+
+const appRoutes: Routes = [
+  
+  { path: '', component: LandingPageComponent},
+  { path: 'login-page', component: LoginPageComponent},
+  { path: 'sign-up', component: SignUpComponent},
+  { path: 'about-page', component: AboutPageComponent },
+  { path: 'users-page', component: UsersPageComponent}
+
+];
+
 
 @NgModule({
   declarations: [
@@ -15,12 +26,15 @@ import { LoginPageComponent } from './login-page/login-page.component';
     UsersPageComponent,
     SignUpComponent,
     NavBarComponent,
-    HomePageComponent,
     AboutPageComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    LandingPageComponent
   ],
   imports: [
-    BrowserModule
+  RouterModule.forRoot(
+    appRoutes
+    ),
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
