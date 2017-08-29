@@ -21,5 +21,4 @@ module.exports = function(sequelize, Sequelize){
 	},
 	tableName: 'location');
 	return model;
-
-}
+};
