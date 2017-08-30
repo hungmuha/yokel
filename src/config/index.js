@@ -35,7 +35,7 @@ router.get('/callback',
     failureRedirect: '/failure'
   }),
   function(req, res) {
-    console.log(req.user._json.sub)
+    console.log(req.user._json.sub);
     res.redirect(req.session.returnTo || '/users-page');
   }
 );
