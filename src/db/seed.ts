@@ -49,7 +49,7 @@ var userCreate = function() {
 		DB.Location.bulkCreate(locationTest)
 		.then(function(location){
 			DB.Comments.create({
-				commentsId: comments.id,
+				commentsId: comments,
 				userId: user.id,
 				locationId: location,
 				commentsField: comments
@@ -64,6 +64,8 @@ var user = function() {
 			password:"1234"
 	})
 }
+
+//test/
 
 var location = function() {
 	return DB.Location.bulkCreate(locationTest);
