@@ -1,6 +1,7 @@
-const express = require('express');
+const express  = require ('express');
 const passport = require('passport');
 const router = express.Router();
+// var usersController = require('../controllers/users.ts');
 
 
 const env = {
@@ -10,9 +11,9 @@ const env = {
 };
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index');
-});
+// router.get('/', function (req, res, next) {
+//   res.render('index');
+// });
 
 router.get('/login', passport.authenticate('auth0', {
   clientID: env.AUTH0_CLIENT_ID,
@@ -35,7 +36,8 @@ router.get('/callback',
     failureRedirect: '/failure'
   }),
   function(req, res) {
-    console.log(req.user._json.sub)
+    console.log(req.user._json.sub);
+    console.log(req.user);
     res.redirect(req.session.returnTo || '/users-page');
   }
 );
@@ -50,6 +52,8 @@ router.get('/failure', function(req, res) {
   });
 });
 
-
+// router.get('/users-page/:id', function(req,res) {
+//   var 
+// })
 
 module.exports = router;
