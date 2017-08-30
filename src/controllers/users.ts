@@ -1,34 +1,37 @@
-// var passport = require("passport");
-// import { db } from '../models';
-// var Comment = db.models.Comment;
-// var Location = db.models.Location;
-// var User = db.models.User;
+import { db } from '../models';
+var User = db.models.User;
 
-// // POST /signup
-// function postSignup(request, response, next) {
-// 	//save a new user
-// 	let signupStrategy = passport.authenticate('local-signup',{
-// 		successRedirect:'/',
-// 		failureRedirect:'/signup',
-// 		failureFlash: true
-// 	});
 
-// 	return signupStrategy(request, response, next);
-// }
+function index(req, res) {
+	User.findAll().then(function(users) {
+		res.json(users);
+	});
+}
 
-// // POST /login 
-// function postLogin(request, response, next) {
-//     var loginProperty = passport.authenticate('local-login', {
-//       successRedirect : '/',
-//       failureRedirect : '/login',
-//       failureFlash : true
-//     });
+function show(req, res) {
 
-//     return loginProperty(request, response, next);
-//  }
+}
 
-// // GET /logout
-// function getLogout(request, response,next) {
-// 	request.logout();
-// 	response.redirect('/');
-// }
+function create(req, res) {
+	User.create(req.body).then(function(user){
+    if(!user) res.send(res, "not saved");
+    else res.json(user);
+  });
+}
+
+function update(req, res) {
+
+}
+
+function destroy(req, res) {
+
+}
+
+const usersController = <any>{};
+usersController.index = index;
+usersController.show = show;
+usersController.create = create;
+usersController.update = update;
+usersController.destroy = destroy;
+
+export {usersController};
