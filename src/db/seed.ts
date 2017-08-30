@@ -19,24 +19,24 @@ var locationTest = [
 	}
 ];
 
-var commentTest = [
+var commentsTest = [
 	{
-		commentId: 1,
+		commentsId: 1,
 		userId: 1,
 		locationId: 1,
-		commentField: "the hot springs are great"
+		commentsField: "the hot springs are great"
 	},
 	{
-		commentId: 2,
+		commentsId: 2,
 		userId: 2,
 		locationId: 1,
-		commentField: "check out the theater for some awesome things"
+		commentsField: "check out the theater for some awesome things"
 	},
 	{
-		commentId: 3,
+		commentsId: 3,
 		userId: 3,
 		locationId: 1,
-		commentField: "who doesn't love baseball?"
+		commentsField: "who doesn't love baseball?"
 	}
 ];
 
@@ -49,10 +49,10 @@ var userCreate = function() {
 		DB.Location.bulkCreate(locationTest)
 		.then(function(location){
 			DB.Comments.create({
-				commentId: comment.id,
+				commentsId: comments.id,
 				userId: user.id,
 				locationId: location,
-				commentField: comment
+				commentsField: comments
 			})
 		});
 	})
@@ -70,7 +70,7 @@ var location = function() {
 };
 
 var comments = function() {
-	return DB.Comments.bulkCreate(commentTest);
+	return DB.Comments.bulkCreate(commentsTest);
 };
 
 user();
