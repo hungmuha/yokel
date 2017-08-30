@@ -11,13 +11,13 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CommentsService } from './comments.service';
 
 const appRoutes: Routes = [
-  
+ 
+
   { path: '', component: LandingPageComponent},
   { path: 'about-page', component: AboutPageComponent },
   { path: 'users-page', component: UsersPageComponent}
 
 ];
-
 
 @NgModule({
   declarations: [

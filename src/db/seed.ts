@@ -1,37 +1,80 @@
-// import { db } from '../models';
-// let DB = db.models;
+import { db } from '../models';
+let DB = db.models;
 
-// var artistCreate = function() {
-// 	return DB.Artist.create({
-//     name: 'Luciano Pavarotti',
-//     photoUrl: 'http://img.informador.com.mx/biblioteca/imagen/677x508/811/810055.jpg',
-//     nationality: 'Italiano',
-//     instrument: 'Voice',
-//     home_address: '1 Strada Roma'
-//   });
-// };
+var locationTest = [
+	{
+		locationId: 1,
+		city: "Denver",
+		state: "Colorado"
+	},
+	{
+		locationId: 2,
+		city: "Aspen",
+		state: "Colorado",
+	},
+	{
+		locationId: 3,
+		city: "Portland",
+		state: "Oregon",
+	}
+];
 
-// var managerCreate = function() {
-// 	return DB.Manager.create({
-//     name: 'Ricky Bobby',
-//     email: 'rbobby@gmail.com',
-//     office_number: '516-877-0304',
-//     cell_phone_number: '718-989-1231'
-// 	});
-// };
+var commentsTest = [
+	{
+		commentsId: 1,
+		userId: 1,
+		locationId: 1,
+		commentsField: "the hot springs are great"
+	},
+	{
+		commentsId: 2,
+		userId: 2,
+		locationId: 1,
+		commentsField: "check out the theater for some awesome things"
+	},
+	{
+		commentsId: 3,
+		userId: 3,
+		locationId: 1,
+		commentsField: "who doesn't love baseball?"
+	}
+];
 
-// var songCreate = function() {
-// 	return DB.Song.create({
-// 	    title: 'The Best Song Ever',
-// 	    duration: '3:31',
-// 	    date_of_release: '7/13/2015',
-// 	    album_title: 'Best Album Ever'
-// 	});
-// };
+var userCreate = function() {
+	return DB.User.create({
+			email:"user",
+			password:"1234"
+	})
+	.then(function(user){
+		DB.Location.bulkCreate(locationTest)
+		.then(function(location){
+			DB.Comments.create({
+				commentsId: comments,
+				userId: user.id,
+				locationId: location,
+				commentsField: comments
+			})
+		});
+	})
+}
 
-// artistCreate()
-// .then(managerCreate)
-// .then(songCreate)
-// .then(function() {
-// 	process.exit();
-// });
+var user = function() {
+	return DB.User.create({
+			email:"user",
+			password:"1234"
+	})
+}
+
+//test/
+
+var location = function() {
+	return DB.Location.bulkCreate(locationTest);
+};
+
+var comments = function() {
+	return DB.Comments.bulkCreate(commentsTest);
+};
+
+user();
+location();
+comments();
