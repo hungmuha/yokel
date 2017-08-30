@@ -65,6 +65,8 @@ var user = function() {
 	})
 }
 
+//test/
+
 var location = function() {
 	return DB.Location.bulkCreate(locationTest);
 };
