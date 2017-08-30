@@ -73,6 +73,6 @@ var comments = function() {
 	return DB.Comments.bulkCreate(commentTest);
 };
 
-rest();
+user();
 location();
 comments();
