@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+import {db} from '../models';
+import * as passport from 'passport';
+
+var Comment = db.models.Comment;
+var Location = db.models.Location;
+
+
+=======
 import { db } from '../models';
 var User = db.models.User;
 
@@ -35,3 +44,4 @@ usersController.update = update;
 usersController.destroy = destroy;
 
 export {usersController};
+>>>>>>> 18b9b07135c91626f337b280c63886588c29958d

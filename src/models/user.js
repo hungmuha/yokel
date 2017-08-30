@@ -20,11 +20,6 @@ module.exports = function(sequelize, DataTypes) {
 			field:'email',
 			allowNull:false
 		},
-		password:{
-			type: Sequelize.STRING,
-			field:'password',
-			allowNull: false
-		},
 		locationId:{
 			type: Sequelize.INTERGER,
 			field: 'locationId',

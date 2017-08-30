@@ -66,7 +66,7 @@ let template = readFileSync(join(__dirname, '..', 'dist', 'index.html')).toStrin
 
 app.engine('html', (_, options, callback) => {
   console.log(options);
-  const opts = { document: template, url: '/'};
+  const opts = { document: template, url: options.req.url};
 
   renderModuleFactory(AppServerModuleNgFactory, opts)
     .then(html => callback(null, html));
