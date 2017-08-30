@@ -1,4 +1,4 @@
-import { db } from '../models';
+var db = require ('../models');
 var Location = db.models.Location;
 
 function index(req, res) {

@@ -1,4 +1,4 @@
-import { db } from '../models';
+var db = require ('../models');
 var Comment = db.models.Comment;
 
 function index(req, res) {
