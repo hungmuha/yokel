@@ -1,15 +1,12 @@
 const express = require('express');
 const passport = require('passport');
 const router = express.Router();
-const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn();
-
 
 
 const env = {
   AUTH0_CLIENT_ID: 'znIJFscwW72J_60g2eoLhWKkwP4NozrU',
   AUTH0_DOMAIN: 'hungmuha.auth0.com',
-  AUTH0_CALLBACK_URL:
-    process.env.AUTH0_CALLBACK_URL || 'http://localhost:3000/callback'
+  AUTH0_CALLBACK_URL:'http://localhost:3000/callback'
 };
 
 /* GET home page. */
@@ -38,7 +35,8 @@ router.get('/callback',
     failureRedirect: '/failure'
   }),
   function(req, res) {
-    res.redirect(req.session.returnTo || '/home');
+    console.log(req.user._json.sub)
+    res.redirect(req.session.returnTo || '/users-page');
   }
 );
 
@@ -52,11 +50,6 @@ router.get('/failure', function(req, res) {
   });
 });
 
-router.get('/', ensureLoggedIn, function(req, res, next) {
-  res.render('user', {
-    user: req.user,
-    userProfile: JSON.stringify(req.user,null, '  ')
-  });
-});
+
 
 module.exports = router;

@@ -8,19 +8,24 @@ import * as bodyParser from 'body-parser';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-import {cookieParser} from 'cookie-parser';
-import {Auth0Strategy}  from 'passport-auth0';
+import * as cookieParser from 'cookie-parser';
+import * as Auth0Strategy   from 'passport-auth0';
 import {session} from 'express-session';
 
 
-import {passport} from 'passport';
+import * as passport from 'passport';
 
-import {routes} from'.config/index';
-const home = require('.config/main');
+
+import * as yokelRoutes from './config/index';
+
+// const home = require('./config/main');
 
 const PORT = 3000;
 
 enableProdMode();
+
+const app = express();
+
 // This will configure Passport to use Auth0
 const strategy = new Auth0Strategy(
   {
@@ -42,11 +47,11 @@ passport.use(strategy);
 //
 
 passport.serializeUser(function(user, done) {
-  done(null, routes);
+  done(null, user);
 });
 
 passport.deserializeUser(function(user, done) {
-  done(null, routes);
+  done(null, user);
 });
 
 
@@ -54,59 +59,36 @@ passport.deserializeUser(function(user, done) {
 
 
 
-const app = express();
+
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use(bodyParser.json());
+// app.use(yokelRouter);
+
+app.use(cookieParser());
+
+app.use(yokelRoutes);
+// app.use('/home', home);
+
 
 let template = readFileSync(join(__dirname, '..', 'dist', 'index.html')).toString();
 
 app.engine('html', (_, options, callback) => {
-  const opts = { document: template, url: options.req.url };
+  console.log(options);
+  const opts = { document: template, url: '/'};
 
   renderModuleFactory(AppServerModuleNgFactory, opts)
     .then(html => callback(null, html));
 });
 
-//view engine setup
+
+
+
 app.set('view engine', 'html');
 app.set('views', 'src')
-
-app.use(passport.initialize());
-app.use(passport.session());
 app.get('*.*', express.static(join(__dirname, '..', 'dist')));
-
-
-//
-
-
-app.use(bodyParser.json());
-
-// app.use(yokelRouter);
-
-app.use(cookieParser());
-
-
-// Handle auth failure error messages
-app.use(function(req, res, next) {
- if (req && req.query && req.query.error) {
-   req.flash("error", req.query.error);
- }
- if (req && req.query && req.query.error_description) {
-   req.flash("error_description", req.query.error_description);
- }
- next();
-});
-
-// Check logged in
-app.use(function(req, res, next) {
-  res.locals.loggedIn = false;
-  if (req.session.passport && typeof req.session.passport.user != 'undefined') {
-    res.locals.loggedIn = true;
-  }
-  next();
-});
-
-app.use('/', routes);
-app.use('/home', home);
-
 app.get('*', (req, res) => {
   res.render('index', { req });
 });
