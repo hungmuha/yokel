@@ -15,8 +15,7 @@ function show(req, res) {
   });	
 }
 
-const locationController = <any>{};
-locationController.index = index;
-locationController.show = show;
-
-export {locationController};
+module.exports = {
+	index: index,
+	show: show
+};
