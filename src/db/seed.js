@@ -1,4 +1,4 @@
-import { db } from '../models';
+var db = require ('../models');
 let DB = db.models;
 
 var locationTest = [

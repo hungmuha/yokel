@@ -11,7 +11,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const appRoutes: Routes = [
   
-  { path: '/', component: LandingPageComponent},
+  { path: '', component: LandingPageComponent},
   { path: 'login-page', component: LoginPageComponent},
   { path: 'sign-up', component: SignUpComponent},
   { path: 'about-page', component: AboutPageComponent },
