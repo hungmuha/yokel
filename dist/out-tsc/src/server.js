@@ -48,7 +48,7 @@ app.use(yokelRoutes);
 var template = fs_1.readFileSync(path_1.join(__dirname, '..', 'dist', 'index.html')).toString();
 app.engine('html', function (_, options, callback) {
     console.log(options);
-    var opts = { document: template, url: options.req.url };
+    var opts = { document: template, url: '/' };
     platform_server_1.renderModuleFactory(app_server_module_ngfactory_1.AppServerModuleNgFactory, opts)
         .then(function (html) { return callback(null, html); });
 });

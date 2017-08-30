@@ -14,7 +14,7 @@
 
 </head>
 <body>
-
+	<nav-bar></nav-bar>
 	<div class="container">
 		<div class="row">
 			<!-- 12 column width -->
@@ -24,16 +24,15 @@
 						<!-- <button type="button" class="btn btn-primary btn-lg">click me</button> -->
 
 						<!-- button dropdown -->
-					  <div class="dropdown">
-					    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">where ya going?
-					    <span class="caret"></span></button>
+					  <div class="dropdown" dropdown>
+					    <button id="dropdown" class="btn btn-primary" dropdown-open>where ya going?</button>
 					    <ul class="dropdown-menu">
-					      <li><a href="#">Aspen</a></li>
-					      <li><a href="#">New York</a></li>
-					      <li><a href="#">Hong Kong</a></li>
+					      <li><a routerLink="/users-page">Aspen</a></li>
+					      <li><a routerLink="/users-page">Denver</a></li>
+					      <li><a routerLink="/users-page">Fort Collins</a></li>
 					    </ul>
 					  </div>
-
+	
 					</div>
 		</div>
 	</div>

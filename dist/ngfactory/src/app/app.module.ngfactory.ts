@@ -10,81 +10,79 @@ import * as i0 from '@angular/core';
 import * as i1 from '../../../../src/app/app.module';
 import * as i2 from '../../../../src/app/app.component';
 import * as i3 from './landing-page/landing-page.component.ngfactory';
-import * as i4 from './login-page/login-page.component.ngfactory';
-import * as i5 from './sign-up/sign-up.component.ngfactory';
-import * as i6 from './about-page/about-page.component.ngfactory';
-import * as i7 from './users-page/users-page.component.ngfactory';
-import * as i8 from './app.component.ngfactory';
-import * as i9 from '@angular/common';
-import * as i10 from '@angular/platform-browser';
-import * as i11 from '@angular/router';
+import * as i4 from './about-page/about-page.component.ngfactory';
+import * as i5 from './users-page/users-page.component.ngfactory';
+import * as i6 from './app.component.ngfactory';
+import * as i7 from '@angular/common';
+import * as i8 from '@angular/platform-browser';
+import * as i9 from '@angular/router';
+import * as i10 from '../../../../src/app/comments.service';
+import * as i11 from 'ng2-dropdown/index';
 import * as i12 from '../../../../src/app/landing-page/landing-page.component';
-import * as i13 from '../../../../src/app/login-page/login-page.component';
-import * as i14 from '../../../../src/app/sign-up/sign-up.component';
-import * as i15 from '../../../../src/app/about-page/about-page.component';
-import * as i16 from '../../../../src/app/users-page/users-page.component';
+import * as i13 from '../../../../src/app/about-page/about-page.component';
+import * as i14 from '../../../../src/app/users-page/users-page.component';
 export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.AppModule,
     [i2.AppComponent],(_l:any) => {
       return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
-          [[8,[i3.LandingPageComponentNgFactory,i4.LoginPageComponentNgFactory,i5.SignUpComponentNgFactory,
-              i6.AboutPageComponentNgFactory,i7.UsersPageComponentNgFactory,i8.AppComponentNgFactory]],
-              [3,i0.ComponentFactoryResolver],i0.NgModuleRef]),i0.ɵmpd(5120,i0.LOCALE_ID,
-          i0.ɵm,[[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i9.NgLocalization,i9.NgLocaleLocalization,
-          [i0.LOCALE_ID]),i0.ɵmpd(5120,i0.IterableDiffers,i0.ɵk,([] as any[])),i0.ɵmpd(5120,
-          i0.KeyValueDiffers,i0.ɵl,([] as any[])),i0.ɵmpd(4608,i10.DomSanitizer,i10.ɵe,
-          [i9.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,(null as any),[i10.DomSanitizer]),
-          i0.ɵmpd(4608,i10.HAMMER_GESTURE_CONFIG,i10.HammerGestureConfig,([] as any[])),
-          i0.ɵmpd(5120,i10.EVENT_MANAGER_PLUGINS,(p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
-            return [new i10.ɵDomEventsPlugin(p0_0),new i10.ɵKeyEventsPlugin(p1_0),
-                new i10.ɵHammerGesturesPlugin(p2_0,p2_1)];
-          },[i9.DOCUMENT,i9.DOCUMENT,i9.DOCUMENT,i10.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
-              i10.EventManager,i10.EventManager,[i10.EVENT_MANAGER_PLUGINS,i0.NgZone]),
-          i0.ɵmpd(135680,i10.ɵDomSharedStylesHost,i10.ɵDomSharedStylesHost,[i9.DOCUMENT]),
-          i0.ɵmpd(4608,i10.ɵDomRendererFactory2,i10.ɵDomRendererFactory2,[i10.EventManager,
-              i10.ɵDomSharedStylesHost]),i0.ɵmpd(6144,i0.RendererFactory2,(null as any),
-              [i10.ɵDomRendererFactory2]),i0.ɵmpd(6144,i10.ɵSharedStylesHost,(null as any),
-              [i10.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i0.Testability,i0.Testability,
-              [i0.NgZone]),i0.ɵmpd(4608,i10.Meta,i10.Meta,[i9.DOCUMENT]),i0.ɵmpd(4608,
-              i10.Title,i10.Title,[i9.DOCUMENT]),i0.ɵmpd(5120,i11.ActivatedRoute,i11.ɵf,
-              [i11.Router]),i0.ɵmpd(4608,i11.NoPreloading,i11.NoPreloading,([] as any[])),
-          i0.ɵmpd(6144,i11.PreloadingStrategy,(null as any),[i11.NoPreloading]),i0.ɵmpd(135680,
-              i11.RouterPreloader,i11.RouterPreloader,[i11.Router,i0.NgModuleFactoryLoader,
-                  i0.Compiler,i0.Injector,i11.PreloadingStrategy]),i0.ɵmpd(4608,i11.PreloadAllModules,
-              i11.PreloadAllModules,([] as any[])),i0.ɵmpd(5120,i11.ROUTER_INITIALIZER,
-              i11.ɵi,[i11.ɵg]),i0.ɵmpd(5120,i0.APP_BOOTSTRAP_LISTENER,(p0_0:any) => {
+          [[8,[i3.LandingPageComponentNgFactory,i4.AboutPageComponentNgFactory,i5.UsersPageComponentNgFactory,
+              i6.AppComponentNgFactory]],[3,i0.ComponentFactoryResolver],i0.NgModuleRef]),
+          i0.ɵmpd(5120,i0.LOCALE_ID,i0.ɵm,[[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i7.NgLocalization,
+              i7.NgLocaleLocalization,[i0.LOCALE_ID]),i0.ɵmpd(5120,i0.IterableDiffers,
+              i0.ɵk,([] as any[])),i0.ɵmpd(5120,i0.KeyValueDiffers,i0.ɵl,([] as any[])),
+          i0.ɵmpd(4608,i8.DomSanitizer,i8.ɵe,[i7.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,
+              (null as any),[i8.DomSanitizer]),i0.ɵmpd(4608,i8.HAMMER_GESTURE_CONFIG,
+              i8.HammerGestureConfig,([] as any[])),i0.ɵmpd(5120,i8.EVENT_MANAGER_PLUGINS,
+              (p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
+                return [new i8.ɵDomEventsPlugin(p0_0),new i8.ɵKeyEventsPlugin(p1_0),
+                    new i8.ɵHammerGesturesPlugin(p2_0,p2_1)];
+              },[i7.DOCUMENT,i7.DOCUMENT,i7.DOCUMENT,i8.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
+              i8.EventManager,i8.EventManager,[i8.EVENT_MANAGER_PLUGINS,i0.NgZone]),
+          i0.ɵmpd(135680,i8.ɵDomSharedStylesHost,i8.ɵDomSharedStylesHost,[i7.DOCUMENT]),
+          i0.ɵmpd(4608,i8.ɵDomRendererFactory2,i8.ɵDomRendererFactory2,[i8.EventManager,
+              i8.ɵDomSharedStylesHost]),i0.ɵmpd(6144,i0.RendererFactory2,(null as any),
+              [i8.ɵDomRendererFactory2]),i0.ɵmpd(6144,i8.ɵSharedStylesHost,(null as any),
+              [i8.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i0.Testability,i0.Testability,
+              [i0.NgZone]),i0.ɵmpd(4608,i8.Meta,i8.Meta,[i7.DOCUMENT]),i0.ɵmpd(4608,
+              i8.Title,i8.Title,[i7.DOCUMENT]),i0.ɵmpd(5120,i9.ActivatedRoute,i9.ɵf,
+              [i9.Router]),i0.ɵmpd(4608,i9.NoPreloading,i9.NoPreloading,([] as any[])),
+          i0.ɵmpd(6144,i9.PreloadingStrategy,(null as any),[i9.NoPreloading]),i0.ɵmpd(135680,
+              i9.RouterPreloader,i9.RouterPreloader,[i9.Router,i0.NgModuleFactoryLoader,
+                  i0.Compiler,i0.Injector,i9.PreloadingStrategy]),i0.ɵmpd(4608,i9.PreloadAllModules,
+              i9.PreloadAllModules,([] as any[])),i0.ɵmpd(5120,i9.ROUTER_INITIALIZER,
+              i9.ɵi,[i9.ɵg]),i0.ɵmpd(5120,i0.APP_BOOTSTRAP_LISTENER,(p0_0:any) => {
             return [p0_0];
-          },[i11.ROUTER_INITIALIZER]),i0.ɵmpd(512,i9.CommonModule,i9.CommonModule,
-              ([] as any[])),i0.ɵmpd(1024,i0.ErrorHandler,i10.ɵa,([] as any[])),i0.ɵmpd(1024,
-              i0.NgProbeToken,() => {
-                return [i11.ɵb()];
+          },[i9.ROUTER_INITIALIZER]),i0.ɵmpd(4608,i10.CommentsService,i10.CommentsService,
+              ([] as any[])),i0.ɵmpd(512,i7.CommonModule,i7.CommonModule,([] as any[])),
+          i0.ɵmpd(1024,i0.ErrorHandler,i8.ɵa,([] as any[])),i0.ɵmpd(1024,i0.NgProbeToken,
+              () => {
+                return [i9.ɵb()];
               },([] as any[])),i0.ɵmpd(256,i0.APP_ID,'cli-universal-demo',([] as any[])),
-          i0.ɵmpd(2048,i10.ɵTRANSITION_ID,(null as any),[i0.APP_ID]),i0.ɵmpd(512,i11.ɵg,
-              i11.ɵg,[i0.Injector]),i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,p0_1:any,
+          i0.ɵmpd(2048,i8.ɵTRANSITION_ID,(null as any),[i0.APP_ID]),i0.ɵmpd(512,i9.ɵg,
+              i9.ɵg,[i0.Injector]),i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,p0_1:any,
               p1_0:any,p1_1:any,p1_2:any,p2_0:any) => {
-            return [i10.ɵc(p0_0,p0_1),i10.ɵf(p1_0,p1_1,p1_2),i11.ɵh(p2_0)];
-          },[[2,i10.NgProbeToken],[2,i0.NgProbeToken],i10.ɵTRANSITION_ID,i9.DOCUMENT,
-              i0.Injector,i11.ɵg]),i0.ɵmpd(512,i0.ApplicationInitStatus,i0.ApplicationInitStatus,
+            return [i8.ɵc(p0_0,p0_1),i8.ɵf(p1_0,p1_1,p1_2),i9.ɵh(p2_0)];
+          },[[2,i8.NgProbeToken],[2,i0.NgProbeToken],i8.ɵTRANSITION_ID,i7.DOCUMENT,
+              i0.Injector,i9.ɵg]),i0.ɵmpd(512,i0.ApplicationInitStatus,i0.ApplicationInitStatus,
               [[2,i0.APP_INITIALIZER]]),i0.ɵmpd(131584,i0.ɵe,i0.ɵe,[i0.NgZone,i0.ɵConsole,
               i0.Injector,i0.ErrorHandler,i0.ComponentFactoryResolver,i0.ApplicationInitStatus]),
           i0.ɵmpd(2048,i0.ApplicationRef,(null as any),[i0.ɵe]),i0.ɵmpd(512,i0.ApplicationModule,
-              i0.ApplicationModule,[i0.ApplicationRef]),i0.ɵmpd(512,i10.BrowserModule,
-              i10.BrowserModule,[[3,i10.BrowserModule]]),i0.ɵmpd(1024,i11.ɵa,i11.ɵd,
-              [[3,i11.Router]]),i0.ɵmpd(512,i11.UrlSerializer,i11.DefaultUrlSerializer,
-              ([] as any[])),i0.ɵmpd(512,i11.ChildrenOutletContexts,i11.ChildrenOutletContexts,
-              ([] as any[])),i0.ɵmpd(256,i11.ROUTER_CONFIGURATION,{},([] as any[])),
-          i0.ɵmpd(1024,i9.LocationStrategy,i11.ɵc,[i9.PlatformLocation,[2,i9.APP_BASE_HREF],
-              i11.ROUTER_CONFIGURATION]),i0.ɵmpd(512,i9.Location,i9.Location,[i9.LocationStrategy]),
-          i0.ɵmpd(512,i0.Compiler,i0.Compiler,([] as any[])),i0.ɵmpd(512,i0.NgModuleFactoryLoader,
-              i0.SystemJsNgModuleLoader,[i0.Compiler,[2,i0.SystemJsNgModuleLoaderConfig]]),
-          i0.ɵmpd(1024,i11.ROUTES,() => {
-            return [[{path:'',component:i12.LandingPageComponent},{path:'login-page',
-                component:i13.LoginPageComponent},{path:'sign-up',component:i14.SignUpComponent},
-                {path:'about-page',component:i15.AboutPageComponent},{path:'users-page',
-                    component:i16.UsersPageComponent}]];
-          },([] as any[])),i0.ɵmpd(1024,i11.Router,i11.ɵe,[i0.ApplicationRef,i11.UrlSerializer,
-              i11.ChildrenOutletContexts,i9.Location,i0.Injector,i0.NgModuleFactoryLoader,
-              i0.Compiler,i11.ROUTES,i11.ROUTER_CONFIGURATION,[2,i11.UrlHandlingStrategy],
-              [2,i11.RouteReuseStrategy]]),i0.ɵmpd(512,i11.RouterModule,i11.RouterModule,
-              [[2,i11.ɵa],[2,i11.Router]]),i0.ɵmpd(512,i1.AppModule,i1.AppModule,([] as any[]))]);
+              i0.ApplicationModule,[i0.ApplicationRef]),i0.ɵmpd(512,i8.BrowserModule,
+              i8.BrowserModule,[[3,i8.BrowserModule]]),i0.ɵmpd(512,i11.DropdownModule,
+              i11.DropdownModule,([] as any[])),i0.ɵmpd(1024,i9.ɵa,i9.ɵd,[[3,i9.Router]]),
+          i0.ɵmpd(512,i9.UrlSerializer,i9.DefaultUrlSerializer,([] as any[])),i0.ɵmpd(512,
+              i9.ChildrenOutletContexts,i9.ChildrenOutletContexts,([] as any[])),i0.ɵmpd(256,
+              i9.ROUTER_CONFIGURATION,{},([] as any[])),i0.ɵmpd(1024,i7.LocationStrategy,
+              i9.ɵc,[i7.PlatformLocation,[2,i7.APP_BASE_HREF],i9.ROUTER_CONFIGURATION]),
+          i0.ɵmpd(512,i7.Location,i7.Location,[i7.LocationStrategy]),i0.ɵmpd(512,i0.Compiler,
+              i0.Compiler,([] as any[])),i0.ɵmpd(512,i0.NgModuleFactoryLoader,i0.SystemJsNgModuleLoader,
+              [i0.Compiler,[2,i0.SystemJsNgModuleLoaderConfig]]),i0.ɵmpd(1024,i9.ROUTES,
+              () => {
+                return [[{path:'',component:i12.LandingPageComponent},{path:'about-page',
+                    component:i13.AboutPageComponent},{path:'users-page',component:i14.UsersPageComponent}]];
+              },([] as any[])),i0.ɵmpd(1024,i9.Router,i9.ɵe,[i0.ApplicationRef,i9.UrlSerializer,
+              i9.ChildrenOutletContexts,i7.Location,i0.Injector,i0.NgModuleFactoryLoader,
+              i0.Compiler,i9.ROUTES,i9.ROUTER_CONFIGURATION,[2,i9.UrlHandlingStrategy],
+              [2,i9.RouteReuseStrategy]]),i0.ɵmpd(512,i9.RouterModule,i9.RouterModule,
+              [[2,i9.ɵa],[2,i9.Router]]),i0.ɵmpd(512,i1.AppModule,i1.AppModule,([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2h1bmdtdWhhbWF0aC9Ib21lV29yay9wcm9qZWN0My95b2tlbC9zcmMvYXBwL2FwcC5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvaHVuZ211aGFtYXRoL0hvbWVXb3JrL3Byb2plY3QzL3lva2VsL3NyYy9hcHAvYXBwLm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvYXBwLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy96YWNobWFyYXppdGkvRGVza3RvcC93ZGktd29yay9wcm9qZWN0cy95b2tlbC9zcmMvYXBwL2FwcC5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9

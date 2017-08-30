@@ -1,6 +1,6 @@
 body	{
 	margin: auto;
-	padding-top: 40px;
+	
 	padding-bottom: 20px;
   /*width: 50%;*/
 }
@@ -39,25 +39,25 @@ button.btn.btn-primary.btn-lg	{
 	margin: 10px;
 }
 
-button.btn.btn-primary.dropdown-toggle:hover {
+#dropdown:hover {
 	background-color: #3F9170 ;
 }
 
-button.btn.btn-primary.dropdown-toggle:active {
+#dropdown:active {
 	background-color: #5DD6A5 ;
 	box-shadow: 0 2px #3F9170;
 	/*color: black;
 	/*transform: translateY(2px);*/
 }
 
-button.btn.btn-primary.dropdown-toggle	{
+#dropdown	{
 	background-color: #5EC295;
 	color: white;
 	border: 1px solid #5EC295;
 	margin-top: 20px;
 }
 
-button.btn.btn-primary.dropdown-toggle:open {
+#dropdown:open {
     color: #fff;
     background-color: #3F9170;
     border-color: #5EC295;
