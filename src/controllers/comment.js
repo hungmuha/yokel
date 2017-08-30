@@ -44,11 +44,10 @@ function destroy(req, res) {
   });  
 }
 
-const commentController = <any>{};
-commentController.index = index;
-commentController.show = show;
-commentController.create = create;
-commentController.update = update;
-commentController.destroy = destroy;
-
-export {commentController};
+module.exports = {
+  destroy: destroy,
+  update: update,
+  create: create,
+  show: show,
+  index: index
+};
