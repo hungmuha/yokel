@@ -1,50 +1,42 @@
 import { db } from '../models';
 let DB = db.models;
 
-var locationDummy = [
+var locationTest = [
 	{
-		name: "burger shack",
-		url: "www.b.com",
-		address: "123 b st"
+		locationId: 1,
+		city: "Denver",
+		state: "Colorado"
 	},
 	{
-		name: "taco truck",
-		url: "www.t.com",
-		address: "456 t dr"
+		locationId: 2,
+		city: "Aspen",
+		state: "Colorado",
 	},
 	{
-		name: "mcbangers",
-		url: "www.m.com",
-		address: "789 m ave"
-	},
-	{
-		name: "asdf",
-		url: "www.asdf.com",
-		address: "asd m ave"
+		locationId: 3,
+		city: "Portland",
+		state: "Oregon",
 	}
 ];
 
-var commentDummy = [
+var commentTest = [
 	{
+		commentId: 1,
 		userId: 1,
 		locationId: 1,
-		likes: 3,
-		trigger: false,
-		favorite: false
+		commentField: "the hot springs are great"
 	},
 	{
-		userId: 1,
-		locationId: 2,
-		likes: 3,
-		trigger: false,
-		favorite: false
+		commentId: 2,
+		userId: 2,
+		locationId: 1,
+		commentField: "check out the theater for some awesome things"
 	},
 	{
-		userId: 1,
-		locationId: 3,
-		likes: 5,
-		trigger: true,
-		favorite: true
+		commentId: 3,
+		userId: 3,
+		locationId: 1,
+		commentField: "who doesn't love baseball?"
 	}
 ];
 
@@ -54,26 +46,18 @@ var userCreate = function() {
 			password:"1234"
 	})
 	.then(function(user){
-		DB.Location.bulkCreate(locationDummy)
+		DB.Location.bulkCreate(locationTest)
 		.then(function(location){
 			DB.Comments.create({
+				commentId: comment.id,
 				userId: user.id,
 				locationId: location,
-				likes: 2,
-				trigger: false
+				commentField: comment
 			})
 		});
 	})
 }
 
-// userCreate()
-// .then(function() {
-// 	process.exit();
-// });
-
-var rest = function() {
-	return DB.Location.bulkCreate(locationDummy);
-};
 var user = function() {
 	return DB.User.create({
 			email:"user",
@@ -81,9 +65,14 @@ var user = function() {
 	})
 }
 
+var location = function() {
+	return DB.Location.bulkCreate(locationTest);
+};
+
 var comments = function() {
-	return DB.Comments.bulkCreate(commentDummy)
-}
+	return DB.Comments.bulkCreate(commentTest);
+};
+
 rest();
-user();
+location();
 comments();
