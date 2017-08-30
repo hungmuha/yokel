@@ -1,8 +1,6 @@
-import * as express from'express';
-import {passport} from 'passport';
-var router = express.Router();
-const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn();
-
+const express = require('express');
+const passport = require('passport');
+const router = express.Router();
 
 
 const env = {
@@ -37,7 +35,8 @@ router.get('/callback',
     failureRedirect: '/failure'
   }),
   function(req, res) {
-    res.redirect(req.session.returnTo || '/home');
+    console.log(req.user._json.sub)
+    res.redirect(req.session.returnTo || '/users-page');
   }
 );
 
@@ -51,11 +50,6 @@ router.get('/failure', function(req, res) {
   });
 });
 
-router.get('/', ensureLoggedIn, function(req, res, next) {
-  res.render('user', {
-    user: req.user,
-    userProfile: JSON.stringify(req.user,null, '  ')
-  });
-});
 
-export {router};
+
+module.exports = router;
