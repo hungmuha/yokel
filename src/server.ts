@@ -7,20 +7,15 @@ import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import { readFileSync } from 'fs';
 import { join } from 'path';
-
 import * as cookieParser from 'cookie-parser';
 import * as Auth0Strategy   from 'passport-auth0';
 import {session} from 'express-session';
-
-
 import * as passport from 'passport';
-
-
 import * as yokelRoutes from './config/index';
 
 // const home = require('./config/main');
 
-const PORT = 3000;
+// const PORT = 3000;
 
 enableProdMode();
 
@@ -54,12 +49,7 @@ passport.deserializeUser(function(user, done) {
   done(null, user);
 });
 
-
 // import { router as yokelRouter} from './config/main';
-
-
-
-
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -72,19 +62,15 @@ app.use(cookieParser());
 app.use(yokelRoutes);
 // app.use('/home', home);
 
-
 let template = readFileSync(join(__dirname, '..', 'dist', 'index.html')).toString();
 
 app.engine('html', (_, options, callback) => {
   console.log(options);
-  const opts = { document: template, url: '/'};
+  const opts = { document: template, url: options.req.url};
 
   renderModuleFactory(AppServerModuleNgFactory, opts)
     .then(html => callback(null, html));
 });
-
-
-
 
 app.set('view engine', 'html');
 app.set('views', 'src')
@@ -93,6 +79,6 @@ app.get('*', (req, res) => {
   res.render('index', { req });
 });
 
-app.listen(PORT, () => {
-  console.log(`listening on http://localhost:${PORT}!`);
+app.listen(process.env.PORT || 3000, function () {
+  console.log('Express server is running on http://localhost:3000/');
 });

@@ -37,7 +37,9 @@ router.get('/callback',
   }),
   function(req, res) {
     console.log(req.user._json.sub);
+
     console.log(req.user);
+
     res.redirect(req.session.returnTo || '/users-page');
   }
 );
@@ -52,8 +54,11 @@ router.get('/failure', function(req, res) {
   });
 });
 
+
 // router.get('/users-page/:id', function(req,res) {
 //   var 
 // })
+
+
 
 module.exports = router;
