@@ -49,7 +49,7 @@ var userCreate = function() {
 		DB.Location.bulkCreate(locationTest)
 		.then(function(location){
 			DB.Comments.create({
-				commentsId: comments.id,
+				commentsId: comments,
 				userId: user.id,
 				locationId: location,
 				commentsField: comments
@@ -78,6 +78,3 @@ var comments = function() {
 user();
 location();
 comments();
-
-//yes much change much happening
-//come on!!!!!!!!!
