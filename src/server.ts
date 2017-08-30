@@ -12,9 +12,7 @@ import * as cookieParser from 'cookie-parser';
 import * as Auth0Strategy   from 'passport-auth0';
 import {session} from 'express-session';
 
-
 import * as passport from 'passport';
-
 
 import * as yokelRoutes from './config/index';
 
@@ -54,12 +52,7 @@ passport.deserializeUser(function(user, done) {
   done(null, user);
 });
 
-
 // import { router as yokelRouter} from './config/main';
-
-
-
-
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -72,7 +65,6 @@ app.use(cookieParser());
 app.use(yokelRoutes);
 // app.use('/home', home);
 
-
 let template = readFileSync(join(__dirname, '..', 'dist', 'index.html')).toString();
 
 app.engine('html', (_, options, callback) => {
@@ -82,9 +74,6 @@ app.engine('html', (_, options, callback) => {
   renderModuleFactory(AppServerModuleNgFactory, opts)
     .then(html => callback(null, html));
 });
-
-
-
 
 app.set('view engine', 'html');
 app.set('views', 'src')

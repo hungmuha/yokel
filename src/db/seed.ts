@@ -1,37 +1,89 @@
-// import { db } from '../models';
-// let DB = db.models;
+import { db } from '../models';
+let DB = db.models;
 
-// var artistCreate = function() {
-// 	return DB.Artist.create({
-//     name: 'Luciano Pavarotti',
-//     photoUrl: 'http://img.informador.com.mx/biblioteca/imagen/677x508/811/810055.jpg',
-//     nationality: 'Italiano',
-//     instrument: 'Voice',
-//     home_address: '1 Strada Roma'
-//   });
-// };
+var locationDummy = [
+	{
+		name: "burger shack",
+		url: "www.b.com",
+		address: "123 b st"
+	},
+	{
+		name: "taco truck",
+		url: "www.t.com",
+		address: "456 t dr"
+	},
+	{
+		name: "mcbangers",
+		url: "www.m.com",
+		address: "789 m ave"
+	},
+	{
+		name: "asdf",
+		url: "www.asdf.com",
+		address: "asd m ave"
+	}
+];
 
-// var managerCreate = function() {
-// 	return DB.Manager.create({
-//     name: 'Ricky Bobby',
-//     email: 'rbobby@gmail.com',
-//     office_number: '516-877-0304',
-//     cell_phone_number: '718-989-1231'
-// 	});
-// };
+var commentDummy = [
+	{
+		userId: 1,
+		locationId: 1,
+		likes: 3,
+		trigger: false,
+		favorite: false
+	},
+	{
+		userId: 1,
+		locationId: 2,
+		likes: 3,
+		trigger: false,
+		favorite: false
+	},
+	{
+		userId: 1,
+		locationId: 3,
+		likes: 5,
+		trigger: true,
+		favorite: true
+	}
+];
 
-// var songCreate = function() {
-// 	return DB.Song.create({
-// 	    title: 'The Best Song Ever',
-// 	    duration: '3:31',
-// 	    date_of_release: '7/13/2015',
-// 	    album_title: 'Best Album Ever'
-// 	});
-// };
+var userCreate = function() {
+	return DB.User.create({
+			email:"user",
+			password:"1234"
+	})
+	.then(function(user){
+		DB.Location.bulkCreate(locationDummy)
+		.then(function(location){
+			DB.Comments.create({
+				userId: user.id,
+				locationId: location,
+				likes: 2,
+				trigger: false
+			})
+		});
+	})
+}
 
-// artistCreate()
-// .then(managerCreate)
-// .then(songCreate)
+// userCreate()
 // .then(function() {
 // 	process.exit();
 // });
+
+var rest = function() {
+	return DB.Location.bulkCreate(locationDummy);
+};
+var user = function() {
+	return DB.User.create({
+			email:"user",
+			password:"1234"
+	})
+}
+
+var comments = function() {
+	return DB.Comments.bulkCreate(commentDummy)
+}
+rest();
+user();
+comments();
