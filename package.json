@@ -28,6 +28,7 @@
     "core-js": "^2.4.1",
     "express-session": "^1.15.5",
     "fs": "0.0.1-security",
+    "ng4-material-dropdown": "^1.0.0",
     "passport": "^0.4.0",
     "passport-auth0": "^0.6.0",
     "path": "^0.12.7",
