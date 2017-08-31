@@ -43,5 +43,5 @@ router.get('/failure', function (req, res) {
 });
 router.get('/users-page/location/:id', location_1.locationController.show);
 router.post('/users-page/location/:id', comment_1.commentController.create);
-router.delete('/users-page/location/:id', comment_1.commentController.delete);
+router.delete('/users-page/location/:id', comment_1.commentController.destroy);
 //# sourceMappingURL=index.js.map

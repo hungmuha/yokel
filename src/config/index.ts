@@ -58,7 +58,7 @@ router.get('/users-page/location/:id', locationController.show);
 
 router.post('/users-page/location/:id', commentController.create);
 
-router.delete('/users-page/location/:id', commentController.delete);
+router.delete('/users-page/location/:id', commentController.destroy);
 
 
 

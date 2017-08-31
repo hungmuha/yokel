@@ -12,7 +12,7 @@ var path_1 = require("path");
 var cookieParser = require("cookie-parser");
 var Auth0Strategy = require("passport-auth0");
 var passport = require("passport");
-var yokelRoutes = require("./config/index");
+var index_1 = require("./config/index");
 // const home = require('./config/main');
 // const PORT = 3000;
 core_1.enableProdMode();
@@ -43,7 +43,7 @@ app.use(passport.session());
 app.use(bodyParser.json());
 // app.use(yokelRouter);
 app.use(cookieParser());
-app.use(yokelRoutes);
+app.use(index_1.router);
 // app.use('/home', home);
 var template = fs_1.readFileSync(path_1.join(__dirname, '..', 'dist', 'index.html')).toString();
 app.engine('html', function (_, options, callback) {

@@ -1,9 +1,23 @@
 module.exports = function (sequelize, Sequelize) {
     var model = sequelize.define("location", {
-        id: Sequelize.INTEGER,
-        name: Sequelize.STRING,
-        commentId: Sequelize.ARRAY(sequelize.INTEGER),
-        userId: Sequelize.ARRAY(sequelize.INTEGER),
+        id: {
+            type: Sequelize.INTEGER,
+            field: 'id',
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true
+        },
+        name: {
+            type: Sequelize.STRING,
+            field: 'name',
+            allowNull: false
+        },
+        commentId: {
+            type: Sequelize.ARRAY(Sequelize.INTEGER)
+        },
+        userId: {
+            type: Sequelize.ARRAY(Sequelize.INTEGER)
+        }
     });
     return model;
 };

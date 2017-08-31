@@ -3,7 +3,7 @@ import * as Sequelize from 'sequelize';
 var sequelize = new Sequelize('postgres://hungmuhamath@localhost:5432/yokel');
 
 var User = sequelize.import('./user');
-var Comment = sequelize.import('./comment');
+var Comment = sequelize.import('./comments');
 var Location = sequelize.import('./location');
 
 User.hasMany(Comment);
