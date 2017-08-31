@@ -8,30 +8,31 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = require("./users-page.component.css.shim.ngstyle");
 var i1 = require("@angular/core");
-var i2 = require("@angular/router");
-var i3 = require("@angular/common");
-var i4 = require("../../../../../src/app/users-page/users-page.component");
+var i2 = require("../nav-bar/nav-bar.component.ngfactory");
+var i3 = require("../../../../../src/app/nav-bar/nav-bar.component");
+var i4 = require("@angular/router");
+var i5 = require("@angular/common");
+var i6 = require("../../../../../src/app/users-page/users-page.component");
 var styles_UsersPageComponent = [i0.styles];
 exports.RenderType_UsersPageComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_UsersPageComponent, data: {} });
 function View_UsersPageComponent_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 168, 'html', [['lang', 'en']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
-            i1.ɵeld(0, null, null, 166, 'html', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 16, 'head', [], null, null, null, null, null)), (_l()(),
+    return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 171, 'html', [['lang', 'en']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
+            i1.ɵeld(0, null, null, 169, 'html', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 16, 'head', [], null, null, null, null, null)), (_l()(),
             i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'meta', [['charset', 'utf-8']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'title', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['yokel'])), (_l()(),
             i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(),
             i1.ɵeld(0, null, null, 0, 'link', [['href', 'https://fonts.googleapis.com/css?family=Questrial'],
                 ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'meta', [['content',
                 'width=device-width, initial-scale=1'], ['name', 'viewport']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])),
         (_l()(), i1.ɵeld(0, null, null, 0, 'link', [['href', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'],
-            ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 145, 'body', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 38, 'div', [['class', 'container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(),
-            i1.ɵeld(0, null, null, 35, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵeld(0, null, null, 31, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        		'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['yokel'])), (_l()(), i1.ɵted(null, ['\n						'])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class', 'tagline']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Be a local in every city you visit.'])), (_l()(),
-            i1.ɵted(null, ['\n						'])), (_l()(), i1.ɵted(null, ['\n\n						'])),
-        (_l()(), i1.ɵted(null, ['\n					  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class', 'dropdown']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n					    '])), (_l()(), i1.ɵeld(0, null, null, 2, 'button', [['class', 'btn btn-primary dropdown-toggle'], ['data-toggle', 'dropdown'],
-            ['type', 'button']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['where ya going?\n					    '])),
+            ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 148, 'body', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'nav-bar', [], null, null, null, i2.View_NavBarComponent_0, i2.RenderType_NavBarComponent)), i1.ɵdid(114688, null, 0, i3.NavBarComponent, [], null, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 38, 'div', [['class',
+                'container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 35, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵeld(0, null, null, 31, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        		'])), (_l()(),
+            i1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['yokel'])), (_l()(), i1.ɵted(null, ['\n						'])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class', 'tagline']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Be a local in every city you visit.'])), (_l()(), i1.ɵted(null, ['\n						'])), (_l()(), i1.ɵted(null, ['\n\n						'])), (_l()(), i1.ɵted(null, ['\n					  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class',
+                'dropdown']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n					    '])), (_l()(), i1.ɵeld(0, null, null, 2, 'button', [['class', 'btn btn-primary dropdown-toggle'], ['data-toggle',
+                'dropdown'], ['type', 'button']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['where ya going?\n					    '])),
         (_l()(), i1.ɵeld(0, null, null, 0, 'span', [['class', 'caret']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n					    '])), (_l()(), i1.ɵeld(0, null, null, 13, 'ul', [['class', 'dropdown-menu']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n					      '])), (_l()(),
             i1.ɵeld(0, null, null, 2, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', '#']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Aspen'])), (_l()(), i1.ɵted(null, ['\n					      '])), (_l()(), i1.ɵeld(0, null, null, 2, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', '#']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['New York'])),
         (_l()(), i1.ɵted(null, ['\n					      '])), (_l()(), i1.ɵeld(0, null, null, 2, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', '#']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Hong Kong'])), (_l()(), i1.ɵted(null, ['\n					    '])), (_l()(), i1.ɵted(null, ['\n					  '])), (_l()(),
@@ -83,25 +84,26 @@ function View_UsersPageComponent_0(_l) {
                 '/about-page']], [[1, 'target', 0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
             var ad = true;
             if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 163).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+                var pd_0 = (i1.ɵnov(_v, 166).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['About yokel'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
+        }, null, null)), i1.ɵdid(671744, null, 0, i4.RouterLinkWithHref, [i4.Router, i4.ActivatedRoute, i5.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['About yokel'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
+        _ck(_v, 26, 0);
         var currVal_2 = '/about-page';
-        _ck(_v, 163, 0, currVal_2);
+        _ck(_v, 166, 0, currVal_2);
     }, function (_ck, _v) {
-        var currVal_0 = i1.ɵnov(_v, 163).target;
-        var currVal_1 = i1.ɵnov(_v, 163).href;
-        _ck(_v, 162, 0, currVal_0, currVal_1);
+        var currVal_0 = i1.ɵnov(_v, 166).target;
+        var currVal_1 = i1.ɵnov(_v, 166).href;
+        _ck(_v, 165, 0, currVal_0, currVal_1);
     });
 }
 exports.View_UsersPageComponent_0 = View_UsersPageComponent_0;
 function View_UsersPageComponent_Host_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-users-page', [], null, null, null, View_UsersPageComponent_0, exports.RenderType_UsersPageComponent)), i1.ɵdid(114688, null, 0, i4.UsersPageComponent, [], null, null)], function (_ck, _v) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-users-page', [], null, null, null, View_UsersPageComponent_0, exports.RenderType_UsersPageComponent)), i1.ɵdid(114688, null, 0, i6.UsersPageComponent, [], null, null)], function (_ck, _v) {
         _ck(_v, 1, 0);
     }, null);
 }
 exports.View_UsersPageComponent_Host_0 = View_UsersPageComponent_Host_0;
-exports.UsersPageComponentNgFactory = i1.ɵccf('app-users-page', i4.UsersPageComponent, View_UsersPageComponent_Host_0, {}, {}, []);
+exports.UsersPageComponentNgFactory = i1.ɵccf('app-users-page', i6.UsersPageComponent, View_UsersPageComponent_Host_0, {}, {}, []);
 //# sourceMappingURL=users-page.component.ngfactory.js.map

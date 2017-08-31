@@ -10,7 +10,7 @@ var NavBarComponent = (function () {
 }());
 NavBarComponent.decorators = [
     { type: core_1.Component, args: [{
-                selector: 'app-nav-bar',
+                selector: 'nav-bar',
                 templateUrl: './nav-bar.component.html',
                 styleUrls: ['./nav-bar.component.css']
             },] },
