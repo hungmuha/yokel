@@ -4,7 +4,6 @@ var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var http_1 = require("@angular/http");
-var ng4_material_dropdown_1 = require("ng4-material-dropdown");
 var app_component_1 = require("./app.component");
 var users_page_component_1 = require("./users-page/users-page.component");
 var sign_up_component_1 = require("./sign-up/sign-up.component");
@@ -37,7 +36,6 @@ AppModule.decorators = [
                     landing_page_component_1.LandingPageComponent
                 ],
                 imports: [
-                    ng4_material_dropdown_1.Ng4DropdownModule,
                     platform_browser_1.BrowserModule.withServerTransition({ appId: 'cli-universal-demo' }),
                     router_1.RouterModule.forRoot(appRoutes),
                     http_1.HttpModule

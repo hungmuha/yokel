@@ -8,45 +8,28 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = require("./users-page.component.css.shim.ngstyle");
 var i1 = require("@angular/core");
-var i2 = require("../../../node_modules/ng4-material-dropdown/dist/src/modules/components/menu-item/ng4-menu-item.ngfactory");
-var i3 = require("ng4-material-dropdown/dist/src/modules/components/menu-item/ng4-menu-item");
-var i4 = require("ng4-material-dropdown/dist/src/modules/services/dropdown-state.service");
-var i5 = require("../nav-bar/nav-bar.component.ngfactory");
-var i6 = require("../../../../../src/app/nav-bar/nav-bar.component");
-var i7 = require("../../../node_modules/ng4-material-dropdown/dist/src/modules/components/dropdown/ng4-dropdown.ngfactory");
-var i8 = require("ng4-material-dropdown/dist/src/modules/components/dropdown/ng4-dropdown");
-var i9 = require("../../../node_modules/ng4-material-dropdown/dist/src/modules/components/button/ng4-dropdown-button.ngfactory");
-var i10 = require("ng4-material-dropdown/dist/src/modules/components/button/ng4-dropdown-button");
-var i11 = require("../../../node_modules/ng4-material-dropdown/dist/src/modules/components/menu/ng4-dropdown-menu.ngfactory");
-var i12 = require("ng4-material-dropdown/dist/src/modules/components/menu/ng4-dropdown-menu");
-var i13 = require("@angular/common");
-var i14 = require("@angular/router");
-var i15 = require("../../../../../src/app/users-page/users-page.component");
-var i16 = require("../../../../../src/app/users-page/comments.service");
+var i2 = require("../nav-bar/nav-bar.component.ngfactory");
+var i3 = require("../../../../../src/app/nav-bar/nav-bar.component");
+var i4 = require("@angular/router");
+var i5 = require("@angular/common");
+var i6 = require("../../../../../src/app/users-page/users-page.component");
+var i7 = require("../../../../../src/app/users-page/comments.service");
 var styles_UsersPageComponent = [i0.styles];
 exports.RenderType_UsersPageComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_UsersPageComponent, data: {} });
-function View_UsersPageComponent_1(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 2, 'ng4-menu-item', [], null, null, null, i2.View_Ng4MenuItem_0, i2.RenderType_Ng4MenuItem)), i1.ɵdid(49152, [[3, 4]], 0, i3.Ng4MenuItem, [i4.DropdownStateService,
-            i1.ElementRef, i1.Renderer], null, null), (_l()(), i1.ɵted(0, ['\n            ',
-            '\n        ']))], null, function (_ck, _v) {
-        var currVal_0 = _v.context.$implicit;
-        _ck(_v, 2, 0, currVal_0);
-    });
-}
 function View_UsersPageComponent_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 268, 'html', [['lang', 'en']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
-            i1.ɵeld(0, null, null, 266, 'html', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 16, 'head', [], null, null, null, null, null)), (_l()(),
+    return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 241, 'html', [['lang', 'en']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
+            i1.ɵeld(0, null, null, 239, 'html', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 16, 'head', [], null, null, null, null, null)), (_l()(),
             i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'meta', [['charset', 'utf-8']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'title', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['yokel'])), (_l()(),
             i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(),
             i1.ɵeld(0, null, null, 0, 'link', [['href', 'https://fonts.googleapis.com/css?family=Questrial'],
                 ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'meta', [['content',
                 'width=device-width, initial-scale=1'], ['name', 'viewport']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])),
         (_l()(), i1.ɵeld(0, null, null, 0, 'link', [['href', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'],
-            ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 245, 'body', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'nav-bar', [], null, null, null, i5.View_NavBarComponent_0, i5.RenderType_NavBarComponent)), i1.ɵdid(114688, null, 0, i6.NavBarComponent, [], null, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 65, 'div', [['class',
+            ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 218, 'body', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'nav-bar', [], null, null, null, i2.View_NavBarComponent_0, i2.RenderType_NavBarComponent)), i1.ɵdid(114688, null, 0, i3.NavBarComponent, [], null, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 38, 'div', [['class',
                 'container']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 62, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵeld(0, null, null, 58, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        		'])), (_l()(),
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 35, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵeld(0, null, null, 31, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        		'])), (_l()(),
             i1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['yokel'])), (_l()(), i1.ɵted(null, ['\n						'])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class', 'tagline']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Be a local in every city you visit.'])), (_l()(), i1.ɵted(null, ['\n						'])), (_l()(), i1.ɵted(null, ['\n\n						'])), (_l()(), i1.ɵted(null, ['\n					  '])), (_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class',
                 'dropdown']], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n					    '])), (_l()(), i1.ɵeld(0, null, null, 2, 'button', [['class', 'btn btn-primary dropdown-toggle'], ['data-toggle',
@@ -54,31 +37,18 @@ function View_UsersPageComponent_0(_l) {
         (_l()(), i1.ɵeld(0, null, null, 0, 'span', [['class', 'caret']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n					    '])), (_l()(), i1.ɵeld(0, null, null, 13, 'ul', [['class', 'dropdown-menu']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n					      '])), (_l()(),
             i1.ɵeld(0, null, null, 2, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', '#']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Aspen'])), (_l()(), i1.ɵted(null, ['\n					      '])), (_l()(), i1.ɵeld(0, null, null, 2, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', '#']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['New York'])),
         (_l()(), i1.ɵted(null, ['\n					      '])), (_l()(), i1.ɵeld(0, null, null, 2, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', '#']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Hong Kong'])), (_l()(), i1.ɵted(null, ['\n					    '])), (_l()(), i1.ɵted(null, ['\n					  '])), (_l()(),
-            i1.ɵted(null, ['\n\n					  '])), (_l()(), i1.ɵted(null, ['\n						'])),
-        (_l()(), i1.ɵeld(0, null, null, 23, 'ng4-dropdown', [], null, [['window', 'scroll']], function (_v, en, $event) {
-            var ad = true;
-            if (('window:scroll' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 68).scrollListener() !== false);
-                ad = (pd_0 && ad);
-            }
-            return ad;
-        }, i7.View_Ng4Dropdown_0, i7.RenderType_Ng4Dropdown)), i1.ɵprd(512, null, i4.DropdownStateService, i4.DropdownStateService, []), i1.ɵdid(114688, null, 2, i8.Ng4Dropdown, [i4.DropdownStateService], null, null),
-        i1.ɵqud(335544320, 1, { button: 0 }), i1.ɵqud(335544320, 2, { menu: 0 }), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, 0, 2, 'ng4-dropdown-button', [], null, null, null, i9.View_Ng4DropdownButton_0, i9.RenderType_Ng4DropdownButton)),
-        i1.ɵdid(49152, [[1, 4]], 0, i10.Ng4DropdownButton, [i1.ElementRef], null, null), (_l()(), i1.ɵted(0, ['\n        Open Menu\n    '])), (_l()(),
-            i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, 1, 12, 'ng4-dropdown-menu', [], null, null, null, i11.View_Ng4DropdownMenu_0, i11.RenderType_Ng4DropdownMenu)), i1.ɵdid(507904, [[2, 4]], 1, i12.Ng4DropdownMenu, [i4.DropdownStateService, i1.ElementRef, i1.Renderer], null, null), i1.ɵqud(603979776, 3, { items: 1 }), (_l()(), i1.ɵted(0, ['\n        '])), (_l()(), i1.ɵand(16777216, null, 0, 1, null, View_UsersPageComponent_1)), i1.ɵdid(802816, null, 0, i13.NgForOf, [i1.ViewContainerRef,
-            i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null),
-        (_l()(), i1.ɵted(0, ['\n \n        '])), (_l()(), i1.ɵeld(0, null, 0, 0, 'div', [['class', 'ng4-menu-divider']], null, null, null, null, null)), (_l()(), i1.ɵted(0, ['\n \n        '])), (_l()(),
-            i1.ɵeld(0, null, 0, 2, 'ng4-menu-item', [], null, null, null, i2.View_Ng4MenuItem_0, i2.RenderType_Ng4MenuItem)),
-        i1.ɵdid(49152, [[3, 4]], 0, i3.Ng4MenuItem, [i4.DropdownStateService, i1.ElementRef,
-            i1.Renderer], null, null), (_l()(), i1.ɵted(0, ['\n            With Divider\n        '])),
-        (_l()(), i1.ɵted(0, ['\n    '])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
-            i1.ɵted(null, ['\n					  '])), (_l()(), i1.ɵted(null, [' \n\n					'])),
-        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])),
-        (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
+            i1.ɵted(null, ['\n\n					'])), (_l()(), i1.ɵted(null, ['\n		'])),
+        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n	'])),
+        (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class',
+                'row']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])),
+        (_l()(), i1.ɵeld(0, null, null, 7, 'div', [['class', 'col-lg-12']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Aspen, CO'])), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['Today there\'s a high of 68° and sunny'])), (_l()(),
+            i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])),
+        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])),
+        (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 108, 'div', [['class',
                 'container']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵeld(0, null, null, 7, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Aspen, CO'])), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Today there\'s a high of 68° and sunny'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(),
-            i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])),
-        (_l()(), i1.ɵeld(0, null, null, 108, 'div', [['class', 'container']], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 1, 'label', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Comments'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 102, 'div', [['class',
                 'detailBox']], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n		'])),
@@ -142,31 +112,26 @@ function View_UsersPageComponent_0(_l) {
                 '/about-page']], [[1, 'target', 0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
             var ad = true;
             if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 263).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+                var pd_0 = (i1.ɵnov(_v, 236).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, null, null)), i1.ɵdid(671744, null, 0, i14.RouterLinkWithHref, [i14.Router, i14.ActivatedRoute, i13.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['About yokel'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
-        var _co = _v.component;
+        }, null, null)), i1.ɵdid(671744, null, 0, i4.RouterLinkWithHref, [i4.Router, i4.ActivatedRoute, i5.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['About yokel'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
         _ck(_v, 26, 0);
-        _ck(_v, 68, 0);
-        _ck(_v, 77, 0);
-        var currVal_0 = _co.pages;
-        _ck(_v, 81, 0, currVal_0);
-        var currVal_3 = '/about-page';
-        _ck(_v, 263, 0, currVal_3);
+        var currVal_2 = '/about-page';
+        _ck(_v, 236, 0, currVal_2);
     }, function (_ck, _v) {
-        var currVal_1 = i1.ɵnov(_v, 263).target;
-        var currVal_2 = i1.ɵnov(_v, 263).href;
-        _ck(_v, 262, 0, currVal_1, currVal_2);
+        var currVal_0 = i1.ɵnov(_v, 236).target;
+        var currVal_1 = i1.ɵnov(_v, 236).href;
+        _ck(_v, 235, 0, currVal_0, currVal_1);
     });
 }
 exports.View_UsersPageComponent_0 = View_UsersPageComponent_0;
 function View_UsersPageComponent_Host_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-users-page', [], null, null, null, View_UsersPageComponent_0, exports.RenderType_UsersPageComponent)), i1.ɵdid(114688, null, 0, i15.UsersPageComponent, [i14.ActivatedRoute, i16.CommentsService], null, null)], function (_ck, _v) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-users-page', [], null, null, null, View_UsersPageComponent_0, exports.RenderType_UsersPageComponent)), i1.ɵdid(114688, null, 0, i6.UsersPageComponent, [i4.ActivatedRoute, i7.CommentsService], null, null)], function (_ck, _v) {
         _ck(_v, 1, 0);
     }, null);
 }
 exports.View_UsersPageComponent_Host_0 = View_UsersPageComponent_Host_0;
-exports.UsersPageComponentNgFactory = i1.ɵccf('app-users-page', i15.UsersPageComponent, View_UsersPageComponent_Host_0, {}, {}, []);
+exports.UsersPageComponentNgFactory = i1.ɵccf('app-users-page', i6.UsersPageComponent, View_UsersPageComponent_Host_0, {}, {}, []);
 //# sourceMappingURL=users-page.component.ngfactory.js.map

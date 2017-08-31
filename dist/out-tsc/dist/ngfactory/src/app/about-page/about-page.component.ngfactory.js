@@ -15,15 +15,15 @@ var styles_AboutPageComponent = [i0.styles];
 exports.RenderType_AboutPageComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_AboutPageComponent, data: {} });
 function View_AboutPageComponent_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 99, 'html', [['lang', 'en']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
-            i1.ɵeld(0, null, null, 97, 'html', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 16, 'head', [], null, null, null, null, null)), (_l()(),
+    return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 197, 'html', [['lang', 'en']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
+            i1.ɵeld(0, null, null, 195, 'html', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 16, 'head', [], null, null, null, null, null)), (_l()(),
             i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'meta', [['charset', 'utf-8']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'title', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['yokel'])), (_l()(),
             i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(),
             i1.ɵeld(0, null, null, 0, 'link', [['href', 'https://fonts.googleapis.com/css?family=Questrial'],
                 ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'meta', [['content',
                 'width=device-width, initial-scale=1'], ['name', 'viewport']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])),
         (_l()(), i1.ɵeld(0, null, null, 0, 'link', [['href', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'],
-            ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n	\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 76, 'body', [], null, null, null, null, null)),
+            ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n	\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 174, 'body', [], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(),
             i1.ɵeld(0, null, null, 11, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵeld(0, null, null, 7, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        		'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['yokel'])), (_l()(), i1.ɵted(null, ['\n				'])),
@@ -31,47 +31,72 @@ function View_AboutPageComponent_0(_l) {
         (_l()(), i1.ɵted(null, ['Be a local in every city you visit.'])), (_l()(),
             i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])),
         (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n	'])),
-        (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 32, 'div', [['class', 'container-about']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 29, 'div', [['class',
+        (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'container-about']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 12, 'div', [['class',
                 'row']], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])),
-        (_l()(), i1.ɵeld(0, null, null, 21, 'div', [['class', 'col-lg-12']], null, null, null, null, null)),
+        (_l()(), i1.ɵeld(0, null, null, 7, 'div', [['class', 'col-lg-12']], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['About yokel'])), (_l()(),
-            i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 13, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Our yokal app brings more interesting and personal experiences to travelers around the world. Founded in 2017 and developed by '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['class', 'about'], ['href',
-                '']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Hung'])), (_l()(), i1.ɵted(null, [', '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['class', 'about'], ['href',
-                '']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Sam'])), (_l()(), i1.ɵted(null, [', '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['class', 'about'], ['href',
-                '']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Zach'])), (_l()(), i1.ɵted(null, [', and '])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['class', 'about'], ['href',
-                '']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Lauren'])), (_l()(), i1.ɵted(null, [', who are talented developers and travelers seeking new travel experiences at the local level. We hope you enjoy becoming a yokal.'])),
+            i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Through our yokel app community and message boards, yokel brings more interesting and personal experiences to travelers in cities around the world. Founded in 2017, yokel was built by developers who are also seeking new travel experiences at the local level. We hope you enjoy becoming a local yokal.'])),
         (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n			'])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'a', [['href', '/login']], null, null, null, null, null)), (_l()(), i1.ɵeld(0, null, null, 1, 'button', [['class', 'btn btn-primary btn-lg landing'],
-            ['type', 'button']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['get yokel'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n\n\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n\n	'])),
-        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'container-footer']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(),
-            i1.ɵeld(0, null, null, 12, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 9, 'div', [['class',
-                'col-lg-12']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n					'])), (_l()(), i1.ɵeld(0, null, null, 1, 'li', [['class', 'container-footer']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['yokel & copy 2017'])), (_l()(), i1.ɵted(null, ['\n					'])), (_l()(),
-            i1.ɵeld(0, null, null, 3, 'li', [['class', 'container-footer']], null, null, null, null, null)),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'a', [['routerLink', '/about-page']], [[1, 'target', 0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])),
+        (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'container-about']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(),
+            i1.ɵeld(0, null, null, 8, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵeld(0, null, null, 4, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['Contributors'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 100, 'div', [['class', 'container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'container-bio']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 3, 'div', [['class',
+                'col-lg-3 col-md-3 col-sm-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])),
+        (_l()(), i1.ɵeld(0, null, null, 0, 'img', [['class', 'img-circle'],
+            ['src', '../assets/hung.png']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])),
+        (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 10, 'div', [['class', 'shout']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h3', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Hung'])), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['PSQL Server, Oauth login authentication.'])), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href',
+                'https://github.com/hungmuha'], ['target', '_blank']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['visit Hung\'s github'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(),
+            i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n		'])),
+        (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n		'])),
+        (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'container-bio']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 3, 'div', [['class', 'col-lg-3 col-md-3 col-sm-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 0, 'img', [['class',
+                'img-circle'], ['src', '../assets/sam.png']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])),
+        (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 10, 'div', [['class', 'shout']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h3', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Sam'])), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['PSQL database on Heroku server, Instagram creation & routing.'])),
+        (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', 'https://github.com/samascher/'], ['target', '_blank']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['visit Sam\'s github'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(),
+            i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n		'])),
+        (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n		'])),
+        (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'container-bio']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 3, 'div', [['class', 'col-lg-3 col-md-3 col-sm-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 0, 'img', [['class',
+                'img-circle'], ['src', '../assets/zach.png']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 10, 'div', [['class', 'shout']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h3', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['Zach'])), (_l()(), i1.ɵted(null, ['\n				'])),
+        (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Angular commponents, front-end routing & design. '])), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href',
+                'https://github.com/Mazkid21'], ['target', '_blank']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['visit Zach\'s github'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(),
+            i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n		'])),
+        (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n		'])),
+        (_l()(), i1.ɵeld(0, null, null, 21, 'div', [['class', 'container-bio']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 3, 'div', [['class', 'col-lg-3 col-md-3 col-sm-6']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 0, 'img', [['class',
+                'img-circle'], ['src', '../assets/lauren.png']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 13, 'div', [['class', 'shout']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h3', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['Lauren'])), (_l()(), i1.ɵted(null, ['\n				'])),
+        (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Front-end design, branding, styles, CSS3 animations, tagline, & copy.'])),
+        (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', 'https://github.com/luluwelborn'], ['target', '_blank']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['visit Lauren\'s github'])), (_l()(), i1.ɵted(null, ['\n				'])),
+        (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', 'https://laurenwelborn.com'],
+            ['target', '_blank']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['visit Lauren\'s site'])),
+        (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])),
+        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])),
+        (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵted(null, ['\n	'])),
+        (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'container-footer']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 12, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 9, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n					'])), (_l()(), i1.ɵeld(0, null, null, 1, 'li', [['class',
+                'container-footer']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['yokel & copy 2017'])), (_l()(),
+            i1.ɵted(null, ['\n					'])), (_l()(), i1.ɵeld(0, null, null, 3, 'li', [['class', 'container-footer']], null, null, null, null, null)), (_l()(), i1.ɵeld(0, null, null, 2, 'a', [['routerLink', '/about-page']], [[1, 'target', 0], [8, 'href', 4]], [[null,
+                'click']], function (_v, en, $event) {
             var ad = true;
             if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 94).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+                var pd_0 = (i1.ɵnov(_v, 192).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
         }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['About yokel'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
         var currVal_2 = '/about-page';
-        _ck(_v, 94, 0, currVal_2);
+        _ck(_v, 192, 0, currVal_2);
     }, function (_ck, _v) {
-        var currVal_0 = i1.ɵnov(_v, 94).target;
-        var currVal_1 = i1.ɵnov(_v, 94).href;
-        _ck(_v, 93, 0, currVal_0, currVal_1);
+        var currVal_0 = i1.ɵnov(_v, 192).target;
+        var currVal_1 = i1.ɵnov(_v, 192).href;
+        _ck(_v, 191, 0, currVal_0, currVal_1);
     });
 }
 exports.View_AboutPageComponent_0 = View_AboutPageComponent_0;

@@ -20,12 +20,11 @@ import * as i10 from '@angular/platform-browser';
 import * as i11 from '@angular/http';
 import * as i12 from '@angular/router';
 import * as i13 from '../../../../src/app/users-page/comments.service';
-import * as i14 from 'ng4-material-dropdown/dist/src/modules/ng4-dropdown.module';
-import * as i15 from '../../../../src/app/landing-page/landing-page.component';
-import * as i16 from '../../../../src/app/login-page/login-page.component';
-import * as i17 from '../../../../src/app/sign-up/sign-up.component';
-import * as i18 from '../../../../src/app/about-page/about-page.component';
-import * as i19 from '../../../../src/app/users-page/users-page.component';
+import * as i14 from '../../../../src/app/landing-page/landing-page.component';
+import * as i15 from '../../../../src/app/login-page/login-page.component';
+import * as i16 from '../../../../src/app/sign-up/sign-up.component';
+import * as i17 from '../../../../src/app/about-page/about-page.component';
+import * as i18 from '../../../../src/app/users-page/users-page.component';
 export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.AppModule,
     [i2.AppComponent],(_l:any) => {
       return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
@@ -63,10 +62,10 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
             return [p0_0];
           },[i12.ROUTER_INITIALIZER]),i0.ɵmpd(4608,i13.CommentsService,i13.CommentsService,
               [i11.Http]),i0.ɵmpd(512,i9.CommonModule,i9.CommonModule,([] as any[])),
-          i0.ɵmpd(512,i14.Ng4DropdownModule,i14.Ng4DropdownModule,([] as any[])),i0.ɵmpd(1024,
-              i0.ErrorHandler,i10.ɵa,([] as any[])),i0.ɵmpd(1024,i0.NgProbeToken,() => {
-            return [i12.ɵb()];
-          },([] as any[])),i0.ɵmpd(256,i0.APP_ID,'cli-universal-demo',([] as any[])),
+          i0.ɵmpd(1024,i0.ErrorHandler,i10.ɵa,([] as any[])),i0.ɵmpd(1024,i0.NgProbeToken,
+              () => {
+                return [i12.ɵb()];
+              },([] as any[])),i0.ɵmpd(256,i0.APP_ID,'cli-universal-demo',([] as any[])),
           i0.ɵmpd(2048,i10.ɵTRANSITION_ID,(null as any),[i0.APP_ID]),i0.ɵmpd(512,i12.ɵg,
               i12.ɵg,[i0.Injector]),i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,p0_1:any,
               p1_0:any,p1_1:any,p1_2:any,p2_0:any) => {
@@ -86,10 +85,10 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
           i0.ɵmpd(512,i0.Compiler,i0.Compiler,([] as any[])),i0.ɵmpd(512,i0.NgModuleFactoryLoader,
               i0.SystemJsNgModuleLoader,[i0.Compiler,[2,i0.SystemJsNgModuleLoaderConfig]]),
           i0.ɵmpd(1024,i12.ROUTES,() => {
-            return [[{path:'',component:i15.LandingPageComponent},{path:'login-page',
-                component:i16.LoginPageComponent},{path:'sign-up',component:i17.SignUpComponent},
-                {path:'about-page',component:i18.AboutPageComponent},{path:'users-page',
-                    component:i19.UsersPageComponent}]];
+            return [[{path:'',component:i14.LandingPageComponent},{path:'login-page',
+                component:i15.LoginPageComponent},{path:'sign-up',component:i16.SignUpComponent},
+                {path:'about-page',component:i17.AboutPageComponent},{path:'users-page',
+                    component:i18.UsersPageComponent}]];
           },([] as any[])),i0.ɵmpd(1024,i12.Router,i12.ɵe,[i0.ApplicationRef,i12.UrlSerializer,
               i12.ChildrenOutletContexts,i9.Location,i0.Injector,i0.NgModuleFactoryLoader,
               i0.Compiler,i12.ROUTES,i12.ROUTER_CONFIGURATION,[2,i12.UrlHandlingStrategy],
@@ -97,4 +96,4 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
               [[2,i12.ɵa],[2,i12.Router]]),i0.ɵmpd(512,i11.HttpModule,i11.HttpModule,
               ([] as any[])),i0.ɵmpd(512,i1.AppModule,i1.AppModule,([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvYXBwLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy96YWNobWFyYXppdGkvRGVza3RvcC93ZGktd29yay9wcm9qZWN0cy95b2tlbC9zcmMvYXBwL2FwcC5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvYXBwLm1vZHVsZS5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy96YWNobWFyYXppdGkvRGVza3RvcC93ZGktd29yay9wcm9qZWN0cy95b2tlbC9zcmMvYXBwL2FwcC5tb2R1bGUudHMiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=

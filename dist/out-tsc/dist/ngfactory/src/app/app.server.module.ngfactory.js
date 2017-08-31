@@ -25,13 +25,12 @@ var i15 = require("@angular/platform-browser/animations");
 var i16 = require("@angular/animations");
 var i17 = require("@angular/router");
 var i18 = require("../../../../src/app/users-page/comments.service");
-var i19 = require("ng4-material-dropdown/dist/src/modules/ng4-dropdown.module");
-var i20 = require("../../../../src/app/landing-page/landing-page.component");
-var i21 = require("../../../../src/app/login-page/login-page.component");
-var i22 = require("../../../../src/app/sign-up/sign-up.component");
-var i23 = require("../../../../src/app/about-page/about-page.component");
-var i24 = require("../../../../src/app/users-page/users-page.component");
-var i25 = require("../../../../src/app/app.module");
+var i19 = require("../../../../src/app/landing-page/landing-page.component");
+var i20 = require("../../../../src/app/login-page/login-page.component");
+var i21 = require("../../../../src/app/sign-up/sign-up.component");
+var i22 = require("../../../../src/app/about-page/about-page.component");
+var i23 = require("../../../../src/app/users-page/users-page.component");
+var i24 = require("../../../../src/app/app.module");
 exports.AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent], function (_l) {
     return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.LandingPageComponentNgFactory, i4.LoginPageComponentNgFactory, i5.SignUpComponentNgFactory,
                     i6.AboutPageComponentNgFactory, i7.UsersPageComponentNgFactory, i8.AppComponentNgFactory]],
@@ -59,18 +58,19 @@ exports.AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent
         }, [[2, i13.NgProbeToken], [2, i0.NgProbeToken], i13.ɵTRANSITION_ID, i12.DOCUMENT,
             i0.Injector, i17.ɵg]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ɵe, i0.ɵe, [i0.NgZone, i0.ɵConsole,
             i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]),
-        i0.ɵmpd(2048, i0.ApplicationRef, null, [i0.ɵe]), i0.ɵmpd(512, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(512, i13.BrowserModule, i13.BrowserModule, [[3, i13.BrowserModule]]), i0.ɵmpd(512, i15.NoopAnimationsModule, i15.NoopAnimationsModule, []), i0.ɵmpd(512, i10.ServerModule, i10.ServerModule, []), i0.ɵmpd(512, i19.Ng4DropdownModule, i19.Ng4DropdownModule, []), i0.ɵmpd(1024, i17.ɵa, i17.ɵd, [[3, i17.Router]]), i0.ɵmpd(512, i17.UrlSerializer, i17.DefaultUrlSerializer, []), i0.ɵmpd(512, i17.ChildrenOutletContexts, i17.ChildrenOutletContexts, []),
+        i0.ɵmpd(2048, i0.ApplicationRef, null, [i0.ɵe]), i0.ɵmpd(512, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(512, i13.BrowserModule, i13.BrowserModule, [[3, i13.BrowserModule]]), i0.ɵmpd(512, i15.NoopAnimationsModule, i15.NoopAnimationsModule, []), i0.ɵmpd(512, i10.ServerModule, i10.ServerModule, []), i0.ɵmpd(1024, i17.ɵa, i17.ɵd, [[3, i17.Router]]),
+        i0.ɵmpd(512, i17.UrlSerializer, i17.DefaultUrlSerializer, []), i0.ɵmpd(512, i17.ChildrenOutletContexts, i17.ChildrenOutletContexts, []),
         i0.ɵmpd(256, i17.ROUTER_CONFIGURATION, {}, []), i0.ɵmpd(1024, i12.LocationStrategy, i17.ɵc, [i12.PlatformLocation, [2, i12.APP_BASE_HREF], i17.ROUTER_CONFIGURATION]),
         i0.ɵmpd(512, i12.Location, i12.Location, [i12.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i0.SystemJsNgModuleLoader, [i0.Compiler, [2, i0.SystemJsNgModuleLoaderConfig]]),
         i0.ɵmpd(1024, i17.ROUTES, function () {
-            return [[{ path: '', component: i20.LandingPageComponent }, { path: 'login-page',
-                        component: i21.LoginPageComponent }, { path: 'sign-up', component: i22.SignUpComponent },
-                    { path: 'about-page', component: i23.AboutPageComponent }, { path: 'users-page',
-                        component: i24.UsersPageComponent }]];
+            return [[{ path: '', component: i19.LandingPageComponent }, { path: 'login-page',
+                        component: i20.LoginPageComponent }, { path: 'sign-up', component: i21.SignUpComponent },
+                    { path: 'about-page', component: i22.AboutPageComponent }, { path: 'users-page',
+                        component: i23.UsersPageComponent }]];
         }, []), i0.ɵmpd(1024, i17.Router, i17.ɵe, [i0.ApplicationRef, i17.UrlSerializer,
             i17.ChildrenOutletContexts, i12.Location, i0.Injector, i0.NgModuleFactoryLoader,
             i0.Compiler, i17.ROUTES, i17.ROUTER_CONFIGURATION, [2, i17.UrlHandlingStrategy],
-            [2, i17.RouteReuseStrategy]]), i0.ɵmpd(512, i17.RouterModule, i17.RouterModule, [[2, i17.ɵa], [2, i17.Router]]), i0.ɵmpd(512, i25.AppModule, i25.AppModule, []), i0.ɵmpd(512, i1.AppServerModule, i1.AppServerModule, []),
+            [2, i17.RouteReuseStrategy]]), i0.ɵmpd(512, i17.RouterModule, i17.RouterModule, [[2, i17.ɵa], [2, i17.Router]]), i0.ɵmpd(512, i24.AppModule, i24.AppModule, []), i0.ɵmpd(512, i1.AppServerModule, i1.AppServerModule, []),
         i0.ɵmpd(256, i11.ɵe, 'XSRF-TOKEN', []), i0.ɵmpd(256, i11.ɵf, 'X-XSRF-TOKEN', [])]);
 });
 //# sourceMappingURL=app.server.module.ngfactory.js.map

@@ -180,4 +180,34 @@ li.container-footer {
 	max-width: 1000px;
 }
 
+/*--- ABOUT ---*/
+/** About image */*/
+img.img-circle {
+  max-width: 200px;
+  float: left;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+/* About shouts */
+.shout {
+  padding-top: 20px;
+}
+
+/*About bio container*/
+.container-bio {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.container-about {
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
 
