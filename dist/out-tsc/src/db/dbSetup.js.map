@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../../../src/db/dbSetup.js"],"names":[],"mappings":"AAAA,IAAI,EAAE,GAAG,OAAO,CAAE,WAAW,CAAC,CAAC;AAE/B,EAAE,CAAC,SAAS,CAAC,IAAI,CAAC,EAAC,KAAK,EAAE,IAAI,EAAC,CAAC,CAAC,IAAI,CAAC;IACpC,OAAO,CAAC,IAAI,EAAE,CAAC;AACjB,CAAC,CAAC,CAAC","file":"dbSetup.js","sourceRoot":""}
+{"version":3,"sources":["../../../../src/db/dbSetup.ts"],"names":[],"mappings":"AAAA,gCAAgC;AAEhC,oDAAoD;AACpD,oBAAoB;AACpB,MAAM","file":"dbSetup.js","sourceRoot":""}

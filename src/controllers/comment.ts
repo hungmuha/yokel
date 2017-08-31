@@ -1,4 +1,4 @@
-var db = require ('../models');
+import { db } from '../models';
 var Comment = db.models.Comment;
 
 function index(req, res) {
@@ -44,10 +44,11 @@ function destroy(req, res) {
   });  
 }
 
-module.exports = {
-  destroy: destroy,
-  update: update,
-  create: create,
-  show: show,
-  index: index
-};
+const commentController = <any>{};
+  commentController.destroy= destroy;
+  commentController.update= update;
+  commentController.create= create;
+  commentController.show= show;
+  commentController.index= index;
+
+export {commentController};

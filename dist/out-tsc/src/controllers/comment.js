@@ -1,5 +1,7 @@
-var db = require('../models');
-var Comment = db.models.Comment;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var models_1 = require("../models");
+var Comment = models_1.db.models.Comment;
 function index(req, res) {
     Comment.findAll().then(function (comment) {
         res.json(comment);
@@ -46,11 +48,11 @@ function destroy(req, res) {
         res.redirect(303, "/comment");
     });
 }
-module.exports = {
-    destroy: destroy,
-    update: update,
-    create: create,
-    show: show,
-    index: index
-};
+var commentController = {};
+exports.commentController = commentController;
+commentController.destroy = destroy;
+commentController.update = update;
+commentController.create = create;
+commentController.show = show;
+commentController.index = index;
 //# sourceMappingURL=comment.js.map

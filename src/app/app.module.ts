@@ -8,6 +8,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { CommentsService } from './users-page/comments.service';
 
 const appRoutes: Routes = [
   
@@ -35,7 +36,7 @@ const appRoutes: Routes = [
     appRoutes
     ),
   ],
-  providers: [],
+  providers: [CommentsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

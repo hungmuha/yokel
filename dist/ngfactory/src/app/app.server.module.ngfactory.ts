@@ -24,12 +24,13 @@ import * as i14 from '@angular/animations/browser';
 import * as i15 from '@angular/platform-browser/animations';
 import * as i16 from '@angular/animations';
 import * as i17 from '@angular/router';
-import * as i18 from '../../../../src/app/landing-page/landing-page.component';
-import * as i19 from '../../../../src/app/login-page/login-page.component';
-import * as i20 from '../../../../src/app/sign-up/sign-up.component';
-import * as i21 from '../../../../src/app/about-page/about-page.component';
-import * as i22 from '../../../../src/app/users-page/users-page.component';
-import * as i23 from '../../../../src/app/app.module';
+import * as i18 from '../../../../src/app/users-page/comments.service';
+import * as i19 from '../../../../src/app/landing-page/landing-page.component';
+import * as i20 from '../../../../src/app/login-page/login-page.component';
+import * as i21 from '../../../../src/app/sign-up/sign-up.component';
+import * as i22 from '../../../../src/app/about-page/about-page.component';
+import * as i23 from '../../../../src/app/users-page/users-page.component';
+import * as i24 from '../../../../src/app/app.module';
 export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i0.ɵcmf(i1.AppServerModule,
     [i2.AppComponent],(_l:any) => {
       return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
@@ -82,9 +83,10 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               i17.PreloadAllModules,([] as any[])),i0.ɵmpd(5120,i17.ROUTER_INITIALIZER,
               i17.ɵi,[i17.ɵg]),i0.ɵmpd(5120,i0.APP_BOOTSTRAP_LISTENER,(p0_0:any) => {
             return [p0_0];
-          },[i17.ROUTER_INITIALIZER]),i0.ɵmpd(512,i9.HttpModule,i9.HttpModule,([] as any[])),
-          i0.ɵmpd(512,i11.HttpClientXsrfModule,i11.HttpClientXsrfModule,([] as any[])),
-          i0.ɵmpd(512,i11.HttpClientModule,i11.HttpClientModule,([] as any[])),i0.ɵmpd(512,
+          },[i17.ROUTER_INITIALIZER]),i0.ɵmpd(4608,i18.CommentsService,i18.CommentsService,
+              [i9.Http]),i0.ɵmpd(512,i9.HttpModule,i9.HttpModule,([] as any[])),i0.ɵmpd(512,
+              i11.HttpClientXsrfModule,i11.HttpClientXsrfModule,([] as any[])),i0.ɵmpd(512,
+              i11.HttpClientModule,i11.HttpClientModule,([] as any[])),i0.ɵmpd(512,
               i12.CommonModule,i12.CommonModule,([] as any[])),i0.ɵmpd(1024,i0.ErrorHandler,
               i13.ɵa,([] as any[])),i0.ɵmpd(1024,i0.NgProbeToken,() => {
             return [i17.ɵb()];
@@ -110,17 +112,17 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               i0.Compiler,i0.Compiler,([] as any[])),i0.ɵmpd(512,i0.NgModuleFactoryLoader,
               i0.SystemJsNgModuleLoader,[i0.Compiler,[2,i0.SystemJsNgModuleLoaderConfig]]),
           i0.ɵmpd(1024,i17.ROUTES,() => {
-            return [[{path:'',component:i18.LandingPageComponent},{path:'login-page',
-                component:i19.LoginPageComponent},{path:'sign-up',component:i20.SignUpComponent},
-                {path:'about-page',component:i21.AboutPageComponent},{path:'users-page',
-                    component:i22.UsersPageComponent}]];
+            return [[{path:'',component:i19.LandingPageComponent},{path:'login-page',
+                component:i20.LoginPageComponent},{path:'sign-up',component:i21.SignUpComponent},
+                {path:'about-page',component:i22.AboutPageComponent},{path:'users-page',
+                    component:i23.UsersPageComponent}]];
           },([] as any[])),i0.ɵmpd(1024,i17.Router,i17.ɵe,[i0.ApplicationRef,i17.UrlSerializer,
               i17.ChildrenOutletContexts,i12.Location,i0.Injector,i0.NgModuleFactoryLoader,
               i0.Compiler,i17.ROUTES,i17.ROUTER_CONFIGURATION,[2,i17.UrlHandlingStrategy],
               [2,i17.RouteReuseStrategy]]),i0.ɵmpd(512,i17.RouterModule,i17.RouterModule,
-              [[2,i17.ɵa],[2,i17.Router]]),i0.ɵmpd(512,i23.AppModule,i23.AppModule,
+              [[2,i17.ɵa],[2,i17.Router]]),i0.ɵmpd(512,i24.AppModule,i24.AppModule,
               ([] as any[])),i0.ɵmpd(512,i1.AppServerModule,i1.AppServerModule,([] as any[])),
           i0.ɵmpd(256,i11.ɵe,'XSRF-TOKEN',([] as any[])),i0.ɵmpd(256,i11.ɵf,'X-XSRF-TOKEN',
               ([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2h1bmdtdWhhbWF0aC9Ib21lV29yay9wcm9qZWN0My95b2tlbC9zcmMvYXBwL2FwcC5zZXJ2ZXIubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2h1bmdtdWhhbWF0aC9Ib21lV29yay9wcm9qZWN0My95b2tlbC9zcmMvYXBwL2FwcC5zZXJ2ZXIubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2h1bmdtdWhhbWF0aC9Ib21lV29yay9wcm9qZWN0My95b2tlbC9zcmMvYXBwL2FwcC5zZXJ2ZXIubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2h1bmdtdWhhbWF0aC9Ib21lV29yay9wcm9qZWN0My95b2tlbC9zcmMvYXBwL2FwcC5zZXJ2ZXIubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=
