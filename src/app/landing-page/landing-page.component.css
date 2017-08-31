@@ -57,6 +57,7 @@ p.landing {
 	color: #fff;
 	font-size: 16px;
 	max-width: 370px;
+	letter-spacing: .1em;
 	line-height: 26px;
 }
 
@@ -108,7 +109,7 @@ h2 {
 }
 
 .tagline	{
-	color: #666;
+	color: #333;
 	font-size: 18px;
 }
 
