@@ -1,6 +1,6 @@
 module.exports = function (sequelize, Sequelize) {
     var model = sequelize.define("comment", {
-        id: Sequelize.INTERGER,
+        // id: Sequelize.INTERGER,
         Content: Sequelize.STRING,
         locationId: Sequelize.INTERGER,
         userId: Sequelize.INTERGER,

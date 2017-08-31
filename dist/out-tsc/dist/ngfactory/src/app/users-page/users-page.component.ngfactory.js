@@ -11,6 +11,7 @@ var i1 = require("@angular/core");
 var i2 = require("@angular/router");
 var i3 = require("@angular/common");
 var i4 = require("../../../../../src/app/users-page/users-page.component");
+var i5 = require("../../../../../src/app/users-page/comments.service");
 var styles_UsersPageComponent = [i0.styles];
 exports.RenderType_UsersPageComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_UsersPageComponent, data: {} });
@@ -98,7 +99,7 @@ function View_UsersPageComponent_0(_l) {
 }
 exports.View_UsersPageComponent_0 = View_UsersPageComponent_0;
 function View_UsersPageComponent_Host_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-users-page', [], null, null, null, View_UsersPageComponent_0, exports.RenderType_UsersPageComponent)), i1.ɵdid(114688, null, 0, i4.UsersPageComponent, [], null, null)], function (_ck, _v) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-users-page', [], null, null, null, View_UsersPageComponent_0, exports.RenderType_UsersPageComponent)), i1.ɵdid(114688, null, 0, i4.UsersPageComponent, [i2.ActivatedRoute, i5.CommentsService], null, null)], function (_ck, _v) {
         _ck(_v, 1, 0);
     }, null);
 }

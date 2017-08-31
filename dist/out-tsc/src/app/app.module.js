@@ -10,6 +10,7 @@ var nav_bar_component_1 = require("./nav-bar/nav-bar.component");
 var about_page_component_1 = require("./about-page/about-page.component");
 var login_page_component_1 = require("./login-page/login-page.component");
 var landing_page_component_1 = require("./landing-page/landing-page.component");
+var comments_service_1 = require("./users-page/comments.service");
 var appRoutes = [
     { path: '', component: landing_page_component_1.LandingPageComponent },
     { path: 'login-page', component: login_page_component_1.LoginPageComponent },
@@ -37,7 +38,7 @@ AppModule.decorators = [
                     platform_browser_1.BrowserModule.withServerTransition({ appId: 'cli-universal-demo' }),
                     router_1.RouterModule.forRoot(appRoutes),
                 ],
-                providers: [],
+                providers: [comments_service_1.CommentsService],
                 bootstrap: [app_component_1.AppComponent]
             },] },
 ];

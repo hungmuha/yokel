@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute }   from '@angular/router';
+import { CommentsService } from './comments.service';
 
 @Component({
   selector: 'app-users-page',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users-page.component.css']
 })
 export class UsersPageComponent implements OnInit {
-
-  constructor() { }
+	oneLocation;
+  constructor(
+  	private route: ActivatedRoute,
+  	private commentsService : CommentsService
+  ) { }
 
   ngOnInit() {
+  	this.route.params.forEach(param => {
+  		this.commentsService.getOneLocation(param.id)
+  		.subscribe(response=>{
+  			console.log(response.json());
+  			this.oneLocation = response.json();
+  		});
+  	});
   }
 
 }

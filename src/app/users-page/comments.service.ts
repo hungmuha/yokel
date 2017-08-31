@@ -5,23 +5,19 @@ import { Http } from '@angular/http';
 export class CommentsService {
 baseUrl = 'http://localhost:3000';
 
-	getAllArtists() {
-		return this.http.get(`${this.baseUrl}/api/artists`);
+	getOneLocation(locationId) {
+		console.log(locationId);
+		return this.http.get(`${this.baseUrl}/user-page/${locationId}`);	
 	}
 
-	getOneArtist(artistId) {
-		console.log(artistId);
-		return this.http.get(`${this.baseUrl}/api/artists/${artistId}`);	
+	deleteComment(location) {
+		console.log(location.id);
+		return this.http.delete(`${this.baseUrl}/user-page/${location.id}`);
 	}
 
-	deleteArtist(artist) {
-		console.log(artist.id);
-		return this.http.delete(`${this.baseUrl}/api/artists/${artist.id}`);
-	}
-
-	saveArtist(newArtist) {
-		console.log(newArtist);
-		return this.http.post(`${this.baseUrl}/api/artists/`, newArtist);
+	saveComment(locationId,newComment) {
+		console.log(newComment);
+		return this.http.post(`${this.baseUrl}/user-page/${locationId}`, newComment);
 	}
 
 	updateArtist(updatedArtist) {
