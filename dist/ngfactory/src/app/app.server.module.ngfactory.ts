@@ -25,12 +25,13 @@ import * as i15 from '@angular/platform-browser/animations';
 import * as i16 from '@angular/animations';
 import * as i17 from '@angular/router';
 import * as i18 from '../../../../src/app/users-page/comments.service';
-import * as i19 from '../../../../src/app/landing-page/landing-page.component';
-import * as i20 from '../../../../src/app/login-page/login-page.component';
-import * as i21 from '../../../../src/app/sign-up/sign-up.component';
-import * as i22 from '../../../../src/app/about-page/about-page.component';
-import * as i23 from '../../../../src/app/users-page/users-page.component';
-import * as i24 from '../../../../src/app/app.module';
+import * as i19 from 'ng4-material-dropdown/dist/src/modules/ng4-dropdown.module';
+import * as i20 from '../../../../src/app/landing-page/landing-page.component';
+import * as i21 from '../../../../src/app/login-page/login-page.component';
+import * as i22 from '../../../../src/app/sign-up/sign-up.component';
+import * as i23 from '../../../../src/app/about-page/about-page.component';
+import * as i24 from '../../../../src/app/users-page/users-page.component';
+import * as i25 from '../../../../src/app/app.module';
 export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i0.ɵcmf(i1.AppServerModule,
     [i2.AppComponent],(_l:any) => {
       return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
@@ -103,8 +104,9 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               i0.ApplicationModule,[i0.ApplicationRef]),i0.ɵmpd(512,i13.BrowserModule,
               i13.BrowserModule,[[3,i13.BrowserModule]]),i0.ɵmpd(512,i15.NoopAnimationsModule,
               i15.NoopAnimationsModule,([] as any[])),i0.ɵmpd(512,i10.ServerModule,
-              i10.ServerModule,([] as any[])),i0.ɵmpd(1024,i17.ɵa,i17.ɵd,[[3,i17.Router]]),
-          i0.ɵmpd(512,i17.UrlSerializer,i17.DefaultUrlSerializer,([] as any[])),i0.ɵmpd(512,
+              i10.ServerModule,([] as any[])),i0.ɵmpd(512,i19.Ng4DropdownModule,i19.Ng4DropdownModule,
+              ([] as any[])),i0.ɵmpd(1024,i17.ɵa,i17.ɵd,[[3,i17.Router]]),i0.ɵmpd(512,
+              i17.UrlSerializer,i17.DefaultUrlSerializer,([] as any[])),i0.ɵmpd(512,
               i17.ChildrenOutletContexts,i17.ChildrenOutletContexts,([] as any[])),
           i0.ɵmpd(256,i17.ROUTER_CONFIGURATION,{},([] as any[])),i0.ɵmpd(1024,i12.LocationStrategy,
               i17.ɵc,[i12.PlatformLocation,[2,i12.APP_BASE_HREF],i17.ROUTER_CONFIGURATION]),
@@ -112,17 +114,17 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               i0.Compiler,i0.Compiler,([] as any[])),i0.ɵmpd(512,i0.NgModuleFactoryLoader,
               i0.SystemJsNgModuleLoader,[i0.Compiler,[2,i0.SystemJsNgModuleLoaderConfig]]),
           i0.ɵmpd(1024,i17.ROUTES,() => {
-            return [[{path:'',component:i19.LandingPageComponent},{path:'login-page',
-                component:i20.LoginPageComponent},{path:'sign-up',component:i21.SignUpComponent},
-                {path:'about-page',component:i22.AboutPageComponent},{path:'users-page',
-                    component:i23.UsersPageComponent}]];
+            return [[{path:'',component:i20.LandingPageComponent},{path:'login-page',
+                component:i21.LoginPageComponent},{path:'sign-up',component:i22.SignUpComponent},
+                {path:'about-page',component:i23.AboutPageComponent},{path:'users-page',
+                    component:i24.UsersPageComponent}]];
           },([] as any[])),i0.ɵmpd(1024,i17.Router,i17.ɵe,[i0.ApplicationRef,i17.UrlSerializer,
               i17.ChildrenOutletContexts,i12.Location,i0.Injector,i0.NgModuleFactoryLoader,
               i0.Compiler,i17.ROUTES,i17.ROUTER_CONFIGURATION,[2,i17.UrlHandlingStrategy],
               [2,i17.RouteReuseStrategy]]),i0.ɵmpd(512,i17.RouterModule,i17.RouterModule,
-              [[2,i17.ɵa],[2,i17.Router]]),i0.ɵmpd(512,i24.AppModule,i24.AppModule,
+              [[2,i17.ɵa],[2,i17.Router]]),i0.ɵmpd(512,i25.AppModule,i25.AppModule,
               ([] as any[])),i0.ɵmpd(512,i1.AppServerModule,i1.AppServerModule,([] as any[])),
           i0.ɵmpd(256,i11.ɵe,'XSRF-TOKEN',([] as any[])),i0.ɵmpd(256,i11.ɵf,'X-XSRF-TOKEN',
               ([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvYXBwLnNlcnZlci5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvemFjaG1hcmF6aXRpL0Rlc2t0b3Avd2RpLXdvcmsvcHJvamVjdHMveW9rZWwvc3JjL2FwcC9hcHAuc2VydmVyLm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvYXBwLnNlcnZlci5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvemFjaG1hcmF6aXRpL0Rlc2t0b3Avd2RpLXdvcmsvcHJvamVjdHMveW9rZWwvc3JjL2FwcC9hcHAuc2VydmVyLm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=

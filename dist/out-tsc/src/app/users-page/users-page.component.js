@@ -7,6 +7,7 @@ var UsersPageComponent = (function () {
     function UsersPageComponent(route, commentsService) {
         this.route = route;
         this.commentsService = commentsService;
+        this.pages = ['Aspen', 'Denver', 'Fort Collins'];
     }
     UsersPageComponent.prototype.ngOnInit = function () {
         var _this = this;
