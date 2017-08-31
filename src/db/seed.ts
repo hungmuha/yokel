@@ -1,5 +1,6 @@
 // import { db } from '../models';
 // let DB = db.models;
+
 // var locationTest = [
 // 	{
 // 		locationId: 1,
@@ -17,6 +18,7 @@
 // 		state: "Oregon",
 // 	}
 // ];
+
 // var commentsTest = [
 // 	{
 // 		commentsId: 1,
@@ -37,6 +39,7 @@
 // 		commentsField: "who doesn't love baseball?"
 // 	}
 // ];
+
 // var userCreate = function() {
 // 	return DB.User.create({
 // 			email:"user",
@@ -54,20 +57,24 @@
 // 		});
 // 	})
 // }
+
 // var user = function() {
 // 	return DB.User.create({
 // 			email:"user",
 // 			password:"1234"
 // 	})
 // }
+
 // //test/
+
 // var location = function() {
 // 	return DB.Location.bulkCreate(locationTest);
 // };
+
 // var comments = function() {
 // 	return DB.Comments.bulkCreate(commentsTest);
 // };
+
 // user();
 // location();
-// comments(); 
-//# sourceMappingURL=seed.js.map
+// comments();

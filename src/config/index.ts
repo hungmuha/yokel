@@ -1,7 +1,8 @@
-const express  = require ('express');
-const passport = require('passport');
-const router = express.Router();
-// var usersController = require('../controllers/users.ts');
+import * as express from 'express';
+import * as passport from 'passport';
+var router = express.Router();
+import {commentController} from '../controllers/comment';
+import {locationController} from '../controllers/location';
 
 
 const env = {
@@ -51,10 +52,14 @@ router.get('/failure', function(req, res) {
 });
 
 
-// router.get('/users-page/:id', function(req,res) {
-//   var 
-// })
+
+
+router.get('/users-page/location/:id', locationController.show);
+
+router.post('/users-page/location/:id', commentController.create);
+
+router.delete('/users-page/location/:id', commentController.delete);
 
 
 
-module.exports = router;
+export {router};

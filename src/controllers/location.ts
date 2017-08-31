@@ -1,10 +1,14 @@
-var db = require ('../models');
+import { db } from '../models';
 var Location = db.models.Location;
 
 function index(req, res) {
 	Location.findAll().then(function(location) {
 		res.json(location);
 	});
+}
+
+function create(req, res) {
+
 }
 
 function show(req, res) {
@@ -15,7 +19,8 @@ function show(req, res) {
   });	
 }
 
-module.exports = {
-	index: index,
-	show: show
-};
+const locationController = <any>{};
+	locationController.index = index;
+	locationController.show = show;
+
+export {locationController};

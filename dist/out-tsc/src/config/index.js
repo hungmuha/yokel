@@ -1,7 +1,11 @@
-var express = require('express');
-var passport = require('passport');
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express = require("express");
+var passport = require("passport");
 var router = express.Router();
-// var usersController = require('../controllers/users.ts');
+exports.router = router;
+var comment_1 = require("../controllers/comment");
+var location_1 = require("../controllers/location");
 var env = {
     AUTH0_CLIENT_ID: 'znIJFscwW72J_60g2eoLhWKkwP4NozrU',
     AUTH0_DOMAIN: 'hungmuha.auth0.com',
@@ -37,8 +41,7 @@ router.get('/failure', function (req, res) {
         error_description: error_description[0],
     });
 });
-// router.get('/users-page/:id', function(req,res) {
-//   var 
-// })
-module.exports = router;
+router.get('/users-page/location/:id', location_1.locationController.show);
+router.post('/users-page/location/:id', comment_1.commentController.create);
+router.delete('/users-page/location/:id', comment_1.commentController.delete);
 //# sourceMappingURL=index.js.map
