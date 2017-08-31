@@ -1,5 +1,6 @@
 
 module.exports = function(sequelize, Sequelize) {
+
 	var model = sequelize.define("user", {
 		id:{
 			type: Sequelize.INTEGER,
@@ -22,6 +23,7 @@ module.exports = function(sequelize, Sequelize) {
 			field: 'locationId',
 			allowNull:false
 		}
+
 	});
 	return model;
 };

@@ -1,6 +1,7 @@
 
 module.exports = function(sequelize, Sequelize){
 	var model = sequelize.define("location", {
+
 		id:{
 			type: Sequelize.INTEGER,
 			field: 'id',
@@ -19,6 +20,7 @@ module.exports = function(sequelize, Sequelize){
 		userId: {
 			type: Sequelize.ARRAY(Sequelize.INTEGER)
 		}
+
 	});
 	return model;
 };

@@ -1,5 +1,6 @@
 module.exports = function(sequelize, Sequelize){
 	var model = sequelize.define("comment", {
+
 		id:{
 			type: Sequelize.INTEGER,
 			field: 'id',
@@ -18,6 +19,7 @@ module.exports = function(sequelize, Sequelize){
 		userId: {
 			type: Sequelize.INTEGER
 		}
+
 	});
 	return model;
 };
