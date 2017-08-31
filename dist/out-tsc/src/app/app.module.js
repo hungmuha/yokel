@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
+var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
 var users_page_component_1 = require("./users-page/users-page.component");
 var sign_up_component_1 = require("./sign-up/sign-up.component");
@@ -37,6 +38,7 @@ AppModule.decorators = [
                 imports: [
                     platform_browser_1.BrowserModule.withServerTransition({ appId: 'cli-universal-demo' }),
                     router_1.RouterModule.forRoot(appRoutes),
+                    http_1.HttpModule
                 ],
                 providers: [comments_service_1.CommentsService],
                 bootstrap: [app_component_1.AppComponent]
