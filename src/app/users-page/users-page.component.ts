@@ -8,6 +8,7 @@ import { CommentsService } from './comments.service';
   styleUrls: ['./users-page.component.css']
 })
 export class UsersPageComponent implements OnInit {
+  pages = ['Aspen', 'Denver', 'Fort Collins'];
 	oneLocation;
   constructor(
   	private route: ActivatedRoute,

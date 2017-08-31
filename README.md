@@ -6,6 +6,9 @@ At yokel we believe life is all about connecting with people and creating indivi
 **Wireframe:** https://github.com/hungmuha/yokel/blob/master/Yokel_wireframe.png
 **Trello:** https://trello.com/b/cOnxleIC/wdi-project-3-local-yokel
 
+## ERD 
+https://github.com/hungmuha/yokel/blob/master/ERD.jpg
+
 ## User research
 **Takeaways:**
 Easy to use, but too much information
@@ -57,9 +60,5 @@ thanks, from localie yokelie, our mascot.
 █▀▄──────────█─────█▄────────█─
 █──▀▀▀▀▀█▄▄▄▄▀─────▀█▀▀▀▄▄▄▄▀──
 █───────────────────▀▄─────────
-
-
-
-
 
 
