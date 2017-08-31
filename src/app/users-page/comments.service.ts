@@ -20,8 +20,8 @@ baseUrl = 'http://localhost:3000';
 		return this.http.post(`${this.baseUrl}/user-page/${locationId}`, newComment);
 	}
 
-	updateArtist(updatedArtist) {
-		return this.http.put(`${this.baseUrl}/api/artists/${updatedArtist.id}`, updatedArtist);		
+	updateArtist(locationId,updatedComment) {
+		return this.http.put(`${this.baseUrl}/user-page/${locationId}`, updatedComment);		
 	}
 
   constructor(private http: Http) { }

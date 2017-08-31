@@ -14,10 +14,6 @@ module.exports = function(sequelize, Sequelize) {
 			field:'username',
 			allowNull:false
 		},
-		email:{
-			type: Sequelize.STRING,
-			field:'email'
-		},
 		locationId:{
 			type: Sequelize.INTEGER,
 			field: 'locationId',
