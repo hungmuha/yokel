@@ -11,7 +11,7 @@ import * as cookieParser from 'cookie-parser';
 import * as Auth0Strategy   from 'passport-auth0';
 import {session} from 'express-session';
 import * as passport from 'passport';
-import * as yokelRoutes from './config/index';
+import { router as yokelRoutes } from './config/index';
 
 // const home = require('./config/main');
 
