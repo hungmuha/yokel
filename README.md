@@ -7,7 +7,7 @@ At yokel we believe life is all about connecting with people and creating indivi
 **Trello:** https://trello.com/b/cOnxleIC/wdi-project-3-local-yokel
 
 ## ERD 
-
+https://github.com/hungmuha/yokel/blob/master/ERD.jpg
 
 ## User research
 **Takeaways:**
