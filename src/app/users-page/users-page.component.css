@@ -1,6 +1,6 @@
 body	{
 	margin: auto;
-	padding-top: 40px;
+	
 	padding-bottom: 20px;
   /*width: 50%;*/
 }
@@ -99,8 +99,31 @@ button.btn.btn-primary.dropdown-toggle:open {
     display:table-cell;
 }
 
+.commentText {
+	float: left;
+	padding-right: 300px;
+	overflow: auto;
+}
+
 .commentText p {
     margin:0;
+}
+
+.commentText2 {
+	float: right;
+	margin-top: 40px;
+	padding-left: 300px;
+	padding-right: 30px;
+	padding-bottom: 40px;
+}
+
+.commentText2 p {
+    margin:0;
+
+}
+
+.local {
+	color: #5EC295;
 }
 
 .sub-text {
