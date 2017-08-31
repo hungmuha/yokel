@@ -1,4 +1,5 @@
 "use strict";
+/// <reference types="node" />
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_dynamic_1 = require("@angular/platform-browser-dynamic");
