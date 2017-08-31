@@ -19,7 +19,7 @@ router.get('/login', passport.authenticate('auth0', {
     audience: 'https://' + env.AUTH0_DOMAIN + '/userinfo',
     scope: 'openid profile'
 }), function (req, res) {
-    res.redirect("/callback");
+    res.redirect('/');
 });
 router.get('/logout', function (req, res) {
     req.logout();
@@ -41,7 +41,7 @@ router.get('/failure', function (req, res) {
         error_description: error_description[0],
     });
 });
-router.get('/users-page/location/:id', location_1.locationController.show);
-router.post('/users-page/location/:id', comment_1.commentController.create);
-router.delete('/users-page/location/:id', comment_1.commentController.destroy);
+router.get('/users-page/:locationId', location_1.locationController.show);
+router.post('/users-page/:locationId', comment_1.commentController.create);
+router.delete('/users-page/:locationId', comment_1.commentController.destroy);
 //# sourceMappingURL=index.js.map

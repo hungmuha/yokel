@@ -7,6 +7,13 @@ function index(req, res) {
 	});
 }
 
+function create(req, res) {
+	User.create(req.body).then(function(user){
+    if(!user) res.send(res, "not saved");
+    else res.json(user);
+  });
+}
+
 function show(req, res) {
   User.findById(req.params.id)
   .then(function(user){
@@ -17,6 +24,7 @@ function show(req, res) {
 
 const userController = <any>{};
 	userController.index = index;
-	userController.show =show;
+	userController.create = create;
+	userController.show = show;
  
  export {userController};

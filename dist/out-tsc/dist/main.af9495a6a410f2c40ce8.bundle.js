@@ -31,7 +31,7 @@ webpackJsonp([1], { "++UV": function (l, n, t) {
         "use strict";
         var u = t("CPp0");
         t.d(n, "a", function () { return o; });
-        var o = function () { function l(l) { this.http = l, this.baseUrl = "http://localhost:3000"; } return l.prototype.getOneLocation = function (l) { return console.log(l), this.http.get(this.baseUrl + "/user-page/" + l); }, l.prototype.deleteComment = function (l) { return console.log(l.id), this.http.delete(this.baseUrl + "/user-page/" + l.id); }, l.prototype.saveComment = function (l, n) { return console.log(n), this.http.post(this.baseUrl + "/user-page/" + l, n); }, l.prototype.updateArtist = function (l) { return this.http.put(this.baseUrl + "/api/artists/" + l.id, l); }, l.ctorParameters = function () { return [{ type: u.a }]; }, l; }();
+        var o = function () { function l(l) { this.http = l, this.baseUrl = "http://localhost:3000"; } return l.prototype.getOneLocation = function (l) { return console.log(l), this.http.get(this.baseUrl + "/user-page/" + l); }, l.prototype.deleteComment = function (l) { return console.log(l.id), this.http.delete(this.baseUrl + "/user-page/" + l.id); }, l.prototype.saveComment = function (l, n) { return console.log(n), this.http.post(this.baseUrl + "/user-page/" + l, n); }, l.prototype.updateArtist = function (l, n) { return this.http.put(this.baseUrl + "/user-page/" + l, n); }, l.ctorParameters = function () { return [{ type: u.a }]; }, l; }();
     }, J9Ho: function (l, n, t) {
         "use strict";
         t.d(n, "a", function () { return u; });
@@ -122,4 +122,4 @@ webpackJsonp([1], { "++UV": function (l, n, t) {
         t.d(n, "a", function () { return u; });
         var u = function () { function l() { } return l.prototype.ngOnInit = function () { }, l.ctorParameters = function () { return []; }, l; }();
     } }, [0]);
-//# sourceMappingURL=main.5b373e579cddec57a8de.bundle.js.map
+//# sourceMappingURL=main.af9495a6a410f2c40ce8.bundle.js.map

@@ -21,4 +21,4 @@ module.exports = function (sequelize, Sequelize) {
     });
     return model;
 };
-//# sourceMappingURL=location.js.map
+//# sourceMappingURL=locations.js.map

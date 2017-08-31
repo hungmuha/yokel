@@ -8,7 +8,10 @@ function index(req, res) {
 }
 
 function create(req, res) {
-
+	Location.create(req.body).then(function(location){
+    if(!location) res.send(res, "not saved");
+    else res.json(location);
+  });
 }
 
 function show(req, res) {

@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Sequelize = require("sequelize");
 var sequelize = new Sequelize('postgres://hungmuhamath@localhost:5432/yokel');
-var User = sequelize.import('./user');
+var User = sequelize.import('./users');
 var Comment = sequelize.import('./comments');
-var Location = sequelize.import('./location');
+var Location = sequelize.import('./locations');
 User.hasMany(Comment);
 Comment.belongsTo(Location);
 Location.hasMany(Comment);

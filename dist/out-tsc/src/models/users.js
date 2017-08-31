@@ -12,10 +12,6 @@ module.exports = function (sequelize, Sequelize) {
             field: 'username',
             allowNull: false
         },
-        email: {
-            type: Sequelize.STRING,
-            field: 'email'
-        },
         locationId: {
             type: Sequelize.INTEGER,
             field: 'locationId',
@@ -24,4 +20,4 @@ module.exports = function (sequelize, Sequelize) {
     });
     return model;
 };
-//# sourceMappingURL=user.js.map
+//# sourceMappingURL=users.js.map

@@ -54,11 +54,11 @@ router.get('/failure', function(req, res) {
 
 
 
-router.get('/users-page/location/:id', locationController.show);
+router.get('/users-page/:locationId', locationController.show);
 
-router.post('/users-page/location/:id', commentController.create);
+router.post('/users-page/:locationId', commentController.create);
 
-router.delete('/users-page/location/:id', commentController.destroy);
+router.delete('/users-page/:locationId', commentController.destroy);
 
 
 

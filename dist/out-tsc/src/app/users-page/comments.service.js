@@ -19,8 +19,8 @@ var CommentsService = (function () {
         console.log(newComment);
         return this.http.post(this.baseUrl + "/user-page/" + locationId, newComment);
     };
-    CommentsService.prototype.updateArtist = function (updatedArtist) {
-        return this.http.put(this.baseUrl + "/api/artists/" + updatedArtist.id, updatedArtist);
+    CommentsService.prototype.updateArtist = function (locationId, updatedComment) {
+        return this.http.put(this.baseUrl + "/user-page/" + locationId, updatedComment);
     };
     return CommentsService;
 }());
