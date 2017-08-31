@@ -31,7 +31,7 @@ Currently we have a dropdown linking to the city forum pages that we've populate
 
 ........................................................
 
-thanks, from local yoakl, our mascott 
+thanks, from localie yokelie, our mascot.
 ───────────────────────────────
 ──────────▄▄▄▄▄▄▄▄▄▄▄──────────
 ─────▄▄▀▀▀▀──────────▀▀▄▄──────
