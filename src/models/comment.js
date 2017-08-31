@@ -1,9 +1,9 @@
 module.exports = function(sequelize, Sequelize){
 	var model = sequelize.define("comment", {
-		// id: Sequelize.INTERGER,
+		id: Sequelize.INTEGER,
 		Content: Sequelize.STRING,
-		locationId: Sequelize.INTERGER,
-		userId: Sequelize.INTERGER,
+		locationId: Sequelize.INTEGER,
+		userId: Sequelize.INTEGER,
 	});
 	return model;
 };
