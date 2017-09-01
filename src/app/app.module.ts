@@ -12,6 +12,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CommentsService } from './users-page/comments.service';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 const appRoutes: Routes = [
   
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
   { path: 'login-page', component: LoginPageComponent},
   { path: 'sign-up', component: SignUpComponent},
   { path: 'about-page', component: AboutPageComponent },
-  { path: 'users-page', component: UsersPageComponent}
+  { path: 'users-page', component: UsersPageComponent},
+  { path: 'profile-page', component: ProfilePageComponent }
 
 ];
 
@@ -31,7 +33,8 @@ const appRoutes: Routes = [
     NavBarComponent,
     AboutPageComponent,
     LoginPageComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ProfilePageComponent
   ],
   imports: [
   BrowserModule.withServerTransition({appId: 'cli-universal-demo'}),

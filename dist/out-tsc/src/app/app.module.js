@@ -12,12 +12,14 @@ var about_page_component_1 = require("./about-page/about-page.component");
 var login_page_component_1 = require("./login-page/login-page.component");
 var landing_page_component_1 = require("./landing-page/landing-page.component");
 var comments_service_1 = require("./users-page/comments.service");
+var profile_page_component_1 = require("./profile-page/profile-page.component");
 var appRoutes = [
     { path: '', component: landing_page_component_1.LandingPageComponent },
     { path: 'login-page', component: login_page_component_1.LoginPageComponent },
     { path: 'sign-up', component: sign_up_component_1.SignUpComponent },
     { path: 'about-page', component: about_page_component_1.AboutPageComponent },
-    { path: 'users-page', component: users_page_component_1.UsersPageComponent }
+    { path: 'users-page', component: users_page_component_1.UsersPageComponent },
+    { path: 'profile-page', component: profile_page_component_1.ProfilePageComponent }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -33,7 +35,8 @@ AppModule.decorators = [
                     nav_bar_component_1.NavBarComponent,
                     about_page_component_1.AboutPageComponent,
                     login_page_component_1.LoginPageComponent,
-                    landing_page_component_1.LandingPageComponent
+                    landing_page_component_1.LandingPageComponent,
+                    profile_page_component_1.ProfilePageComponent
                 ],
                 imports: [
                     platform_browser_1.BrowserModule.withServerTransition({ appId: 'cli-universal-demo' }),

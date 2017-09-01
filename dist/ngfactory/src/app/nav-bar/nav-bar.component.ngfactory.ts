@@ -34,16 +34,16 @@ export function View_NavBarComponent_0(_l:any):i1.ɵViewDefinition {
           (null as any)),(_l()(),i1.ɵted((null as any),['home'])),(_l()(),i1.ɵted((null as any),
           ['\n		'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),3,'div',[['class',
           'nav-item']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'a',[['routerLink','']],[[1,
-          'target',0],[8,'href',4]],[[(null as any),'click']],(_v,en,$event) => {
-        var ad:boolean = true;
-        if (('click' === en)) {
-          const pd_0:any = ((<any>i1.ɵnov(_v,9).onClick($event.button,$event.ctrlKey,
-              $event.metaKey,$event.shiftKey)) !== false);
-          ad = (pd_0 && ad);
-        }
-        return ad;
-      },(null as any),(null as any))),i1.ɵdid(671744,(null as any),0,i2.RouterLinkWithHref,
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'a',[['routerLink','/profile-page']],
+          [[1,'target',0],[8,'href',4]],[[(null as any),'click']],(_v,en,$event) => {
+            var ad:boolean = true;
+            if (('click' === en)) {
+              const pd_0:any = ((<any>i1.ɵnov(_v,9).onClick($event.button,$event.ctrlKey,
+                  $event.metaKey,$event.shiftKey)) !== false);
+              ad = (pd_0 && ad);
+            }
+            return ad;
+          },(null as any),(null as any))),i1.ɵdid(671744,(null as any),0,i2.RouterLinkWithHref,
           [i2.Router,i2.ActivatedRoute,i3.LocationStrategy],{routerLink:[0,'routerLink']},
           (null as any)),(_l()(),i1.ɵted((null as any),['profile'])),(_l()(),i1.ɵted((null as any),
           ['\n		'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),3,'div',[['class',
@@ -67,7 +67,7 @@ export function View_NavBarComponent_0(_l:any):i1.ɵViewDefinition {
           ['logout'])),(_l()(),i1.ɵted((null as any),['\n	\n']))],(_ck,_v) => {
     const currVal_2:any = '/users-page';
     _ck(_v,4,0,currVal_2);
-    const currVal_5:any = '';
+    const currVal_5:any = '/profile-page';
     _ck(_v,9,0,currVal_5);
     const currVal_8:any = '/about-page';
     _ck(_v,14,0,currVal_8);
@@ -93,4 +93,4 @@ export function View_NavBarComponent_Host_0(_l:any):i1.ɵViewDefinition {
 }
 export const NavBarComponentNgFactory:i1.ComponentFactory<i4.NavBarComponent> = i1.ɵccf('nav-bar',
     i4.NavBarComponent,View_NavBarComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvbmF2LWJhci9uYXYtYmFyLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy96YWNobWFyYXppdGkvRGVza3RvcC93ZGktd29yay9wcm9qZWN0cy95b2tlbC9zcmMvYXBwL25hdi1iYXIvbmF2LWJhci5jb21wb25lbnQudHMiLCJuZzovLy9Vc2Vycy96YWNobWFyYXppdGkvRGVza3RvcC93ZGktd29yay9wcm9qZWN0cy95b2tlbC9zcmMvYXBwL25hdi1iYXIvbmF2LWJhci5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvbmF2LWJhci9uYXYtYmFyLmNvbXBvbmVudC50cy5OYXZCYXJDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8bmF2IGNsYXNzPVwibmF2LWJhclwiPlxuXHRcblx0XHRcblx0XHQ8ZGl2IGNsYXNzPVwibmF2LWl0ZW1cIj48YSByb3V0ZXJMaW5rPVwiL3VzZXJzLXBhZ2VcIj5ob21lPC9hPjwvZGl2PlxuXHRcdDxkaXYgY2xhc3M9XCJuYXYtaXRlbVwiPjxhIHJvdXRlckxpbms9XCJcIj5wcm9maWxlPC9hPjwvZGl2PlxuXHRcdDxkaXYgY2xhc3M9XCJuYXYtaXRlbVwiPjxhIHJvdXRlckxpbms9XCIvYWJvdXQtcGFnZVwiPmFib3V0PC9hPjwvZGl2PlxuXHRcdDxkaXYgY2xhc3M9XCJuYXYtaXRlbVwiPjxhIGhyZWY9XCIvbG9nb3V0XCI+bG9nb3V0PC9hPjwvZGl2PlxuXHRcbjwvbmF2ID4iLCI8bmF2LWJhcj48L25hdi1iYXI+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTtNQUFxQixnREFHbkI7VUFBQTtVQUFBLDRDQUFzQjtVQUFBO2NBQUE7WUFBQTtZQUFBO2NBQUE7a0JBQUE7Y0FBQTtZQUFBO1lBQUE7VUFBQSx1Q0FBQTtVQUFBO1VBQUEsZUFBNEIseUNBQWM7VUFBQSxXQUNoRTtVQUFBO01BQXNCO1VBQUE7UUFBQTtRQUFBO1VBQUE7Y0FBQTtVQUFBO1FBQUE7UUFBQTtNQUFBLHVDQUFBO1VBQUE7VUFBQSxlQUFpQiw0Q0FBaUI7VUFBQSxXQUN4RDtVQUFBO01BQXNCO1VBQUE7WUFBQTtZQUFBO2NBQUE7a0JBQUE7Y0FBQTtZQUFBO1lBQUE7VUFBQSx1Q0FBQTtVQUFBO1VBQUEsZUFBNEIsMENBQWU7VUFBQSxXQUNqRTtVQUFBO01BQXNCO1VBQUEsMERBQWtCO1VBQUEsYUFBZ0I7SUFIL0I7SUFBSCxXQUFHLFNBQUg7SUFDRztJQUFILFdBQUcsU0FBSDtJQUNHO0lBQUgsWUFBRyxTQUFIOztJQUZBO0lBQUE7SUFBQSxXQUFBLG1CQUFBO0lBQ0E7SUFBQTtJQUFBLFdBQUEsbUJBQUE7SUFDQTtJQUFBO0lBQUEsWUFBQSxtQkFBQTs7OztvQkNMeEI7TUFBQTthQUFBO1VBQUE7SUFBQTs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvbmF2LWJhci9uYXYtYmFyLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy96YWNobWFyYXppdGkvRGVza3RvcC93ZGktd29yay9wcm9qZWN0cy95b2tlbC9zcmMvYXBwL25hdi1iYXIvbmF2LWJhci5jb21wb25lbnQudHMiLCJuZzovLy9Vc2Vycy96YWNobWFyYXppdGkvRGVza3RvcC93ZGktd29yay9wcm9qZWN0cy95b2tlbC9zcmMvYXBwL25hdi1iYXIvbmF2LWJhci5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvbmF2LWJhci9uYXYtYmFyLmNvbXBvbmVudC50cy5OYXZCYXJDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8bmF2IGNsYXNzPVwibmF2LWJhclwiPlxuXHRcblx0XHRcblx0XHQ8ZGl2IGNsYXNzPVwibmF2LWl0ZW1cIj48YSByb3V0ZXJMaW5rPVwiL3VzZXJzLXBhZ2VcIj5ob21lPC9hPjwvZGl2PlxuXHRcdDxkaXYgY2xhc3M9XCJuYXYtaXRlbVwiPjxhIHJvdXRlckxpbms9XCIvcHJvZmlsZS1wYWdlXCI+cHJvZmlsZTwvYT48L2Rpdj5cblx0XHQ8ZGl2IGNsYXNzPVwibmF2LWl0ZW1cIj48YSByb3V0ZXJMaW5rPVwiL2Fib3V0LXBhZ2VcIj5hYm91dDwvYT48L2Rpdj5cblx0XHQ8ZGl2IGNsYXNzPVwibmF2LWl0ZW1cIj48YSBocmVmPVwiL2xvZ291dFwiPmxvZ291dDwvYT48L2Rpdj5cblx0XG48L25hdiA+IiwiPG5hdi1iYXI+PC9uYXYtYmFyPiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O29CQ0FBO01BQUE7TUFBcUIsZ0RBR25CO1VBQUE7VUFBQSw0Q0FBc0I7VUFBQTtjQUFBO1lBQUE7WUFBQTtjQUFBO2tCQUFBO2NBQUE7WUFBQTtZQUFBO1VBQUEsdUNBQUE7VUFBQTtVQUFBLGVBQTRCLHlDQUFjO1VBQUEsV0FDaEU7VUFBQTtNQUFzQjtVQUFBO1lBQUE7WUFBQTtjQUFBO2tCQUFBO2NBQUE7WUFBQTtZQUFBO1VBQUEsdUNBQUE7VUFBQTtVQUFBLGVBQThCLDRDQUFpQjtVQUFBLFdBQ3JFO1VBQUE7TUFBc0I7VUFBQTtZQUFBO1lBQUE7Y0FBQTtrQkFBQTtjQUFBO1lBQUE7WUFBQTtVQUFBLHVDQUFBO1VBQUE7VUFBQSxlQUE0QiwwQ0FBZTtVQUFBLFdBQ2pFO1VBQUE7TUFBc0I7VUFBQSwwREFBa0I7VUFBQSxhQUFnQjtJQUgvQjtJQUFILFdBQUcsU0FBSDtJQUNHO0lBQUgsV0FBRyxTQUFIO0lBQ0c7SUFBSCxZQUFHLFNBQUg7O0lBRkE7SUFBQTtJQUFBLFdBQUEsbUJBQUE7SUFDQTtJQUFBO0lBQUEsV0FBQSxtQkFBQTtJQUNBO0lBQUE7SUFBQSxZQUFBLG1CQUFBOzs7O29CQ0x4QjtNQUFBO2FBQUE7VUFBQTtJQUFBOzs7OyJ9

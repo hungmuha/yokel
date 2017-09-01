@@ -27,8 +27,7 @@ function View_NavBarComponent_0(_l) {
             return ad;
         }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['home'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 3, 'div', [['class',
                 'nav-item']], null, null, null, null, null)),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'a', [['routerLink', '']], [[1,
-                'target', 0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
+        (_l()(), i1.ɵeld(0, null, null, 2, 'a', [['routerLink', '/profile-page']], [[1, 'target', 0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
             var ad = true;
             if (('click' === en)) {
                 var pd_0 = (i1.ɵnov(_v, 9).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
@@ -49,7 +48,7 @@ function View_NavBarComponent_0(_l) {
         (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['href', '/logout']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['logout'])), (_l()(), i1.ɵted(null, ['\n	\n']))], function (_ck, _v) {
         var currVal_2 = '/users-page';
         _ck(_v, 4, 0, currVal_2);
-        var currVal_5 = '';
+        var currVal_5 = '/profile-page';
         _ck(_v, 9, 0, currVal_5);
         var currVal_8 = '/about-page';
         _ck(_v, 14, 0, currVal_8);
