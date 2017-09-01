@@ -7,8 +7,20 @@ var UsersPageComponent = (function () {
     function UsersPageComponent(route, commentsService) {
         this.route = route;
         this.commentsService = commentsService;
-        this.pages = ['Aspen', 'Denver', 'Fort Collins'];
+        this.navExpanded = false;
     }
+    UsersPageComponent.prototype.dismissNav = function () {
+        this.navExpanded = false;
+    };
+    UsersPageComponent.prototype.toggleNav = function () {
+        console.log("YAyyyy");
+        if (!this.navExpanded) {
+            this.navExpanded = true;
+        }
+        else {
+            this.navExpanded = false;
+        }
+    };
     UsersPageComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.params.forEach(function (param) {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterContentInit } from '@angular/core';
 import { ActivatedRoute }   from '@angular/router';
 import { CommentsService } from './comments.service';
 
@@ -8,7 +8,24 @@ import { CommentsService } from './comments.service';
   styleUrls: ['./users-page.component.css']
 })
 export class UsersPageComponent implements OnInit {
-  pages = ['Aspen', 'Denver', 'Fort Collins'];
+  navExpanded = false;
+
+
+  dismissNav() {
+    this.navExpanded = false;
+  }
+
+  toggleNav() {
+    console.log("YAyyyy");
+    if (!this.navExpanded) {
+      this.navExpanded = true;
+    } else {
+      this.navExpanded = false;
+    }
+  }
+
+
+  
 	oneLocation;
   constructor(
   	private route: ActivatedRoute,
