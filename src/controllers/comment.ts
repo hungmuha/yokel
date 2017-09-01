@@ -7,6 +7,8 @@ function index(req, res) {
 	});
 }
 
+//hello/
+
 function show(req, res) {
   Comment.findById(req.params.id)
   .then(function(comment){
