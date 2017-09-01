@@ -1,7 +1,7 @@
 a	{
 	color: white;
 	font-size: 14px;
-	display: block;
+	display: inline;
 
 
 }
@@ -24,7 +24,7 @@ a:hover {
 
 }
 
-.nav-text {
+.nav-item {
 	
 	margin: 20px 10px;
 	align-self: center;

@@ -8,35 +8,32 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = require("./about-page.component.css.shim.ngstyle");
 var i1 = require("@angular/core");
-var i2 = require("@angular/router");
-var i3 = require("@angular/common");
-var i4 = require("../../../../../src/app/about-page/about-page.component");
+var i2 = require("../nav-bar/nav-bar.component.ngfactory");
+var i3 = require("../../../../../src/app/nav-bar/nav-bar.component");
+var i4 = require("@angular/router");
+var i5 = require("@angular/common");
+var i6 = require("../../../../../src/app/about-page/about-page.component");
 var styles_AboutPageComponent = [i0.styles];
 exports.RenderType_AboutPageComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_AboutPageComponent, data: {} });
 function View_AboutPageComponent_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 197, 'html', [['lang', 'en']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
-            i1.ɵeld(0, null, null, 195, 'html', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 16, 'head', [], null, null, null, null, null)), (_l()(),
+    return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 200, 'html', [['lang', 'en']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
+            i1.ɵeld(0, null, null, 198, 'html', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 16, 'head', [], null, null, null, null, null)), (_l()(),
             i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'meta', [['charset', 'utf-8']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'title', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['yokel'])), (_l()(),
             i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(),
             i1.ɵeld(0, null, null, 0, 'link', [['href', 'https://fonts.googleapis.com/css?family=Questrial'],
                 ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'meta', [['content',
                 'width=device-width, initial-scale=1'], ['name', 'viewport']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])),
         (_l()(), i1.ɵeld(0, null, null, 0, 'link', [['href', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'],
-            ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n	\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 174, 'body', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class', 'container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(),
-            i1.ɵeld(0, null, null, 11, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵeld(0, null, null, 7, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        		'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['yokel'])), (_l()(), i1.ɵted(null, ['\n				'])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class', 'tagline']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Be a local in every city you visit.'])), (_l()(),
-            i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])),
-        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n	'])),
-        (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'container-about']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 12, 'div', [['class',
-                'row']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])),
-        (_l()(), i1.ɵeld(0, null, null, 7, 'div', [['class', 'col-lg-12']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['About yokel'])), (_l()(),
-            i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Through our yokel app community and message boards, yokel brings more interesting and personal experiences to travelers in cities around the world. Founded in 2017, yokel was built by developers who are also seeking new travel experiences at the local level. We hope you enjoy becoming a local yokal.'])),
+            ['rel', 'stylesheet']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n	\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 177, 'body', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'nav-bar', [], null, null, null, i2.View_NavBarComponent_0, i2.RenderType_NavBarComponent)), i1.ɵdid(114688, null, 0, i3.NavBarComponent, [], null, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 14, 'div', [['class',
+                'container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵeld(0, null, null, 7, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        		'])), (_l()(),
+            i1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['yokel'])), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class', 'tagline']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Be a local in every city you visit.'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(),
+            i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'container-about']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(),
+            i1.ɵeld(0, null, null, 12, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵeld(0, null, null, 7, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['About yokel'])), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['Through our yokel app community and message boards, yokel brings more interesting and personal experiences to travelers in cities around the world. Founded in 2017, yokel was built by developers who are also seeking new travel experiences at the local level. We hope you enjoy becoming a local yokal.'])),
         (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n			'])),
         (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])),
         (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 11, 'div', [['class', 'container-about']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(),
@@ -86,25 +83,26 @@ function View_AboutPageComponent_0(_l) {
                 'click']], function (_v, en, $event) {
             var ad = true;
             if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 192).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+                var pd_0 = (i1.ɵnov(_v, 195).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['About yokel'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
+        }, null, null)), i1.ɵdid(671744, null, 0, i4.RouterLinkWithHref, [i4.Router, i4.ActivatedRoute, i5.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['About yokel'])), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n'])), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
+        _ck(_v, 26, 0);
         var currVal_2 = '/about-page';
-        _ck(_v, 192, 0, currVal_2);
+        _ck(_v, 195, 0, currVal_2);
     }, function (_ck, _v) {
-        var currVal_0 = i1.ɵnov(_v, 192).target;
-        var currVal_1 = i1.ɵnov(_v, 192).href;
-        _ck(_v, 191, 0, currVal_0, currVal_1);
+        var currVal_0 = i1.ɵnov(_v, 195).target;
+        var currVal_1 = i1.ɵnov(_v, 195).href;
+        _ck(_v, 194, 0, currVal_0, currVal_1);
     });
 }
 exports.View_AboutPageComponent_0 = View_AboutPageComponent_0;
 function View_AboutPageComponent_Host_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-about-page', [], null, null, null, View_AboutPageComponent_0, exports.RenderType_AboutPageComponent)), i1.ɵdid(114688, null, 0, i4.AboutPageComponent, [], null, null)], function (_ck, _v) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-about-page', [], null, null, null, View_AboutPageComponent_0, exports.RenderType_AboutPageComponent)), i1.ɵdid(114688, null, 0, i6.AboutPageComponent, [], null, null)], function (_ck, _v) {
         _ck(_v, 1, 0);
     }, null);
 }
 exports.View_AboutPageComponent_Host_0 = View_AboutPageComponent_Host_0;
-exports.AboutPageComponentNgFactory = i1.ɵccf('app-about-page', i4.AboutPageComponent, View_AboutPageComponent_Host_0, {}, {}, []);
+exports.AboutPageComponentNgFactory = i1.ɵccf('app-about-page', i6.AboutPageComponent, View_AboutPageComponent_Host_0, {}, {}, []);
 //# sourceMappingURL=about-page.component.ngfactory.js.map
