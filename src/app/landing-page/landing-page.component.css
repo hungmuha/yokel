@@ -1,8 +1,18 @@
-body	{
+/*body {
 	margin: auto;
 	padding-top: 40px;
 	padding-bottom: 20px;
-  /*width: 50%;*/
+	height: 100%;
+}*/
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
 }
 
 /*--- LANDING PAGE ---*/
@@ -63,7 +73,8 @@ p.landing {
 
 .container-footer-landing {
 	background-color: #e4f7ee;
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 0px;
 	padding-left: 12%;
 	margin-top: 75px;
 }
@@ -92,6 +103,7 @@ h1 {
 	color: #5EC295;
 	font-size: 72px;
 	margin-bottom: 10px;
+	margin-top: 60px;
 } 
 
 h1.landing {
@@ -236,9 +248,11 @@ a.about {
 
 li.container-footer {
     display: inline-block;
+    font-size: 12px;
     font-weight: bold;
     padding-right: 20px;
     max-width: 1000px;
+    padding-bottom: 10px;
 }
 
 .container {
