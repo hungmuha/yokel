@@ -13,6 +13,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CommentsService } from './users-page/comments.service';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { CommentLocationComponent } from './comment-location/comment-location.component';
 
 const appRoutes: Routes = [
   
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     AboutPageComponent,
     LoginPageComponent,
     LandingPageComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    CommentLocationComponent
   ],
   imports: [
   BrowserModule.withServerTransition({appId: 'cli-universal-demo'}),

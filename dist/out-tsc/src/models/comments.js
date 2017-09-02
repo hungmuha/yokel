@@ -1,21 +1,21 @@
 module.exports = function (sequelize, Sequelize) {
     var model = sequelize.define("comment", {
-        id: {
+        comment_id: {
             type: Sequelize.INTEGER,
-            field: 'id',
+            field: 'comment_id',
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
-        Content: {
+        comment_field: {
             type: Sequelize.STRING,
-            field: 'content',
+            field: 'comment_field',
             allowNull: false
         },
-        locationId: {
+        location_id: {
             type: Sequelize.INTEGER
         },
-        userId: {
+        user_id: {
             type: Sequelize.INTEGER
         }
     });
