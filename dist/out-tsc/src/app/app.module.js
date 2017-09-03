@@ -13,6 +13,7 @@ var login_page_component_1 = require("./login-page/login-page.component");
 var landing_page_component_1 = require("./landing-page/landing-page.component");
 var comments_service_1 = require("./users-page/comments.service");
 var profile_page_component_1 = require("./profile-page/profile-page.component");
+var comment_location_component_1 = require("./comment-location/comment-location.component");
 var appRoutes = [
     { path: '', component: landing_page_component_1.LandingPageComponent },
     { path: 'login-page', component: login_page_component_1.LoginPageComponent },
@@ -36,7 +37,8 @@ AppModule.decorators = [
                     about_page_component_1.AboutPageComponent,
                     login_page_component_1.LoginPageComponent,
                     landing_page_component_1.LandingPageComponent,
-                    profile_page_component_1.ProfilePageComponent
+                    profile_page_component_1.ProfilePageComponent,
+                    comment_location_component_1.CommentLocationComponent
                 ],
                 imports: [
                     platform_browser_1.BrowserModule.withServerTransition({ appId: 'cli-universal-demo' }),
