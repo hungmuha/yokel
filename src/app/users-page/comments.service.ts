@@ -10,14 +10,14 @@ baseUrl = 'http://localhost:3000';
 		return this.http.get(`${this.baseUrl}/user-page/${locationId}`);	
 	}
 
-	deleteComment(location) {
-		console.log(location.id);
-		return this.http.delete(`${this.baseUrl}/user-page/${location.id}`);
+	deleteComment(comment) {
+		console.log(comment);
+		return this.http.delete(`${this.baseUrl}/user-page/${comment.id}`);
 	}
 
-	saveComment(locationId,newComment) {
+	saveComment(newComment) {
 		console.log(newComment);
-		return this.http.post(`${this.baseUrl}/user-page/${locationId}`, newComment);
+		return this.http.post(`${this.baseUrl}/user-page/`, newComment);
 	}
 
 	updateArtist(locationId,updatedComment) {

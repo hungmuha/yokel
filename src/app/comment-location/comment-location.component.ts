@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute }   from '@angular/router';
+import { CommentsService } from './comments.service';
 
 @Component({
   selector: 'comment-location',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comment-location.component.css']
 })
 export class CommentLocationComponent implements OnInit {
+
+oneLocation;
 
 comments = [
 	{
@@ -44,9 +48,26 @@ comments = [
 
 ];
 
+allLocations = [];
+
+  deleteComment(deletedComment) {
+    this.commentService.deleteComment(deletedComment)
+    .subscribe(response => {
+      let commentIndex = this.allLocations.indexOf(deletedComment);
+      this.allLocations.splice(commentIndex, 1);
+    });
+  }
+
   constructor() { }
 
   ngOnInit() {
+  	this.route.params.forEach(param => {
+  		this.commentsService.getOneLocation(param.id)
+  		.subscribe(response=>{
+  			console.log(response.json());
+  			this.oneLocation = response.json();
+  		});
+  	});
   }
 
 }
