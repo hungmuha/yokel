@@ -52,7 +52,7 @@ allLocations = [];
 newComment;
 oneLocation;
   deleteComment(deletedComment) {
-    this.commentService.deleteComment(deletedComment)
+    this.commentsService.deleteComment(deletedComment)
     .subscribe(response => {
       let commentIndex = this.allLocations.indexOf(deletedComment);
       this.allLocations.splice(commentIndex, 1);

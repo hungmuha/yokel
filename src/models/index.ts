@@ -6,10 +6,10 @@ var User = sequelize.import('./users');
 var Comment = sequelize.import('./comments');
 var Location = sequelize.import('./locations');
 
-User.hasMany(Comment);
+// User.hasMany(Comment);
 Comment.belongsTo(Location);
 Location.hasMany(Comment);
-Location.hasMany(User);
+// Location.hasMany(User);
 
 const db = <any>{};
 db.models = {

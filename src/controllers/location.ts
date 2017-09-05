@@ -2,11 +2,11 @@ import { db } from '../models';
 var Location = db.models.Location;
 var Comment = db.models.Comment;
 
-function index(req, res) {
-	Location.findAll().then(function(location) {
-		res.json(location);
-	});
-}
+// function index(req, res) {
+// 	Location.findAll().then(function(location) {
+// 		res.json(location);
+// 	});
+// }
 
 
 function create(req, res) {
@@ -25,7 +25,7 @@ function show(req, res) {
 }
 
 const locationController = <any>{};
-	locationController.index = index;
+	// locationController.index = index;
   locationController.create = create;
 	locationController.show = show;
 

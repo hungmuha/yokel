@@ -38,6 +38,8 @@ router.get('/callback',
 
     console.log(req.user);
 
+    
+
     res.redirect(req.session.returnTo || '/users-page/1');
   }
 );
@@ -59,7 +61,7 @@ router.get('/users-page/:id', locationController.show);
 
 router.post('/users-page/', commentController.create);
 
-router.delete('/users-page/:locationId', commentController.destroy);
+router.delete('/users-page/:id', commentController.destroy);
 
 
 

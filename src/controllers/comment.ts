@@ -2,11 +2,11 @@ import { db } from '../models';
 var Comment = db.models.Comment;
 var Location = db.models.Location;
 
-function index(req, res) {
-	Comment.findAll().then(function(comment) {
-		res.json(comment);
-	});
-}
+// function index(req, res) {
+// 	Comment.findAll().then(function(comment) {
+// 		res.json(comment);
+// 	});
+// }
 
 function show(req, res) {
   Comment.findById(req.params.id)
@@ -18,14 +18,15 @@ function show(req, res) {
 
 function create(req, res) {
 	Comment.create(req.body).then(function(comment){
-    if(!comment) {res.send(res, "not saved")};
+    if(!comment) res.send(res, "not saved");
     else {
       res.json(comment);
       Location.findById(comment.location_id)
-      .then(function(comment.comment_id,location){
-      if(!location) res.send(res, "not found");
-      else {location.comment_id.push(comment.comment_id)}
-    });
+      .then(function(comment,location){
+        if(!location) res.send(res, "not found");
+        else {location.comment_id.push(comment.comment_id)};
+      });
+    }
   });
 }
 
@@ -56,6 +57,6 @@ const commentController = <any>{};
   commentController.update= update;
   commentController.create= create;
   commentController.show= show;
-  commentController.index= index;
+  // commentController.index= index;
 
 export {commentController};
