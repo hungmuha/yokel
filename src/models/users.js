@@ -2,9 +2,9 @@
 module.exports = function(sequelize, Sequelize) {
 
 	var model = sequelize.define("user", {
-		id:{
+		user_id:{
 			type: Sequelize.INTEGER,
-			field:'id',
+			field:'user_id',
 			primaryKey: true,
 			autoIncrement: true,
 			allowNull:false
@@ -14,9 +14,9 @@ module.exports = function(sequelize, Sequelize) {
 			field:'username',
 			allowNull:false
 		},
-		locationId:{
+		location_Id:{
 			type: Sequelize.INTEGER,
-			field: 'locationId',
+			field: 'location_Id',
 			allowNull:false
 		}
 

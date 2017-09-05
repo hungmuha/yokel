@@ -3,6 +3,7 @@ import * as passport from 'passport';
 var router = express.Router();
 import {commentController} from '../controllers/comment';
 import {locationController} from '../controllers/location';
+import { userController } from '../controllers/user';
 
 
 const env = {

@@ -9,7 +9,7 @@ import { CommentsService } from '../users-page/comments.service';
 })
 export class CommentLocationComponent implements OnInit {
 
-oneLocation;
+
 
 // comments = [
 // 	{
@@ -49,7 +49,8 @@ oneLocation;
 // ];
 
 allLocations = [];
-
+newComment;
+oneLocation;
   deleteComment(deletedComment) {
     this.commentService.deleteComment(deletedComment)
     .subscribe(response => {
@@ -61,8 +62,8 @@ allLocations = [];
 
 
   constructor(
-  	private route: ActivatedRoute,
-  	private commentsService = CommentsService
+  	private route : ActivatedRoute,
+  	private commentsService : CommentsService
   ) { }
 
   ngOnInit() {
@@ -75,7 +76,7 @@ allLocations = [];
   	});
   }
 
-   saveManager(newComment) {
+   saveComment(newComment) {
       console.log("saving manager");
       console.log(newComment);
       this.commentsService.saveComment(newComment)

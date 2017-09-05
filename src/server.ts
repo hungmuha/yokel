@@ -11,6 +11,7 @@ import * as cookieParser from 'cookie-parser';
 import * as Auth0Strategy   from 'passport-auth0';
 import {session} from 'express-session';
 import * as passport from 'passport';
+
 import { router as yokelRoutes } from './config/index';
 
 // const home = require('./config/main');
@@ -49,7 +50,7 @@ passport.deserializeUser(function(user, done) {
   done(null, user);
 });
 
-// import { router as yokelRouter} from './config/main';
+
 
 app.use(passport.initialize());
 app.use(passport.session());

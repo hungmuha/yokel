@@ -26,6 +26,7 @@ function show(req, res) {
 
 const locationController = <any>{};
 	locationController.index = index;
+  locationController.create = create;
 	locationController.show = show;
 
 export {locationController};

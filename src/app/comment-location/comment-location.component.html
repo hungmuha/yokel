@@ -27,8 +27,8 @@
 						<!-- comment 1 -->
 						<li *ngFor = "let comment of oneLocation.comments">
 					        <div class="commentText">
-					          <p >{{comment.content}}</p> 
-					          <span class="date sub-text"> <strong>{{comment.userId}}</strong></span>
+					          <p >{{comment.comment_field}}</p> 
+					          <span class="date sub-text"> <strong>{{comment.user_Id}}</strong></span>
 					          <form (ngSubmit)="deleteComment(comment)">
 			          			<input type="submit" value="Delete"/>
 			        		  </form>

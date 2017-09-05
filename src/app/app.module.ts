@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 import { AppComponent } from './app.component';
@@ -11,9 +13,12 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { CommentsService } from './users-page/comments.service';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { CommentLocationComponent } from './comment-location/comment-location.component';
+
+import { CommentsService } from './users-page/comments.service';
+
+
 
 const appRoutes: Routes = [
   
@@ -43,7 +48,9 @@ const appRoutes: Routes = [
   RouterModule.forRoot(
     appRoutes
     ),
-  HttpModule
+  HttpModule,
+  FormsModule,
+  CommonModule
   ],
   providers: [CommentsService],
   bootstrap: [AppComponent]

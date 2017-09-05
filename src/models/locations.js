@@ -19,10 +19,10 @@ module.exports = function(sequelize, Sequelize){
 			field: 'state',
 			allowNull: true
 		},
-		commentId:{
+		comment_Id:{
 			type: Sequelize.ARRAY(Sequelize.INTEGER)
 		},
-		userId: {
+		user_Id: {
 			type: Sequelize.ARRAY(Sequelize.INTEGER)
 		}
 
