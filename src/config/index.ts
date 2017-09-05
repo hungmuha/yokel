@@ -37,7 +37,7 @@ router.get('/callback',
 
     console.log(req.user);
 
-    res.redirect(req.session.returnTo || '/users-page');
+    res.redirect(req.session.returnTo || '/users-page/1');
   }
 );
 
@@ -54,9 +54,9 @@ router.get('/failure', function(req, res) {
 
 
 
-router.get('/users-page/:locationId', locationController.show);
+router.get('/users-page/:id', locationController.show);
 
-router.post('/users-page/:locationId', commentController.create);
+router.post('/users-page/', commentController.create);
 
 router.delete('/users-page/:locationId', commentController.destroy);
 

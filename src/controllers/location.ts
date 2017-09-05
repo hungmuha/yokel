@@ -1,11 +1,13 @@
 import { db } from '../models';
 var Location = db.models.Location;
+var Comment = db.models.Comment;
 
 function index(req, res) {
 	Location.findAll().then(function(location) {
 		res.json(location);
 	});
 }
+
 
 function create(req, res) {
 	Location.create(req.body).then(function(location){
@@ -15,7 +17,7 @@ function create(req, res) {
 }
 
 function show(req, res) {
-  Location.findById(req.params.id)
+  Location.findById(req.params.id,{include: Comment})
   .then(function(location){
     if(!location) res.send(res, "not found");
     else res.json(location);

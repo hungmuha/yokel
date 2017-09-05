@@ -21,24 +21,23 @@
 			<h5 class="taskDescription">The most AMAZING spot in Aspen is the Maroon Bells. You have to check it out, and make sure to bring your camera!</h5>
 		</div> -->
 	
-		<div class="container">
-			<div class="actionBox">
-				<ul class="commentList">
-					<!-- comment 1 -->
-					<li *ngFor = "let comment of oneLocation.comments">
-		        <div class="commentText">
-		          <p >{{comment.content}}</p> 
-		          <span class="date sub-text">{{comment.date}} <strong>{{comment.userId}}</strong></span>
-		          <form (ngSubmit)="deleteComment(comment)">
-          			<input type="submit" value="Delete"/>
-        		  </form>
-		        </div>
-		      </li>
-		      <!-- comments 2 --> 
-		      	
-		    </ul>
-		  </div>
-		  </div>
+			<div class="container">
+				<div class="actionBox">
+					<ul class="commentList">
+						<!-- comment 1 -->
+						<li *ngFor = "let comment of oneLocation.comments">
+					        <div class="commentText">
+					          <p >{{comment.content}}</p> 
+					          <span class="date sub-text"> <strong>{{comment.userId}}</strong></span>
+					          <form (ngSubmit)="deleteComment(comment)">
+			          			<input type="submit" value="Delete"/>
+			        		  </form>
+					        </div>
+			     		 </li>
+			      <!-- comments 2 -->   	
+			    	</ul>
+			  </div>
+			</div>
 		</div>
 	</div>
 	<!-- leave comment form -->

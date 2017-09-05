@@ -1,5 +1,6 @@
 import { db } from '../models';
 var Comment = db.models.Comment;
+var Location = db.models.Location;
 
 function index(req, res) {
 	Comment.findAll().then(function(comment) {
@@ -17,8 +18,14 @@ function show(req, res) {
 
 function create(req, res) {
 	Comment.create(req.body).then(function(comment){
-    if(!comment) res.send(res, "not saved");
-    else res.json(comment);
+    if(!comment) {res.send(res, "not saved")};
+    else {
+      res.json(comment);
+      Location.findById(comment.location_id)
+      .then(function(comment.comment_id,location){
+      if(!location) res.send(res, "not found");
+      else {location.comment_id.push(comment.comment_id)}
+    });
   });
 }
 

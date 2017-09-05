@@ -17,7 +17,7 @@ module.exports = function(sequelize, Sequelize){
 		state: {
 			type: Sequelize.STRING,
 			field: 'state',
-			allowNull: false
+			allowNull: true
 		},
 		commentId:{
 			type: Sequelize.ARRAY(Sequelize.INTEGER)
