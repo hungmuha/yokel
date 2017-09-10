@@ -2,6 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var express = require("express");
 var passport = require("passport");
+var models_1 = require("../models");
+var User = models_1.db.models.User;
 var router = express.Router();
 exports.router = router;
 var comment_1 = require("../controllers/comment");
@@ -28,9 +30,20 @@ router.get('/logout', function (req, res) {
 router.get('/callback', passport.authenticate('auth0', {
     failureRedirect: '/failure'
 }), function (req, res) {
-    console.log(req.user._json.sub);
+    console.log(req.user._json.name);
     console.log(req.user);
-    res.redirect(req.session.returnTo || '/users-page/1');
+    var name = req.user._json.name;
+    User.findOrCreate({
+        where: {
+            username: name
+        }
+    }).spread(function (user, created) {
+        console.log(user.get({
+            plain: true
+        }));
+        console.log(created);
+    });
+    res.redirect(req.session.returnTo || '/users-page');
 });
 router.get('/failure', function (req, res) {
     var error = req.flash("error");

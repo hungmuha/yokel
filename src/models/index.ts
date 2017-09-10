@@ -6,7 +6,8 @@ var User = sequelize.import('./users');
 var Comment = sequelize.import('./comments');
 var Location = sequelize.import('./locations');
 
-// User.hasMany(Comment);
+User.hasMany(Comment);
+Comment.belongsTo(User);
 Comment.belongsTo(Location);
 Location.hasMany(Comment);
 // Location.hasMany(User);

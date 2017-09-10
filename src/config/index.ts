@@ -1,5 +1,7 @@
 import * as express from 'express';
 import * as passport from 'passport';
+import { db } from '../models';
+var User = db.models.User;
 var router = express.Router();
 import {commentController} from '../controllers/comment';
 import {locationController} from '../controllers/location';
@@ -34,13 +36,21 @@ router.get('/callback',
     failureRedirect: '/failure'
   }),
   function(req, res) {
-    console.log(req.user._json.sub);
-
+    console.log(req.user._json.name);
     console.log(req.user);
+    var name = req.user._json.name;
+    User.findOrCreate({
+        where: {
+          username: name
+        }
 
-    
+      }).spread((user, created) => {
+    console.log(user.get({
+      plain: true
+    }))
+    console.log(created);})
 
-    res.redirect(req.session.returnTo || '/users-page/1');
+    res.redirect(req.session.returnTo || '/users-page');
   }
 );
 

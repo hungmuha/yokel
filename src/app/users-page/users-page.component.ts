@@ -37,12 +37,10 @@ export class UsersPageComponent implements OnInit {
   // - USE WHEN CONNECTED TO BACKEND -
   // Comment= <any>{};
 
-  // constructor(
-  // 	private route: ActivatedRoute,
-  // 	private commentsService : CommentsService,
-
-  // ) {this.newComment = new comment();
-  // }
+  constructor(
+  	private route: ActivatedRoute,
+  	private commentsService : CommentsService,
+  ) {}
 
   ngOnInit() {
   	// this.route.params.forEach(param => {

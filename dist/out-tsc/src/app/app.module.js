@@ -21,7 +21,7 @@ var appRoutes = [
     { path: 'login-page', component: login_page_component_1.LoginPageComponent },
     { path: 'sign-up', component: sign_up_component_1.SignUpComponent },
     { path: 'about-page', component: about_page_component_1.AboutPageComponent },
-    { path: 'users-page/:id', component: users_page_component_1.UsersPageComponent },
+    { path: 'users-page', component: users_page_component_1.UsersPageComponent },
     { path: 'profile-page', component: profile_page_component_1.ProfilePageComponent }
 ];
 var AppModule = (function () {

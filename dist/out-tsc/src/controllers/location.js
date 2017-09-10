@@ -27,7 +27,7 @@ function show(req, res) {
 }
 var locationController = {};
 exports.locationController = locationController;
-// locationController.index = index;
+//locationController.index = index;
 locationController.create = create;
 locationController.show = show;
 //# sourceMappingURL=location.js.map
