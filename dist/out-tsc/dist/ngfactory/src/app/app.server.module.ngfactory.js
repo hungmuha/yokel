@@ -15,69 +15,87 @@ var i5 = require("./sign-up/sign-up.component.ngfactory");
 var i6 = require("./about-page/about-page.component.ngfactory");
 var i7 = require("./users-page/users-page.component.ngfactory");
 var i8 = require("./profile-page/profile-page.component.ngfactory");
-var i9 = require("./app.component.ngfactory");
-var i10 = require("@angular/http");
-var i11 = require("@angular/platform-server");
-var i12 = require("@angular/common/http");
-var i13 = require("@angular/common");
-var i14 = require("@angular/platform-browser");
-var i15 = require("@angular/animations/browser");
-var i16 = require("@angular/platform-browser/animations");
-var i17 = require("@angular/animations");
-var i18 = require("@angular/forms");
-var i19 = require("@angular/router");
-var i20 = require("../../../../src/app/users-page/comments.service");
-var i21 = require("../../../../src/app/landing-page/landing-page.component");
-var i22 = require("../../../../src/app/login-page/login-page.component");
-var i23 = require("../../../../src/app/sign-up/sign-up.component");
-var i24 = require("../../../../src/app/about-page/about-page.component");
-var i25 = require("../../../../src/app/users-page/users-page.component");
-var i26 = require("../../../../src/app/profile-page/profile-page.component");
-var i27 = require("../../../../src/app/app.module");
+var i9 = require("./vail/vail.component.ngfactory");
+var i10 = require("./telluride/telluride.component.ngfactory");
+var i11 = require("./beaver-creek/beaver-creek.component.ngfactory");
+var i12 = require("./fort-collins/fort-collins.component.ngfactory");
+var i13 = require("./denver/denver.component.ngfactory");
+var i14 = require("./aspen/aspen.component.ngfactory");
+var i15 = require("./app.component.ngfactory");
+var i16 = require("@angular/http");
+var i17 = require("@angular/platform-server");
+var i18 = require("@angular/common/http");
+var i19 = require("@angular/common");
+var i20 = require("@angular/platform-browser");
+var i21 = require("@angular/animations/browser");
+var i22 = require("@angular/platform-browser/animations");
+var i23 = require("@angular/animations");
+var i24 = require("@angular/forms");
+var i25 = require("@angular/router");
+var i26 = require("../../../../src/app/users-page/comments.service");
+var i27 = require("../../../../src/app/landing-page/landing-page.component");
+var i28 = require("../../../../src/app/login-page/login-page.component");
+var i29 = require("../../../../src/app/sign-up/sign-up.component");
+var i30 = require("../../../../src/app/about-page/about-page.component");
+var i31 = require("../../../../src/app/users-page/users-page.component");
+var i32 = require("../../../../src/app/profile-page/profile-page.component");
+var i33 = require("../../../../src/app/vail/vail.component");
+var i34 = require("../../../../src/app/telluride/telluride.component");
+var i35 = require("../../../../src/app/beaver-creek/beaver-creek.component");
+var i36 = require("../../../../src/app/fort-collins/fort-collins.component");
+var i37 = require("../../../../src/app/denver/denver.component");
+var i38 = require("../../../../src/app/aspen/aspen.component");
+var i39 = require("../../../../src/app/app.module");
 exports.AppServerModuleNgFactory = i0.ɵcmf(i1.AppServerModule, [i2.AppComponent], function (_l) {
     return i0.ɵmod([i0.ɵmpd(512, i0.ComponentFactoryResolver, i0.ɵCodegenComponentFactoryResolver, [[8, [i3.LandingPageComponentNgFactory, i4.LoginPageComponentNgFactory, i5.SignUpComponentNgFactory,
                     i6.AboutPageComponentNgFactory, i7.UsersPageComponentNgFactory, i8.ProfilePageComponentNgFactory,
-                    i9.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]),
-        i0.ɵmpd(4608, i10.BrowserXhr, i11.ɵc, []), i0.ɵmpd(4608, i10.ResponseOptions, i10.BaseResponseOptions, []), i0.ɵmpd(4608, i10.XSRFStrategy, i11.ɵd, []), i0.ɵmpd(4608, i10.XHRBackend, i10.XHRBackend, [i10.BrowserXhr,
-            i10.ResponseOptions, i10.XSRFStrategy]), i0.ɵmpd(4608, i10.RequestOptions, i10.BaseRequestOptions, []), i0.ɵmpd(5120, i10.Http, i11.ɵe, [i10.XHRBackend,
-            i10.RequestOptions]), i0.ɵmpd(4608, i12.HttpXsrfTokenExtractor, i12.ɵg, [i13.DOCUMENT, i0.PLATFORM_ID, i12.ɵe]), i0.ɵmpd(4608, i12.ɵh, i12.ɵh, [i12.HttpXsrfTokenExtractor,
-            i12.ɵf]), i0.ɵmpd(5120, i12.HTTP_INTERCEPTORS, function (p0_0) {
+                    i9.VailComponentNgFactory, i10.TellurideComponentNgFactory, i11.BeaverCreekComponentNgFactory,
+                    i12.FortCollinsComponentNgFactory, i13.DenverComponentNgFactory, i14.AspenComponentNgFactory,
+                    i15.AppComponentNgFactory]], [3, i0.ComponentFactoryResolver], i0.NgModuleRef]),
+        i0.ɵmpd(4608, i16.BrowserXhr, i17.ɵc, []), i0.ɵmpd(4608, i16.ResponseOptions, i16.BaseResponseOptions, []), i0.ɵmpd(4608, i16.XSRFStrategy, i17.ɵd, []), i0.ɵmpd(4608, i16.XHRBackend, i16.XHRBackend, [i16.BrowserXhr,
+            i16.ResponseOptions, i16.XSRFStrategy]), i0.ɵmpd(4608, i16.RequestOptions, i16.BaseRequestOptions, []), i0.ɵmpd(5120, i16.Http, i17.ɵe, [i16.XHRBackend,
+            i16.RequestOptions]), i0.ɵmpd(4608, i18.HttpXsrfTokenExtractor, i18.ɵg, [i19.DOCUMENT, i0.PLATFORM_ID, i18.ɵe]), i0.ɵmpd(4608, i18.ɵh, i18.ɵh, [i18.HttpXsrfTokenExtractor,
+            i18.ɵf]), i0.ɵmpd(5120, i18.HTTP_INTERCEPTORS, function (p0_0) {
             return [p0_0];
-        }, [i12.ɵh]), i0.ɵmpd(4608, i12.XhrFactory, i11.ɵc, []), i0.ɵmpd(4608, i12.HttpXhrBackend, i12.HttpXhrBackend, [i12.XhrFactory]), i0.ɵmpd(6144, i12.HttpBackend, null, [i12.HttpXhrBackend]), i0.ɵmpd(5120, i12.HttpHandler, i11.ɵf, [i12.HttpBackend, [2, i12.HTTP_INTERCEPTORS]]), i0.ɵmpd(4608, i12.HttpClient, i12.HttpClient, [i12.HttpHandler]), i0.ɵmpd(4608, i12.ɵd, i12.ɵd, []),
-        i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵm, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i13.NgLocalization, i13.NgLocaleLocalization, [i0.LOCALE_ID]), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵk, []), i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵl, []),
-        i0.ɵmpd(4608, i14.DomSanitizer, i14.ɵe, [i13.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i14.DomSanitizer]), i0.ɵmpd(4608, i14.HAMMER_GESTURE_CONFIG, i14.HammerGestureConfig, []), i0.ɵmpd(5120, i14.EVENT_MANAGER_PLUGINS, function (p0_0, p1_0, p2_0, p2_1) {
-            return [new i14.ɵDomEventsPlugin(p0_0), new i14.ɵKeyEventsPlugin(p1_0),
-                new i14.ɵHammerGesturesPlugin(p2_0, p2_1)];
-        }, [i13.DOCUMENT, i13.DOCUMENT, i13.DOCUMENT, i14.HAMMER_GESTURE_CONFIG]),
-        i0.ɵmpd(4608, i14.EventManager, i14.EventManager, [i14.EVENT_MANAGER_PLUGINS,
-            i0.NgZone]), i0.ɵmpd(135680, i14.ɵDomSharedStylesHost, i14.ɵDomSharedStylesHost, [i13.DOCUMENT]), i0.ɵmpd(4608, i14.ɵDomRendererFactory2, i14.ɵDomRendererFactory2, [i14.EventManager, i14.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i11.ɵb, i11.ɵb, [i14.DOCUMENT, [2, i14.ɵTRANSITION_ID]]), i0.ɵmpd(6144, i14.ɵSharedStylesHost, null, [i11.ɵb]), i0.ɵmpd(4608, i11.ɵServerRendererFactory2, i11.ɵServerRendererFactory2, [i0.NgZone, i14.DOCUMENT, i14.ɵSharedStylesHost]), i0.ɵmpd(4608, i15.AnimationDriver, i15.ɵNoopAnimationDriver, []), i0.ɵmpd(5120, i15.ɵAnimationStyleNormalizer, i16.ɵd, []), i0.ɵmpd(4608, i15.ɵAnimationEngine, i16.ɵb, [i15.AnimationDriver,
-            i15.ɵAnimationStyleNormalizer]), i0.ɵmpd(5120, i0.RendererFactory2, i11.ɵa, [i11.ɵServerRendererFactory2, i15.ɵAnimationEngine, i0.NgZone]), i0.ɵmpd(4352, i0.Testability, null, []), i0.ɵmpd(4608, i14.Meta, i14.Meta, [i13.DOCUMENT]), i0.ɵmpd(4608, i14.Title, i14.Title, [i13.DOCUMENT]), i0.ɵmpd(4608, i17.AnimationBuilder, i16.ɵBrowserAnimationBuilder, [i0.RendererFactory2,
-            i14.DOCUMENT]), i0.ɵmpd(4608, i18.ɵi, i18.ɵi, []), i0.ɵmpd(5120, i19.ActivatedRoute, i19.ɵf, [i19.Router]), i0.ɵmpd(4608, i19.NoPreloading, i19.NoPreloading, []), i0.ɵmpd(6144, i19.PreloadingStrategy, null, [i19.NoPreloading]), i0.ɵmpd(135680, i19.RouterPreloader, i19.RouterPreloader, [i19.Router, i0.NgModuleFactoryLoader, i0.Compiler,
-            i0.Injector, i19.PreloadingStrategy]), i0.ɵmpd(4608, i19.PreloadAllModules, i19.PreloadAllModules, []), i0.ɵmpd(5120, i19.ROUTER_INITIALIZER, i19.ɵi, [i19.ɵg]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) {
+        }, [i18.ɵh]), i0.ɵmpd(4608, i18.XhrFactory, i17.ɵc, []), i0.ɵmpd(4608, i18.HttpXhrBackend, i18.HttpXhrBackend, [i18.XhrFactory]), i0.ɵmpd(6144, i18.HttpBackend, null, [i18.HttpXhrBackend]), i0.ɵmpd(5120, i18.HttpHandler, i17.ɵf, [i18.HttpBackend, [2, i18.HTTP_INTERCEPTORS]]), i0.ɵmpd(4608, i18.HttpClient, i18.HttpClient, [i18.HttpHandler]), i0.ɵmpd(4608, i18.ɵd, i18.ɵd, []),
+        i0.ɵmpd(5120, i0.LOCALE_ID, i0.ɵm, [[3, i0.LOCALE_ID]]), i0.ɵmpd(4608, i19.NgLocalization, i19.NgLocaleLocalization, [i0.LOCALE_ID]), i0.ɵmpd(5120, i0.IterableDiffers, i0.ɵk, []), i0.ɵmpd(5120, i0.KeyValueDiffers, i0.ɵl, []),
+        i0.ɵmpd(4608, i20.DomSanitizer, i20.ɵe, [i19.DOCUMENT]), i0.ɵmpd(6144, i0.Sanitizer, null, [i20.DomSanitizer]), i0.ɵmpd(4608, i20.HAMMER_GESTURE_CONFIG, i20.HammerGestureConfig, []), i0.ɵmpd(5120, i20.EVENT_MANAGER_PLUGINS, function (p0_0, p1_0, p2_0, p2_1) {
+            return [new i20.ɵDomEventsPlugin(p0_0), new i20.ɵKeyEventsPlugin(p1_0),
+                new i20.ɵHammerGesturesPlugin(p2_0, p2_1)];
+        }, [i19.DOCUMENT, i19.DOCUMENT, i19.DOCUMENT, i20.HAMMER_GESTURE_CONFIG]),
+        i0.ɵmpd(4608, i20.EventManager, i20.EventManager, [i20.EVENT_MANAGER_PLUGINS,
+            i0.NgZone]), i0.ɵmpd(135680, i20.ɵDomSharedStylesHost, i20.ɵDomSharedStylesHost, [i19.DOCUMENT]), i0.ɵmpd(4608, i20.ɵDomRendererFactory2, i20.ɵDomRendererFactory2, [i20.EventManager, i20.ɵDomSharedStylesHost]), i0.ɵmpd(4608, i17.ɵb, i17.ɵb, [i20.DOCUMENT, [2, i20.ɵTRANSITION_ID]]), i0.ɵmpd(6144, i20.ɵSharedStylesHost, null, [i17.ɵb]), i0.ɵmpd(4608, i17.ɵServerRendererFactory2, i17.ɵServerRendererFactory2, [i0.NgZone, i20.DOCUMENT, i20.ɵSharedStylesHost]), i0.ɵmpd(4608, i21.AnimationDriver, i21.ɵNoopAnimationDriver, []), i0.ɵmpd(5120, i21.ɵAnimationStyleNormalizer, i22.ɵd, []), i0.ɵmpd(4608, i21.ɵAnimationEngine, i22.ɵb, [i21.AnimationDriver,
+            i21.ɵAnimationStyleNormalizer]), i0.ɵmpd(5120, i0.RendererFactory2, i17.ɵa, [i17.ɵServerRendererFactory2, i21.ɵAnimationEngine, i0.NgZone]), i0.ɵmpd(4352, i0.Testability, null, []), i0.ɵmpd(4608, i20.Meta, i20.Meta, [i19.DOCUMENT]), i0.ɵmpd(4608, i20.Title, i20.Title, [i19.DOCUMENT]), i0.ɵmpd(4608, i23.AnimationBuilder, i22.ɵBrowserAnimationBuilder, [i0.RendererFactory2,
+            i20.DOCUMENT]), i0.ɵmpd(4608, i24.ɵi, i24.ɵi, []), i0.ɵmpd(5120, i25.ActivatedRoute, i25.ɵf, [i25.Router]), i0.ɵmpd(4608, i25.NoPreloading, i25.NoPreloading, []), i0.ɵmpd(6144, i25.PreloadingStrategy, null, [i25.NoPreloading]), i0.ɵmpd(135680, i25.RouterPreloader, i25.RouterPreloader, [i25.Router, i0.NgModuleFactoryLoader, i0.Compiler,
+            i0.Injector, i25.PreloadingStrategy]), i0.ɵmpd(4608, i25.PreloadAllModules, i25.PreloadAllModules, []), i0.ɵmpd(5120, i25.ROUTER_INITIALIZER, i25.ɵi, [i25.ɵg]), i0.ɵmpd(5120, i0.APP_BOOTSTRAP_LISTENER, function (p0_0) {
             return [p0_0];
-        }, [i19.ROUTER_INITIALIZER]), i0.ɵmpd(4608, i20.CommentsService, i20.CommentsService, [i10.Http]), i0.ɵmpd(512, i10.HttpModule, i10.HttpModule, []),
-        i0.ɵmpd(512, i12.HttpClientXsrfModule, i12.HttpClientXsrfModule, []),
-        i0.ɵmpd(512, i12.HttpClientModule, i12.HttpClientModule, []), i0.ɵmpd(512, i13.CommonModule, i13.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i14.ɵa, []), i0.ɵmpd(1024, i0.NgProbeToken, function () {
-            return [i19.ɵb()];
+        }, [i25.ROUTER_INITIALIZER]), i0.ɵmpd(4608, i26.CommentsService, i26.CommentsService, [i16.Http]), i0.ɵmpd(512, i16.HttpModule, i16.HttpModule, []),
+        i0.ɵmpd(512, i18.HttpClientXsrfModule, i18.HttpClientXsrfModule, []),
+        i0.ɵmpd(512, i18.HttpClientModule, i18.HttpClientModule, []), i0.ɵmpd(512, i19.CommonModule, i19.CommonModule, []), i0.ɵmpd(1024, i0.ErrorHandler, i20.ɵa, []), i0.ɵmpd(1024, i0.NgProbeToken, function () {
+            return [i25.ɵb()];
         }, []), i0.ɵmpd(256, i0.APP_ID, 'cli-universal-demo', []),
-        i0.ɵmpd(2048, i14.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(512, i19.ɵg, i19.ɵg, [i0.Injector]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p0_1, p1_0, p1_1, p1_2, p2_0) {
-            return [i14.ɵc(p0_0, p0_1), i14.ɵf(p1_0, p1_1, p1_2), i19.ɵh(p2_0)];
-        }, [[2, i14.NgProbeToken], [2, i0.NgProbeToken], i14.ɵTRANSITION_ID, i13.DOCUMENT,
-            i0.Injector, i19.ɵg]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ɵe, i0.ɵe, [i0.NgZone, i0.ɵConsole,
+        i0.ɵmpd(2048, i20.ɵTRANSITION_ID, null, [i0.APP_ID]), i0.ɵmpd(512, i25.ɵg, i25.ɵg, [i0.Injector]), i0.ɵmpd(1024, i0.APP_INITIALIZER, function (p0_0, p0_1, p1_0, p1_1, p1_2, p2_0) {
+            return [i20.ɵc(p0_0, p0_1), i20.ɵf(p1_0, p1_1, p1_2), i25.ɵh(p2_0)];
+        }, [[2, i20.NgProbeToken], [2, i0.NgProbeToken], i20.ɵTRANSITION_ID, i19.DOCUMENT,
+            i0.Injector, i25.ɵg]), i0.ɵmpd(512, i0.ApplicationInitStatus, i0.ApplicationInitStatus, [[2, i0.APP_INITIALIZER]]), i0.ɵmpd(131584, i0.ɵe, i0.ɵe, [i0.NgZone, i0.ɵConsole,
             i0.Injector, i0.ErrorHandler, i0.ComponentFactoryResolver, i0.ApplicationInitStatus]),
-        i0.ɵmpd(2048, i0.ApplicationRef, null, [i0.ɵe]), i0.ɵmpd(512, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(512, i14.BrowserModule, i14.BrowserModule, [[3, i14.BrowserModule]]), i0.ɵmpd(512, i16.NoopAnimationsModule, i16.NoopAnimationsModule, []), i0.ɵmpd(512, i11.ServerModule, i11.ServerModule, []), i0.ɵmpd(1024, i19.ɵa, i19.ɵd, [[3, i19.Router]]),
-        i0.ɵmpd(512, i19.UrlSerializer, i19.DefaultUrlSerializer, []), i0.ɵmpd(512, i19.ChildrenOutletContexts, i19.ChildrenOutletContexts, []),
-        i0.ɵmpd(256, i19.ROUTER_CONFIGURATION, {}, []), i0.ɵmpd(1024, i13.LocationStrategy, i19.ɵc, [i13.PlatformLocation, [2, i13.APP_BASE_HREF], i19.ROUTER_CONFIGURATION]),
-        i0.ɵmpd(512, i13.Location, i13.Location, [i13.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i0.SystemJsNgModuleLoader, [i0.Compiler, [2, i0.SystemJsNgModuleLoaderConfig]]),
-        i0.ɵmpd(1024, i19.ROUTES, function () {
-            return [[{ path: '', component: i21.LandingPageComponent }, { path: 'login-page',
-                        component: i22.LoginPageComponent }, { path: 'sign-up', component: i23.SignUpComponent },
-                    { path: 'about-page', component: i24.AboutPageComponent }, { path: 'users-page',
-                        component: i25.UsersPageComponent }, { path: 'profile-page', component: i26.ProfilePageComponent }]];
-        }, []), i0.ɵmpd(1024, i19.Router, i19.ɵe, [i0.ApplicationRef, i19.UrlSerializer,
-            i19.ChildrenOutletContexts, i13.Location, i0.Injector, i0.NgModuleFactoryLoader,
-            i0.Compiler, i19.ROUTES, i19.ROUTER_CONFIGURATION, [2, i19.UrlHandlingStrategy],
-            [2, i19.RouteReuseStrategy]]), i0.ɵmpd(512, i19.RouterModule, i19.RouterModule, [[2, i19.ɵa], [2, i19.Router]]), i0.ɵmpd(512, i18.ɵba, i18.ɵba, []),
-        i0.ɵmpd(512, i18.FormsModule, i18.FormsModule, []), i0.ɵmpd(512, i27.AppModule, i27.AppModule, []), i0.ɵmpd(512, i1.AppServerModule, i1.AppServerModule, []), i0.ɵmpd(256, i12.ɵe, 'XSRF-TOKEN', []), i0.ɵmpd(256, i12.ɵf, 'X-XSRF-TOKEN', [])]);
+        i0.ɵmpd(2048, i0.ApplicationRef, null, [i0.ɵe]), i0.ɵmpd(512, i0.ApplicationModule, i0.ApplicationModule, [i0.ApplicationRef]), i0.ɵmpd(512, i20.BrowserModule, i20.BrowserModule, [[3, i20.BrowserModule]]), i0.ɵmpd(512, i22.NoopAnimationsModule, i22.NoopAnimationsModule, []), i0.ɵmpd(512, i17.ServerModule, i17.ServerModule, []), i0.ɵmpd(1024, i25.ɵa, i25.ɵd, [[3, i25.Router]]),
+        i0.ɵmpd(512, i25.UrlSerializer, i25.DefaultUrlSerializer, []), i0.ɵmpd(512, i25.ChildrenOutletContexts, i25.ChildrenOutletContexts, []),
+        i0.ɵmpd(256, i25.ROUTER_CONFIGURATION, {}, []), i0.ɵmpd(1024, i19.LocationStrategy, i25.ɵc, [i19.PlatformLocation, [2, i19.APP_BASE_HREF], i25.ROUTER_CONFIGURATION]),
+        i0.ɵmpd(512, i19.Location, i19.Location, [i19.LocationStrategy]), i0.ɵmpd(512, i0.Compiler, i0.Compiler, []), i0.ɵmpd(512, i0.NgModuleFactoryLoader, i0.SystemJsNgModuleLoader, [i0.Compiler, [2, i0.SystemJsNgModuleLoaderConfig]]),
+        i0.ɵmpd(1024, i25.ROUTES, function () {
+            return [[{ path: '', component: i27.LandingPageComponent }, { path: 'login-page',
+                        component: i28.LoginPageComponent }, { path: 'sign-up', component: i29.SignUpComponent },
+                    { path: 'about-page', component: i30.AboutPageComponent }, { path: 'users-page',
+                        component: i31.UsersPageComponent }, { path: 'profile-page', component: i32.ProfilePageComponent },
+                    { path: 'vail', component: i33.VailComponent }, { path: 'telluride', component: i34.TellurideComponent },
+                    { path: 'beaver-creek', component: i35.BeaverCreekComponent }, { path: 'fort-collins',
+                        component: i36.FortCollinsComponent }, { path: 'denver', component: i37.DenverComponent },
+                    { path: 'aspen', component: i38.AspenComponent }]];
+        }, []), i0.ɵmpd(1024, i25.Router, i25.ɵe, [i0.ApplicationRef, i25.UrlSerializer,
+            i25.ChildrenOutletContexts, i19.Location, i0.Injector, i0.NgModuleFactoryLoader,
+            i0.Compiler, i25.ROUTES, i25.ROUTER_CONFIGURATION, [2, i25.UrlHandlingStrategy],
+            [2, i25.RouteReuseStrategy]]), i0.ɵmpd(512, i25.RouterModule, i25.RouterModule, [[2, i25.ɵa], [2, i25.Router]]), i0.ɵmpd(512, i24.ɵba, i24.ɵba, []),
+        i0.ɵmpd(512, i24.FormsModule, i24.FormsModule, []), i0.ɵmpd(512, i39.AppModule, i39.AppModule, []), i0.ɵmpd(512, i1.AppServerModule, i1.AppServerModule, []), i0.ɵmpd(256, i18.ɵe, 'XSRF-TOKEN', []), i0.ɵmpd(256, i18.ɵf, 'X-XSRF-TOKEN', [])]);
 });
 //# sourceMappingURL=app.server.module.ngfactory.js.map

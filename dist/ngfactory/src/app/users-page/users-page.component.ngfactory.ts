@@ -20,7 +20,7 @@ const styles_UsersPageComponent:any[] = [i0.styles];
 export const RenderType_UsersPageComponent:i1.RendererType2 = i1.ɵcrt({encapsulation:0,
     styles:styles_UsersPageComponent,data:{}});
 function View_UsersPageComponent_1(_l:any):i1.ɵViewDefinition {
-  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),25,'div',[['class',
+  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),46,'div',[['class',
       'silkscreen']],(null as any),[[(null as any),'click']],(_v,en,$event) => {
     var ad:boolean = true;
     var _co:any = _v.component;
@@ -29,34 +29,34 @@ function View_UsersPageComponent_1(_l:any):i1.ɵViewDefinition {
       ad = (pd_0 && ad);
     }
     return ad;
-  },(null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n				        '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),22,'ul',[['id','shownNav']],(null as any),
+  },(null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n			        '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),43,'ul',[['id','shownNav']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n				            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,
+          ['\n			            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,
           'li',([] as any[]),(null as any),(null as any),(null as any),(null as any),
-          (null as any))),(_l()(),i1.ɵted((null as any),[' \n				              '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'a',[['routerLink','']],[[1,
-          'target',0],[8,'href',4]],[[(null as any),'click']],(_v,en,$event) => {
-        var ad:boolean = true;
-        var _co:any = _v.component;
-        if (('click' === en)) {
-          const pd_0:any = ((<any>i1.ɵnov(_v,7).onClick($event.button,$event.ctrlKey,
-              $event.metaKey,$event.shiftKey)) !== false);
-          ad = (pd_0 && ad);
-        }
-        if (('click' === en)) {
-          const pd_1:any = ((<any>_co.toggleNav()) !== false);
-          ad = (pd_1 && ad);
-        }
-        return ad;
-      },(null as any),(null as any))),i1.ɵdid(671744,(null as any),0,i2.RouterLinkWithHref,
+          (null as any))),(_l()(),i1.ɵted((null as any),[' \n			              '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'a',[['routerLink','/aspen']],
+          [[1,'target',0],[8,'href',4]],[[(null as any),'click']],(_v,en,$event) => {
+            var ad:boolean = true;
+            var _co:any = _v.component;
+            if (('click' === en)) {
+              const pd_0:any = ((<any>i1.ɵnov(_v,7).onClick($event.button,$event.ctrlKey,
+                  $event.metaKey,$event.shiftKey)) !== false);
+              ad = (pd_0 && ad);
+            }
+            if (('click' === en)) {
+              const pd_1:any = ((<any>_co.toggleNav()) !== false);
+              ad = (pd_1 && ad);
+            }
+            return ad;
+          },(null as any),(null as any))),i1.ɵdid(671744,(null as any),0,i2.RouterLinkWithHref,
           [i2.Router,i2.ActivatedRoute,i3.LocationStrategy],{routerLink:[0,'routerLink']},
           (null as any)),(_l()(),i1.ɵted((null as any),['Aspen'])),(_l()(),i1.ɵted((null as any),
-          ['\n				            '])),(_l()(),i1.ɵted((null as any),['\n				            '])),
+          ['\n			            '])),(_l()(),i1.ɵted((null as any),['\n			            '])),
       (_l()(),i1.ɵeld(0,(null as any),(null as any),5,'li',([] as any[]),(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n				            	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          2,'a',[['routerLink','']],[[1,'target',0],[8,'href',4]],[[(null as any),
+          ['\n			            	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),2,
+          'a',[['routerLink','/vail']],[[1,'target',0],[8,'href',4]],[[(null as any),
               'click']],(_v,en,$event) => {
             var ad:boolean = true;
             var _co:any = _v.component;
@@ -72,12 +72,12 @@ function View_UsersPageComponent_1(_l:any):i1.ɵViewDefinition {
             return ad;
           },(null as any),(null as any))),i1.ɵdid(671744,(null as any),0,i2.RouterLinkWithHref,
           [i2.Router,i2.ActivatedRoute,i3.LocationStrategy],{routerLink:[0,'routerLink']},
-          (null as any)),(_l()(),i1.ɵted((null as any),['Denver'])),(_l()(),i1.ɵted((null as any),
-          ['\n				            '])),(_l()(),i1.ɵted((null as any),['\n				            '])),
+          (null as any)),(_l()(),i1.ɵted((null as any),['Vail'])),(_l()(),i1.ɵted((null as any),
+          ['\n			            '])),(_l()(),i1.ɵted((null as any),['\n			            '])),
       (_l()(),i1.ɵeld(0,(null as any),(null as any),5,'li',([] as any[]),(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n				            	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          2,'a',[['routerLink','']],[[1,'target',0],[8,'href',4]],[[(null as any),
+          ['\n			            	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),2,
+          'a',[['routerLink','/fort-collins']],[[1,'target',0],[8,'href',4]],[[(null as any),
               'click']],(_v,en,$event) => {
             var ad:boolean = true;
             var _co:any = _v.component;
@@ -94,14 +94,83 @@ function View_UsersPageComponent_1(_l:any):i1.ɵViewDefinition {
           },(null as any),(null as any))),i1.ɵdid(671744,(null as any),0,i2.RouterLinkWithHref,
           [i2.Router,i2.ActivatedRoute,i3.LocationStrategy],{routerLink:[0,'routerLink']},
           (null as any)),(_l()(),i1.ɵted((null as any),['Fort Collins'])),(_l()(),
-          i1.ɵted((null as any),['\n				            '])),(_l()(),i1.ɵted((null as any),
-          ['\n				    	'])),(_l()(),i1.ɵted((null as any),['\n				    ']))],(_ck,_v) => {
-    const currVal_2:any = '';
+          i1.ɵted((null as any),['\n			            '])),(_l()(),i1.ɵted((null as any),
+          ['\n			            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,
+          'li',([] as any[]),(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n			            	'])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),2,'a',[['routerLink','/denver']],[[1,
+              'target',0],[8,'href',4]],[[(null as any),'click']],(_v,en,$event) => {
+            var ad:boolean = true;
+            var _co:any = _v.component;
+            if (('click' === en)) {
+              const pd_0:any = ((<any>i1.ɵnov(_v,28).onClick($event.button,$event.ctrlKey,
+                  $event.metaKey,$event.shiftKey)) !== false);
+              ad = (pd_0 && ad);
+            }
+            if (('click' === en)) {
+              const pd_1:any = ((<any>_co.toggleNav()) !== false);
+              ad = (pd_1 && ad);
+            }
+            return ad;
+          },(null as any),(null as any))),i1.ɵdid(671744,(null as any),0,i2.RouterLinkWithHref,
+          [i2.Router,i2.ActivatedRoute,i3.LocationStrategy],{routerLink:[0,'routerLink']},
+          (null as any)),(_l()(),i1.ɵted((null as any),['Denver'])),(_l()(),i1.ɵted((null as any),
+          ['\n			            '])),(_l()(),i1.ɵted((null as any),['\n			            '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),5,'li',([] as any[]),(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['\n			            	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),2,
+          'a',[['routerLink','/beaver-creek']],[[1,'target',0],[8,'href',4]],[[(null as any),
+              'click']],(_v,en,$event) => {
+            var ad:boolean = true;
+            var _co:any = _v.component;
+            if (('click' === en)) {
+              const pd_0:any = ((<any>i1.ɵnov(_v,35).onClick($event.button,$event.ctrlKey,
+                  $event.metaKey,$event.shiftKey)) !== false);
+              ad = (pd_0 && ad);
+            }
+            if (('click' === en)) {
+              const pd_1:any = ((<any>_co.toggleNav()) !== false);
+              ad = (pd_1 && ad);
+            }
+            return ad;
+          },(null as any),(null as any))),i1.ɵdid(671744,(null as any),0,i2.RouterLinkWithHref,
+          [i2.Router,i2.ActivatedRoute,i3.LocationStrategy],{routerLink:[0,'routerLink']},
+          (null as any)),(_l()(),i1.ɵted((null as any),['Beaver Creek'])),(_l()(),
+          i1.ɵted((null as any),['\n			            '])),(_l()(),i1.ɵted((null as any),
+          ['\n			            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),5,
+          'li',([] as any[]),(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n			            	'])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),2,'a',[['routerLink','/telluride']],
+              [[1,'target',0],[8,'href',4]],[[(null as any),'click']],(_v,en,$event) => {
+                var ad:boolean = true;
+                var _co:any = _v.component;
+                if (('click' === en)) {
+                  const pd_0:any = ((<any>i1.ɵnov(_v,42).onClick($event.button,$event.ctrlKey,
+                      $event.metaKey,$event.shiftKey)) !== false);
+                  ad = (pd_0 && ad);
+                }
+                if (('click' === en)) {
+                  const pd_1:any = ((<any>_co.toggleNav()) !== false);
+                  ad = (pd_1 && ad);
+                }
+                return ad;
+              },(null as any),(null as any))),i1.ɵdid(671744,(null as any),0,i2.RouterLinkWithHref,
+          [i2.Router,i2.ActivatedRoute,i3.LocationStrategy],{routerLink:[0,'routerLink']},
+          (null as any)),(_l()(),i1.ɵted((null as any),['Telluride'])),(_l()(),i1.ɵted((null as any),
+          ['\n			            '])),(_l()(),i1.ɵted((null as any),['\n			    	'])),(_l()(),
+          i1.ɵted((null as any),['\n			    ']))],(_ck,_v) => {
+    const currVal_2:any = '/aspen';
     _ck(_v,7,0,currVal_2);
-    const currVal_5:any = '';
+    const currVal_5:any = '/vail';
     _ck(_v,14,0,currVal_5);
-    const currVal_8:any = '';
+    const currVal_8:any = '/fort-collins';
     _ck(_v,21,0,currVal_8);
+    const currVal_11:any = '/denver';
+    _ck(_v,28,0,currVal_11);
+    const currVal_14:any = '/beaver-creek';
+    _ck(_v,35,0,currVal_14);
+    const currVal_17:any = '/telluride';
+    _ck(_v,42,0,currVal_17);
   },(_ck,_v) => {
     const currVal_0:any = i1.ɵnov(_v,7).target;
     const currVal_1:any = i1.ɵnov(_v,7).href;
@@ -112,13 +181,22 @@ function View_UsersPageComponent_1(_l:any):i1.ɵViewDefinition {
     const currVal_6:any = i1.ɵnov(_v,21).target;
     const currVal_7:any = i1.ɵnov(_v,21).href;
     _ck(_v,20,0,currVal_6,currVal_7);
+    const currVal_9:any = i1.ɵnov(_v,28).target;
+    const currVal_10:any = i1.ɵnov(_v,28).href;
+    _ck(_v,27,0,currVal_9,currVal_10);
+    const currVal_12:any = i1.ɵnov(_v,35).target;
+    const currVal_13:any = i1.ɵnov(_v,35).href;
+    _ck(_v,34,0,currVal_12,currVal_13);
+    const currVal_15:any = i1.ɵnov(_v,42).target;
+    const currVal_16:any = i1.ɵnov(_v,42).href;
+    _ck(_v,41,0,currVal_15,currVal_16);
   });
 }
 export function View_UsersPageComponent_0(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵeld(0,(null as any),
-      (null as any),76,'html',[['lang','en']],(null as any),(null as any),(null as any),
+      (null as any),79,'html',[['lang','en']],(null as any),(null as any),(null as any),
       (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),
-      i1.ɵeld(0,(null as any),(null as any),73,'html',([] as any[]),(null as any),
+      i1.ɵeld(0,(null as any),(null as any),77,'html',([] as any[]),(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
       ['\n'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),16,'head',([] as any[]),
       (null as any),(null as any),(null as any),(null as any),(null as any))),(_l()(),
@@ -138,18 +216,18 @@ export function View_UsersPageComponent_0(_l:any):i1.ɵViewDefinition {
           ['rel','stylesheet']],(null as any),(null as any),(null as any),(null as any),
           (null as any))),(_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵted((null as any),
           ['\n  '])),(_l()(),i1.ɵted((null as any),['\n\n'])),(_l()(),i1.ɵted((null as any),
-          ['\n'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),52,'body',([] as any[]),
+          ['\n'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),56,'body',([] as any[]),
           (null as any),(null as any),(null as any),(null as any),(null as any))),
       (_l()(),i1.ɵted((null as any),['\n	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
           1,'nav-bar',([] as any[]),(null as any),(null as any),(null as any),i4.View_NavBarComponent_0,
           i4.RenderType_NavBarComponent)),i1.ɵdid(114688,(null as any),0,i5.NavBarComponent,
           ([] as any[]),(null as any),(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),25,'div',[['class',
+          ['\n	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),27,'div',[['class',
           'container']],(null as any),(null as any),(null as any),(null as any),(null as any))),
       (_l()(),i1.ɵted((null as any),['\n		'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          22,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
+          24,'div',[['class','row']],(null as any),(null as any),(null as any),(null as any),
           (null as any))),(_l()(),i1.ɵted((null as any),['\n			'])),(_l()(),i1.ɵted((null as any),
-          ['\n        	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),17,'div',
+          ['\n        	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),20,'div',
           [['class','col-lg-12']],(null as any),(null as any),(null as any),(null as any),
           (null as any))),(_l()(),i1.ɵted((null as any),['\n        		'])),(_l()(),
           i1.ɵeld(0,(null as any),(null as any),1,'h1',([] as any[]),(null as any),
@@ -158,10 +236,10 @@ export function View_UsersPageComponent_0(_l:any):i1.ɵViewDefinition {
           (null as any),(null as any),1,'div',[['class','tagline']],(null as any),
           (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
           ['Be a local in every city you visit.'])),(_l()(),i1.ɵted((null as any),
-          ['\n						\n\n						'])),(_l()(),i1.ɵted((null as any),['\n				'])),(_l()(),
-          i1.ɵeld(0,(null as any),(null as any),7,'nav',([] as any[]),(null as any),
-              (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n					'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'button',[['class',
+          ['\n						\n		'])),(_l()(),i1.ɵted((null as any),['\n			'])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),7,'nav',([] as any[]),(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['\n				'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'button',[['class',
           'btn btn-primary dropdown-toggle'],['data-toggle','dropdown'],['type','button']],
           (null as any),[[(null as any),'click']],(_v,en,$event) => {
             var ad:boolean = true;
@@ -171,51 +249,71 @@ export function View_UsersPageComponent_0(_l:any):i1.ɵViewDefinition {
               ad = (pd_0 && ad);
             }
             return ad;
-          },(null as any),(null as any))),(_l()(),i1.ɵted((null as any),['where ya ging?'])),
-      (_l()(),i1.ɵted((null as any),['\n				    '])),(_l()(),i1.ɵand(16777216,(null as any),
+          },(null as any),(null as any))),(_l()(),i1.ɵted((null as any),['where ya going?'])),
+      (_l()(),i1.ɵted((null as any),['\n			    '])),(_l()(),i1.ɵand(16777216,(null as any),
           (null as any),1,(null as any),View_UsersPageComponent_1)),i1.ɵdid(16384,
           (null as any),0,i3.NgIf,[i1.ViewContainerRef,i1.TemplateRef],{ngIf:[0,'ngIf']},
-          (null as any)),(_l()(),i1.ɵted((null as any),['\n				'])),(_l()(),i1.ɵted((null as any),
-          [' \n\n			'])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),
-          ['\n\n					\n		'])),(_l()(),i1.ɵted((null as any),['\n	'])),(_l()(),i1.ɵted((null as any),
-          ['\n\n	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),0,'hr',([] as any[]),
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n	'])),(_l()(),i1.ɵted((null as any),['\n	\n'])),
-      (_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          1,'comment-location',([] as any[]),(null as any),(null as any),(null as any),
-          i7.View_CommentLocationComponent_0,i7.RenderType_CommentLocationComponent)),
-      i1.ɵdid(114688,(null as any),0,i8.CommentLocationComponent,[i2.ActivatedRoute,
-          i9.CommentsService],(null as any),(null as any)),(_l()(),i1.ɵted((null as any),
-          ['\n\n	'])),(_l()(),i1.ɵted((null as any),['\n	'])),(_l()(),i1.ɵeld(0,(null as any),
-          (null as any),11,'div',[['class','container-footer']],(null as any),(null as any),
+          (null as any)),(_l()(),i1.ɵted((null as any),['\n			'])),(_l()(),i1.ɵted((null as any),
+          [' \n\n			\n    '])),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),0,'hr',([] as any[]),(null as any),
+              (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['	\n				\n			'])),(_l()(),i1.ɵted((null as any),['\n					\n		'])),(_l()(),
+          i1.ɵted((null as any),['\n	'])),(_l()(),i1.ɵted((null as any),['\n\n\n	'])),
+      (_l()(),i1.ɵted((null as any),['\n	\n'])),(_l()(),i1.ɵted((null as any),['\n'])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'comment-location',([] as any[]),
+          (null as any),(null as any),(null as any),i7.View_CommentLocationComponent_0,
+          i7.RenderType_CommentLocationComponent)),i1.ɵdid(114688,(null as any),0,
+          i8.CommentLocationComponent,[i2.ActivatedRoute,i9.CommentsService],(null as any),
+          (null as any)),(_l()(),i1.ɵted((null as any),['\n	'])),(_l()(),i1.ɵted((null as any),
+          ['\n	'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),15,'div',[['class',
+          'container-footer']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n		'])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),12,'div',[['class','row']],(null as any),(null as any),
           (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n		'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),8,'div',[['class',
-          'row']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n			'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
-          5,'div',[['class','col-lg-12']],(null as any),(null as any),(null as any),
-          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n					'])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),1,'li',[['class','container-footer']],
-          (null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['yokel Ⓒ 2017'])),(_l()(),i1.ɵted((null as any),
-          ['\n					'])),(_l()(),i1.ɵted((null as any),['\n			'])),(_l()(),i1.ɵted((null as any),
-          ['\n		'])),(_l()(),i1.ɵted((null as any),['\n	'])),(_l()(),i1.ɵted((null as any),
-          ['\n\n'])),(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵted((null as any),
-          ['\n\n\n\n\n\n\n\n\n\n\n\n\n\n']))],(_ck,_v) => {
+          ['\n			'])),(_l()(),i1.ɵeld(0,(null as any),(null as any),9,'div',[['class',
+          'col-lg-12']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n					'])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),1,'li',[['class','container-footer']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['yokel & copy 2017'])),(_l()(),i1.ɵted((null as any),['\n					'])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),3,'li',[['class','container-footer']],
+              (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),2,'a',[['routerLink','/about-page']],
+          [[1,'target',0],[8,'href',4]],[[(null as any),'click']],(_v,en,$event) => {
+            var ad:boolean = true;
+            if (('click' === en)) {
+              const pd_0:any = ((<any>i1.ɵnov(_v,74).onClick($event.button,$event.ctrlKey,
+                  $event.metaKey,$event.shiftKey)) !== false);
+              ad = (pd_0 && ad);
+            }
+            return ad;
+          },(null as any),(null as any))),i1.ɵdid(671744,(null as any),0,i2.RouterLinkWithHref,
+          [i2.Router,i2.ActivatedRoute,i3.LocationStrategy],{routerLink:[0,'routerLink']},
+          (null as any)),(_l()(),i1.ɵted((null as any),['About yokel'])),(_l()(),i1.ɵted((null as any),
+          ['\n			'])),(_l()(),i1.ɵted((null as any),['\n		'])),(_l()(),i1.ɵted((null as any),
+          ['\n	'])),(_l()(),i1.ɵted((null as any),['\n\n'])),(_l()(),i1.ɵted((null as any),
+          ['\n']))],(_ck,_v) => {
     var _co:i6.UsersPageComponent = _v.component;
     _ck(_v,26,0);
     const currVal_0:any = _co.navExpanded;
     _ck(_v,48,0,currVal_0);
     _ck(_v,60,0);
-  },(null as any));
+    const currVal_3:any = '/about-page';
+    _ck(_v,74,0,currVal_3);
+  },(_ck,_v) => {
+    const currVal_1:any = i1.ɵnov(_v,74).target;
+    const currVal_2:any = i1.ɵnov(_v,74).href;
+    _ck(_v,73,0,currVal_1,currVal_2);
+  });
 }
 export function View_UsersPageComponent_Host_0(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'app-users-page',
       ([] as any[]),(null as any),(null as any),(null as any),View_UsersPageComponent_0,
       RenderType_UsersPageComponent)),i1.ɵdid(114688,(null as any),0,i6.UsersPageComponent,
-      ([] as any[]),(null as any),(null as any))],(_ck,_v) => {
+      [i2.ActivatedRoute,i9.CommentsService],(null as any),(null as any))],(_ck,_v) => {
     _ck(_v,1,0);
   },(null as any));
 }
 export const UsersPageComponentNgFactory:i1.ComponentFactory<i6.UsersPageComponent> = i1.ɵccf('app-users-page',
     i6.UsersPageComponent,View_UsersPageComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2h1bmdtdWhhbWF0aC9Ib21lV29yay9wcm9qZWN0My95b2tlbC9zcmMvYXBwL3VzZXJzLXBhZ2UvdXNlcnMtcGFnZS5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvaHVuZ211aGFtYXRoL0hvbWVXb3JrL3Byb2plY3QzL3lva2VsL3NyYy9hcHAvdXNlcnMtcGFnZS91c2Vycy1wYWdlLmNvbXBvbmVudC50cyIsIm5nOi8vL1VzZXJzL2h1bmdtdWhhbWF0aC9Ib21lV29yay9wcm9qZWN0My95b2tlbC9zcmMvYXBwL3VzZXJzLXBhZ2UvdXNlcnMtcGFnZS5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2h1bmdtdWhhbWF0aC9Ib21lV29yay9wcm9qZWN0My95b2tlbC9zcmMvYXBwL3VzZXJzLXBhZ2UvdXNlcnMtcGFnZS5jb21wb25lbnQudHMuVXNlcnNQYWdlQ29tcG9uZW50X0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6WyIgIiwiPCFET0NUWVBFIGh0bWw+XG48aHRtbCBsYW5nPVwiZW5cIj5cbjxodG1sPlxuPGhlYWQ+XG5cdDxtZXRhIGNoYXJzZXQ9XCJ1dGYtOFwiPlxuXHQ8dGl0bGU+eW9rZWw8L3RpdGxlPlxuXHQ8IS0tIGdvb2dsZSBmb250IC0tPlxuXHQ8bGluayBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVF1ZXN0cmlhbFwiIHJlbD1cInN0eWxlc2hlZXRcIj5cblx0PCEtLSBMYXRlc3QgY29tcGlsZWQgYW5kIG1pbmlmaWVkIENTUyAtLT5cblx0PG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCI+XG4gIDxsaW5rIHJlbD1cInN0eWxlc2hlZXRcIiBocmVmPVwiaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9ib290c3RyYXAvMy4zLjcvY3NzL2Jvb3RzdHJhcC5taW4uY3NzXCI+XG4gIDxzY3JpcHQgc3JjPVwiaHR0cHM6Ly9hamF4Lmdvb2dsZWFwaXMuY29tL2FqYXgvbGlicy9qcXVlcnkvMy4yLjEvanF1ZXJ5Lm1pbi5qc1wiPjwvc2NyaXB0PlxuICA8c2NyaXB0IHNyYz1cImh0dHBzOi8vbWF4Y2RuLmJvb3RzdHJhcGNkbi5jb20vYm9vdHN0cmFwLzMuMy43L2pzL2Jvb3RzdHJhcC5taW4uanNcIj48L3NjcmlwdD5cblxuPC9oZWFkPlxuPGJvZHk+XG5cdDxuYXYtYmFyPjwvbmF2LWJhcj5cblx0PGRpdiBjbGFzcz1cImNvbnRhaW5lclwiPlxuXHRcdDxkaXYgY2xhc3M9XCJyb3dcIj5cblx0XHRcdDwhLS0gMTIgY29sdW1uIHdpZHRoIC0tPlxuICAgICAgICBcdDxkaXYgY2xhc3M9XCJjb2wtbGctMTJcIj5cbiAgICAgICAgXHRcdDxoMT55b2tlbDwvaDE+XG5cdFx0XHRcdFx0XHQ8ZGl2IGNsYXNzPVwidGFnbGluZVwiPkJlIGEgbG9jYWwgaW4gZXZlcnkgY2l0eSB5b3UgdmlzaXQuPC9kaXY+XG5cdFx0XHRcdFx0XHRcblxuXHRcdFx0XHRcdFx0PCEtLSBidXR0b24gZHJvcGRvd24gLS0+XG5cdFx0XHRcdDxuYXY+XG5cdFx0XHRcdFx0PGJ1dHRvbiBjbGFzcz1cImJ0biBidG4tcHJpbWFyeSBkcm9wZG93bi10b2dnbGVcIiB0eXBlPVwiYnV0dG9uXCIgZGF0YS10b2dnbGU9XCJkcm9wZG93blwiIChjbGljayk9XCJ0b2dnbGVOYXYoKVwiPndoZXJlIHlhIGdpbmc/PC9idXR0b24+XG5cdFx0XHRcdCAgICA8ZGl2IGNsYXNzPVwic2lsa3NjcmVlblwiICpuZ0lmPVwibmF2RXhwYW5kZWRcIiAoY2xpY2spPWRpc21pc3NOYXYoKT5cblx0XHRcdFx0ICAgICAgICA8dWwgaWQ9XCJzaG93bk5hdlwiPlxuXHRcdFx0XHQgICAgICAgICAgICA8bGk+IFxuXHRcdFx0XHQgICAgICAgICAgICAgIDxhIHJvdXRlckxpbms9XCJcIiAoY2xpY2spPXRvZ2dsZU5hdigpPkFzcGVuPC9hPlxuXHRcdFx0XHQgICAgICAgICAgICA8L2xpPlxuXHRcdFx0XHQgICAgICAgICAgICA8bGk+XG5cdFx0XHRcdCAgICAgICAgICAgIFx0PGEgcm91dGVyTGluaz1cIlwiIChjbGljayk9dG9nZ2xlTmF2KCk+RGVudmVyPC9hPlxuXHRcdFx0XHQgICAgICAgICAgICA8L2xpPlxuXHRcdFx0XHQgICAgICAgICAgICA8bGk+XG5cdFx0XHRcdCAgICAgICAgICAgIFx0PGEgcm91dGVyTGluaz1cIlwiIChjbGljayk9dG9nZ2xlTmF2KCk+Rm9ydCBDb2xsaW5zPC9hPlxuXHRcdFx0XHQgICAgICAgICAgICA8L2xpPlxuXHRcdFx0XHQgICAgXHQ8L3VsPlxuXHRcdFx0XHQgICAgPC9kaXY+XG5cdFx0XHRcdDwvbmF2PiBcblxuXHRcdFx0PC9kaXY+XG4gICAgPCEtLSBkcm9wZG93biBidXR0b24gb3ZlciAtLT5cblxuXHRcdFx0XHRcdFxuXHRcdDwvZGl2PlxuXHQ8L2Rpdj5cblxuXHQ8aHI+XG5cdDwhLS0gSEVBREVSIC0tPlxuXHRcbjwhLS0gQ09NTUVOVCBCT1ggLS0+XG48Y29tbWVudC1sb2NhdGlvbj48L2NvbW1lbnQtbG9jYXRpb24+XG5cblx0PCEtLSBGT09URVIgLS0+XG5cdDxkaXYgY2xhc3M9XCJjb250YWluZXItZm9vdGVyXCI+XG5cdFx0PGRpdiBjbGFzcz1cInJvd1wiPlxuXHRcdFx0PGRpdiBjbGFzcz1cImNvbC1sZy0xMlwiPlxuXHRcdFx0XHRcdDxsaSBjbGFzcz1cImNvbnRhaW5lci1mb290ZXJcIj55b2tlbCAmIzk0MDA7IDIwMTc8L2xpPlxuXHRcdFx0XHRcdDwhLS0gPGxpIGNsYXNzPVwiY29udGFpbmVyLWZvb3RlclwiPjxhIHJvdXRlckxpbms9Jy9hYm91dC1wYWdlJz5BYm91dCB5b2tlbDwvYT48L2xpPiAtLT5cblx0XHRcdDwvZGl2PlxuXHRcdDwvZGl2PlxuXHQ8L2Rpdj5cblxuPC9ib2R5PlxuPC9odG1sPlxuXG5cblxuXG5c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
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvdXNlcnMtcGFnZS91c2Vycy1wYWdlLmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy96YWNobWFyYXppdGkvRGVza3RvcC93ZGktd29yay9wcm9qZWN0cy95b2tlbC9zcmMvYXBwL3VzZXJzLXBhZ2UvdXNlcnMtcGFnZS5jb21wb25lbnQudHMiLCJuZzovLy9Vc2Vycy96YWNobWFyYXppdGkvRGVza3RvcC93ZGktd29yay9wcm9qZWN0cy95b2tlbC9zcmMvYXBwL3VzZXJzLXBhZ2UvdXNlcnMtcGFnZS5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvdXNlcnMtcGFnZS91c2Vycy1wYWdlLmNvbXBvbmVudC50cy5Vc2Vyc1BhZ2VDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8IURPQ1RZUEUgaHRtbD5cbjxodG1sIGxhbmc9XCJlblwiPlxuPGh0bWw+XG48aGVhZD5cblx0PG1ldGEgY2hhcnNldD1cInV0Zi04XCI+XG5cdDx0aXRsZT55b2tlbDwvdGl0bGU+XG5cdDwhLS0gZ29vZ2xlIGZvbnQgLS0+XG5cdDxsaW5rIGhyZWY9XCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9UXVlc3RyaWFsXCIgcmVsPVwic3R5bGVzaGVldFwiPlxuXHQ8IS0tIExhdGVzdCBjb21waWxlZCBhbmQgbWluaWZpZWQgQ1NTIC0tPlxuXHQ8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTFcIj5cbiAgPGxpbmsgcmVsPVwic3R5bGVzaGVldFwiIGhyZWY9XCJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjMuNy9jc3MvYm9vdHN0cmFwLm1pbi5jc3NcIj5cbiAgPHNjcmlwdCBzcmM9XCJodHRwczovL2FqYXguZ29vZ2xlYXBpcy5jb20vYWpheC9saWJzL2pxdWVyeS8zLjIuMS9qcXVlcnkubWluLmpzXCI+PC9zY3JpcHQ+XG4gIDxzY3JpcHQgc3JjPVwiaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9ib290c3RyYXAvMy4zLjcvanMvYm9vdHN0cmFwLm1pbi5qc1wiPjwvc2NyaXB0PlxuXG48L2hlYWQ+XG48Ym9keT5cblx0PG5hdi1iYXI+PC9uYXYtYmFyPlxuXHQ8ZGl2IGNsYXNzPVwiY29udGFpbmVyXCI+XG5cdFx0PGRpdiBjbGFzcz1cInJvd1wiPlxuXHRcdFx0PCEtLSAxMiBjb2x1bW4gd2lkdGggLS0+XG4gICAgICAgIFx0PGRpdiBjbGFzcz1cImNvbC1sZy0xMlwiPlxuICAgICAgICBcdFx0PGgxPnlva2VsPC9oMT5cblx0XHRcdFx0XHRcdDxkaXYgY2xhc3M9XCJ0YWdsaW5lXCI+QmUgYSBsb2NhbCBpbiBldmVyeSBjaXR5IHlvdSB2aXNpdC48L2Rpdj5cblx0XHRcdFx0XHRcdFxuXHRcdDwhLS0gYnV0dG9uIGRyb3Bkb3duIC0tPlxuXHRcdFx0PG5hdj5cblx0XHRcdFx0PGJ1dHRvbiBjbGFzcz1cImJ0biBidG4tcHJpbWFyeSBkcm9wZG93bi10b2dnbGVcIiB0eXBlPVwiYnV0dG9uXCIgZGF0YS10b2dnbGU9XCJkcm9wZG93blwiIChjbGljayk9XCJ0b2dnbGVOYXYoKVwiPndoZXJlIHlhIGdvaW5nPzwvYnV0dG9uPlxuXHRcdFx0ICAgIDxkaXYgY2xhc3M9XCJzaWxrc2NyZWVuXCIgKm5nSWY9XCJuYXZFeHBhbmRlZFwiIChjbGljayk9ZGlzbWlzc05hdigpPlxuXHRcdFx0ICAgICAgICA8dWwgaWQ9XCJzaG93bk5hdlwiPlxuXHRcdFx0ICAgICAgICAgICAgPGxpPiBcblx0XHRcdCAgICAgICAgICAgICAgPGEgcm91dGVyTGluaz1cIi9hc3BlblwiIChjbGljayk9dG9nZ2xlTmF2KCk+QXNwZW48L2E+XG5cdFx0XHQgICAgICAgICAgICA8L2xpPlxuXHRcdFx0ICAgICAgICAgICAgPGxpPlxuXHRcdFx0ICAgICAgICAgICAgXHQ8YSByb3V0ZXJMaW5rPVwiL3ZhaWxcIiAoY2xpY2spPXRvZ2dsZU5hdigpPlZhaWw8L2E+XG5cdFx0XHQgICAgICAgICAgICA8L2xpPlxuXHRcdFx0ICAgICAgICAgICAgPGxpPlxuXHRcdFx0ICAgICAgICAgICAgXHQ8YSByb3V0ZXJMaW5rPVwiL2ZvcnQtY29sbGluc1wiIChjbGljayk9dG9nZ2xlTmF2KCk+Rm9ydCBDb2xsaW5zPC9hPlxuXHRcdFx0ICAgICAgICAgICAgPC9saT5cblx0XHRcdCAgICAgICAgICAgIDxsaT5cblx0XHRcdCAgICAgICAgICAgIFx0PGEgcm91dGVyTGluaz1cIi9kZW52ZXJcIiAoY2xpY2spPXRvZ2dsZU5hdigpPkRlbnZlcjwvYT5cblx0XHRcdCAgICAgICAgICAgIDwvbGk+XG5cdFx0XHQgICAgICAgICAgICA8bGk+XG5cdFx0XHQgICAgICAgICAgICBcdDxhIHJvdXRlckxpbms9XCIvYmVhdmVyLWNyZWVrXCIgKGNsaWNrKT10b2dnbGVOYXYoKT5CZWF2ZXIgQ3JlZWs8L2E+XG5cdFx0XHQgICAgICAgICAgICA8L2xpPlxuXHRcdFx0ICAgICAgICAgICAgPGxpPlxuXHRcdFx0ICAgICAgICAgICAgXHQ8YSByb3V0ZXJMaW5rPVwiL3RlbGx1cmlkZVwiIChjbGljayk9dG9nZ2xlTmF2KCk+VGVsbHVyaWRlPC9hPlxuXHRcdFx0ICAgICAgICAgICAgPC9saT5cblx0XHRcdCAgICBcdDwvdWw+XG5cdFx0XHQgICAgPC9kaXY+XG5cdFx0XHQ8L25hdj4gXG5cblx0XHRcdFxuICAgIDwhLS0gZHJvcGRvd24gYnV0dG9uIG92ZXIgLS0+XG4gICAgPGhyPlx0XG5cdFx0XHRcdFxuXHRcdFx0PC9kaXY+XG5cdFx0XHRcdFx0XG5cdFx0PC9kaXY+XG5cdDwvZGl2PlxuXG5cblx0PCEtLSBIRUFERVIgLS0+XG5cdFxuPCEtLSBDT01NRU5UIEJPWCAtLT5cbjxjb21tZW50LWxvY2F0aW9uPjwvY29tbWVudC1sb2NhdGlvbj5cblx0PCEtLSBGT09URVIgLS0+XG5cdDxkaXYgY2xhc3M9XCJjb250YWluZXItZm9vdGVyXCI+XG5cdFx0PGRpdiBjbGFzcz1cInJvd1wiPlxuXHRcdFx0PGRpdiBjbGFzcz1cImNvbC1sZy0xMlwiPlxuXHRcdFx0XHRcdDxsaSBjbGFzcz1cImNvbnRhaW5lci1mb290ZXJcIj55b2tlbCAmIGNvcHkgMjAxNzwvbGk+XG5cdFx0XHRcdFx0PGxpIGNsYXNzPVwiY29udGFpbmVyLWZvb3RlclwiPjxhIHJvdXRlckxpbms9Jy9hYm91dC1wYWdlJz5BYm91dCB5b2tlbDwvYT48L2xpPlxuXHRcdFx0PC9kaXY+XG5cdFx0PC9kaXY+XG5cdDwvZGl2PlxuXG48L2JvZHk+XG48L2h0bWw+IiwiPGFwcC11c2Vycy1wYWdlPjwvYXBwLXVzZXJzLXBhZ2U+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkMyQk87TUFBQTtJQUFBO0lBQUE7SUFBNEM7TUFBQTtNQUFBO0lBQUE7SUFBNUM7RUFBQSxnQ0FBaUU7TUFDN0Q7VUFBQSwwREFBa0I7VUFBQSx3QkFDZDtVQUFBO1VBQUEsZ0JBQUk7TUFDRjtVQUFBO1lBQUE7WUFBQTtZQUFBO2NBQUE7a0JBQUE7Y0FBQTtZQUFBO1lBQXVCO2NBQUE7Y0FBQTtZQUFBO1lBQXZCO1VBQUEsdUNBQUE7VUFBQTtVQUFBLGVBQTJDLDBDQUFTO1VBQUEsd0JBQ2pEO01BQ0w7VUFBQSwwREFBSTtVQUFBLHlCQUNIO1VBQUE7Y0FBQTtZQUFBO1lBQUE7WUFBQTtjQUFBO2tCQUFBO2NBQUE7WUFBQTtZQUFzQjtjQUFBO2NBQUE7WUFBQTtZQUF0QjtVQUFBLHVDQUFBO1VBQUE7VUFBQSxlQUEwQyx5Q0FBUTtVQUFBLHdCQUM5QztNQUNMO1VBQUEsMERBQUk7VUFBQSx5QkFDSDtVQUFBO2NBQUE7WUFBQTtZ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
