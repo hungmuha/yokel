@@ -65,11 +65,11 @@ router.get('/failure', function(req, res) {
 });
 
 
-
+router.get('/users-page/', locationController.index);
 
 router.get('/users-page/:id', locationController.show);
 
-router.post('/users-page/', commentController.create);
+router.post('/users-page/:id', commentController.create);
 
 router.delete('/users-page/:id', commentController.destroy);
 

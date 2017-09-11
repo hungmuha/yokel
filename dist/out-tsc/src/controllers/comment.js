@@ -23,15 +23,11 @@ function create(req, res) {
             res.send(res, "not saved");
         else {
             res.json(comment);
-            Location.findById(comment.location_id)
-                .then(function (comment, location) {
-                if (!location)
-                    res.send(res, "not found");
-                else {
-                    location.comment_id.push(comment.comment_id);
-                }
-                ;
-            });
+            // Location.findById(comment.location_id)
+            // .then(function(comment,location){
+            //   if(!location) res.send(res, "not found");
+            //   else {location.comment_id.push(comment.comment_id)};
+            // });
         }
     });
 }

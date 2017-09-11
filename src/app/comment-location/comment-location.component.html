@@ -3,7 +3,7 @@
 			<!-- 12 column width -->
         	<div class="col-lg-12" *ngIf="oneLocation">
         		<h2>{{oneLocation.city}},{{ oneLocation.state}}</h2>
-				<span class="date sub-text" (ngModel)="newComment.location_id">{{oneLocation.location_id}}</span>
+				<span class="date sub-text" (ngModel)="newComment.locationId">{{oneLocation.locationId}}</span>
 				<p>Today there's a high of 68&deg; and sunny</p>
 			</div>
 		</div>
@@ -28,7 +28,7 @@
 						<li *ngFor = "let comment of oneLocation.comments">
 					        <div class="commentText">
 					          <p >{{comment.comment_field}}</p> 
-					          <span class="date sub-text"> <strong>{{comment.user_Id}}</strong></span>
+					          <span class="date sub-text"> <strong>{{comment.userId}}</strong></span>
 					          <form (ngSubmit)="deleteComment(comment)">
 			          			<input type="submit" value="Delete"/>
 			        		  </form>

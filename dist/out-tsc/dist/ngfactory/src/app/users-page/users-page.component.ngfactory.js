@@ -19,8 +19,36 @@ var i9 = require("../../../../../src/app/users-page/comments.service");
 var styles_UsersPageComponent = [i0.styles];
 exports.RenderType_UsersPageComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_UsersPageComponent, data: {} });
+function View_UsersPageComponent_2(_l) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 9, 'ul', [['id', 'shownNav']], null, null, null, null, null)), (_l()(),
+            i1.ɵted(null, ['\n				            '])), (_l()(), i1.ɵeld(0, null, null, 5, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, [' \n				              '])),
+        (_l()(), i1.ɵeld(0, null, null, 2, 'a', [], [[1, 'target',
+                0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
+            var ad = true;
+            var _co = _v.component;
+            if (('click' === en)) {
+                var pd_0 = (i1.ɵnov(_v, 5).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+                ad = (pd_0 && ad);
+            }
+            if (('click' === en)) {
+                var pd_1 = (_co.toggleNav() !== false);
+                ad = (pd_1 && ad);
+            }
+            return ad;
+        }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n				            '])), (_l()(), i1.ɵted(null, ['\n				           '])),
+        (_l()(), i1.ɵted(null, ['\n				    	']))], function (_ck, _v) {
+        var currVal_2 = i1.ɵinlineInterpolate(1, '/user-page/', _v.context.$implicit.id, '');
+        _ck(_v, 5, 0, currVal_2);
+    }, function (_ck, _v) {
+        var currVal_0 = i1.ɵnov(_v, 5).target;
+        var currVal_1 = i1.ɵnov(_v, 5).href;
+        _ck(_v, 4, 0, currVal_0, currVal_1);
+        var currVal_3 = _v.context.$implicit.name;
+        _ck(_v, 6, 0, currVal_3);
+    });
+}
 function View_UsersPageComponent_1(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 25, 'div', [['class',
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 4, 'div', [['class',
                 'silkscreen']], null, [[null, 'click']], function (_v, en, $event) {
             var ad = true;
             var _co = _v.component;
@@ -30,67 +58,13 @@ function View_UsersPageComponent_1(_l) {
             }
             return ad;
         }, null, null)), (_l()(), i1.ɵted(null, ['\n				        '])),
-        (_l()(), i1.ɵeld(0, null, null, 22, 'ul', [['id', 'shownNav']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				            '])), (_l()(), i1.ɵeld(0, null, null, 5, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, [' \n				              '])),
-        (_l()(), i1.ɵeld(0, null, null, 2, 'a', [['routerLink', '']], [[1,
-                'target', 0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 7).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('click' === en)) {
-                var pd_1 = (_co.toggleNav() !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['Aspen'])), (_l()(), i1.ɵted(null, ['\n				            '])), (_l()(), i1.ɵted(null, ['\n				            '])),
-        (_l()(), i1.ɵeld(0, null, null, 5, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				            	'])), (_l()(), i1.ɵeld(0, null, null, 2, 'a', [['routerLink', '']], [[1, 'target', 0], [8, 'href', 4]], [[null,
-                'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 14).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('click' === en)) {
-                var pd_1 = (_co.toggleNav() !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['Denver'])), (_l()(), i1.ɵted(null, ['\n				            '])), (_l()(), i1.ɵted(null, ['\n				            '])),
-        (_l()(), i1.ɵeld(0, null, null, 5, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				            	'])), (_l()(), i1.ɵeld(0, null, null, 2, 'a', [['routerLink', '']], [[1, 'target', 0], [8, 'href', 4]], [[null,
-                'click']], function (_v, en, $event) {
-            var ad = true;
-            var _co = _v.component;
-            if (('click' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 21).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
-                ad = (pd_0 && ad);
-            }
-            if (('click' === en)) {
-                var pd_1 = (_co.toggleNav() !== false);
-                ad = (pd_1 && ad);
-            }
-            return ad;
-        }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['Fort Collins'])), (_l()(),
-            i1.ɵted(null, ['\n				            '])), (_l()(), i1.ɵted(null, ['\n				    	'])), (_l()(), i1.ɵted(null, ['\n				    ']))], function (_ck, _v) {
-        var currVal_2 = '';
-        _ck(_v, 7, 0, currVal_2);
-        var currVal_5 = '';
-        _ck(_v, 14, 0, currVal_5);
-        var currVal_8 = '';
-        _ck(_v, 21, 0, currVal_8);
-    }, function (_ck, _v) {
-        var currVal_0 = i1.ɵnov(_v, 7).target;
-        var currVal_1 = i1.ɵnov(_v, 7).href;
-        _ck(_v, 6, 0, currVal_0, currVal_1);
-        var currVal_3 = i1.ɵnov(_v, 14).target;
-        var currVal_4 = i1.ɵnov(_v, 14).href;
-        _ck(_v, 13, 0, currVal_3, currVal_4);
-        var currVal_6 = i1.ɵnov(_v, 21).target;
-        var currVal_7 = i1.ɵnov(_v, 21).href;
-        _ck(_v, 20, 0, currVal_6, currVal_7);
-    });
+        (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UsersPageComponent_2)),
+        i1.ɵdid(802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef,
+            i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n				    ']))], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.allLocations;
+        _ck(_v, 3, 0, currVal_0);
+    }, null);
 }
 function View_UsersPageComponent_0(_l) {
     return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 76, 'html', [['lang', 'en']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n'])), (_l()(),
@@ -134,7 +108,7 @@ function View_UsersPageComponent_0(_l) {
 }
 exports.View_UsersPageComponent_0 = View_UsersPageComponent_0;
 function View_UsersPageComponent_Host_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-users-page', [], null, null, null, View_UsersPageComponent_0, exports.RenderType_UsersPageComponent)), i1.ɵdid(114688, null, 0, i6.UsersPageComponent, [], null, null)], function (_ck, _v) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-users-page', [], null, null, null, View_UsersPageComponent_0, exports.RenderType_UsersPageComponent)), i1.ɵdid(114688, null, 0, i6.UsersPageComponent, [i2.ActivatedRoute, i9.CommentsService], null, null)], function (_ck, _v) {
         _ck(_v, 1, 0);
     }, null);
 }

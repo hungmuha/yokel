@@ -28,13 +28,13 @@ var CommentLocationComponent = (function () {
         });
     };
     CommentLocationComponent.prototype.saveComment = function (newComment) {
-        console.log("saving manager");
+        console.log("saving comment");
         console.log(newComment);
         this.commentsService.saveComment(newComment)
             .subscribe(function (response) {
             console.log(response.json());
             var comment = response.json();
-            window.location.href = "/user-page/" + newComment.location_id;
+            window.location.href = "/user-page/" + newComment.locationId;
         });
     };
     return CommentLocationComponent;

@@ -1,8 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var comments_service_1 = require("./comments.service");
 var UsersPageComponent = (function () {
-    function UsersPageComponent() {
+    // - REMOVE WHEN CONNECTED TO BACKEND -
+    // newComment: comment;
+    // - USE WHEN CONNECTED TO BACKEND -
+    // Comment= <any>{};
+    function UsersPageComponent(route, commentsService) {
+        this.route = route;
+        this.commentsService = commentsService;
         this.navExpanded = false;
     }
     UsersPageComponent.prototype.dismissNav = function () {
@@ -17,23 +25,13 @@ var UsersPageComponent = (function () {
             this.navExpanded = false;
         }
     };
-    // - REMOVE WHEN CONNECTED TO BACKEND -
-    // newComment: comment;
-    // - USE WHEN CONNECTED TO BACKEND -
-    // Comment= <any>{};
-    // constructor(
-    // 	private route: ActivatedRoute,
-    // 	private commentsService : CommentsService,
-    // ) {this.newComment = new comment();
-    // }
     UsersPageComponent.prototype.ngOnInit = function () {
-        // this.route.params.forEach(param => {
-        // 	this.commentsService.getOneLocation(param.id)
-        // 	.subscribe(response=>{
-        // 		console.log(response.json());
-        // 		this.oneLocation = response.json();
-        // 	});
-        // });
+        var _this = this;
+        this.commentsService.getAllLocation()
+            .subscribe(function (response) {
+            console.log(response.json());
+            _this.allLocations = response.json();
+        });
     };
     return UsersPageComponent;
 }());
@@ -52,6 +50,9 @@ UsersPageComponent.decorators = [
             },] },
 ];
 /** @nocollapse */
-UsersPageComponent.ctorParameters = function () { return []; };
+UsersPageComponent.ctorParameters = function () { return [
+    { type: router_1.ActivatedRoute, },
+    { type: comments_service_1.CommentsService, },
+]; };
 exports.UsersPageComponent = UsersPageComponent;
 //# sourceMappingURL=users-page.component.js.map

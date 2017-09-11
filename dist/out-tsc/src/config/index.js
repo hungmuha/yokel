@@ -54,7 +54,8 @@ router.get('/failure', function (req, res) {
         error_description: error_description[0],
     });
 });
+router.get('/users-page/', location_1.locationController.index);
 router.get('/users-page/:id', location_1.locationController.show);
-router.post('/users-page/', comment_1.commentController.create);
+router.post('/users-page/:id', comment_1.commentController.create);
 router.delete('/users-page/:id', comment_1.commentController.destroy);
 //# sourceMappingURL=index.js.map

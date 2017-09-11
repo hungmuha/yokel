@@ -10,9 +10,12 @@ var CommentsService = (function () {
         this.http = http;
         this.baseUrl = 'http://localhost:3000';
     }
-    CommentsService.prototype.getOneLocation = function (location_Id) {
-        console.log(location_Id);
-        return this.http.get(this.baseUrl + "/user-page/" + location_Id);
+    CommentsService.prototype.getAllLocation = function () {
+        return this.http.get(this.baseUrl + "/user-page");
+    };
+    CommentsService.prototype.getOneLocation = function (locationId) {
+        console.log(locationId);
+        return this.http.get(this.baseUrl + "/user-page/" + locationId);
     };
     CommentsService.prototype.deleteComment = function (comment) {
         console.log(comment);
@@ -20,7 +23,7 @@ var CommentsService = (function () {
     };
     CommentsService.prototype.saveComment = function (newComment) {
         console.log(newComment);
-        return this.http.post(this.baseUrl + "/user-page/", newComment);
+        return this.http.post(this.baseUrl + "/user-page", newComment);
     };
     return CommentsService;
 }());

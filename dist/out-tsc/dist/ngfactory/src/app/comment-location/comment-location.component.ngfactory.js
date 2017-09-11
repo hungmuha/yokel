@@ -27,7 +27,7 @@ function View_CommentLocationComponent_1(_l) {
             var ad = true;
             var _co = _v.component;
             if (('ngModel' === en)) {
-                var pd_0 = (_co.newComment.location_id !== false);
+                var pd_0 = (_co.newComment.locationId !== false);
                 ad = (pd_0 && ad);
             }
             return ad;
@@ -46,7 +46,7 @@ function View_CommentLocationComponent_1(_l) {
         var currVal_7 = i1.ɵnov(_v, 8).ngClassInvalid;
         var currVal_8 = i1.ɵnov(_v, 8).ngClassPending;
         _ck(_v, 5, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8);
-        var currVal_9 = _co.oneLocation.location_id;
+        var currVal_9 = _co.oneLocation.locationId;
         _ck(_v, 9, 0, currVal_9);
     });
 }
@@ -82,7 +82,7 @@ function View_CommentLocationComponent_2(_l) {
         (_l()(), i1.ɵted(null, ['\n			        		  '])), (_l()(), i1.ɵted(null, ['\n					        '])), (_l()(), i1.ɵted(null, ['\n			     		 ']))], null, function (_ck, _v) {
         var currVal_0 = _v.context.$implicit.comment_field;
         _ck(_v, 5, 0, currVal_0);
-        var currVal_1 = _v.context.$implicit.user_Id;
+        var currVal_1 = _v.context.$implicit.userId;
         _ck(_v, 10, 0, currVal_1);
         var currVal_2 = i1.ɵnov(_v, 16).ngClassUntouched;
         var currVal_3 = i1.ɵnov(_v, 16).ngClassTouched;

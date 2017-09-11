@@ -40,13 +40,13 @@ oneLocation;
   }
 
    saveComment(newComment) {
-      console.log("saving manager");
+      console.log("saving comment");
       console.log(newComment);
       this.commentsService.saveComment(newComment)
           .subscribe(response => {
         console.log(response.json());
         let comment = response.json();
-        window.location.href = "/user-page/" + newComment.location_id;
+        window.location.href = "/user-page/" + newComment.locationId;
       })
     }
 

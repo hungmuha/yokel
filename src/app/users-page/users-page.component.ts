@@ -30,7 +30,7 @@ export class UsersPageComponent implements OnInit {
 
 
   
-	oneLocation;
+	allLocations;
   updateText;
   // - REMOVE WHEN CONNECTED TO BACKEND -
   // newComment: comment;
@@ -43,13 +43,11 @@ export class UsersPageComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-  	// this.route.params.forEach(param => {
-  	// 	this.commentsService.getOneLocation(param.id)
-  	// 	.subscribe(response=>{
-  	// 		console.log(response.json());
-  	// 		this.oneLocation = response.json();
-  	// 	});
-  	// });
+    this.commentsService.getAllLocation()
+      .subscribe(response => {
+        console.log(response.json());
+        this.allLocations = response.json()
+      });
   }  
 
   // - USE WHEN CONNECTED TO BACKEND -
