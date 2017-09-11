@@ -25,18 +25,12 @@
 
 						<!-- button dropdown -->
 				<nav>
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" (click)="toggleNav()">where ya ging?</button>
+					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" (click)="toggleNav()">where ya going?</button>
 				    <div class="silkscreen" *ngIf="navExpanded" (click)=dismissNav()>
 				        <ul id="shownNav" *ngFor="let location of allLocations">
 				            <li> 
-				              <a routerLink="/user-page/{{location.id}}" (click)=toggleNav()>{{location.name}}</a>
+				              <a routerLink="/users-page/{{location.id}}" (click)=toggleNav()>{{location.city}},{{location.state}}</a>
 				            </li>
-				           <!--  <li>
-				            	<a routerLink="" (click)=toggleNav()>Denver</a>
-				            </li>
-				            <li>
-				            	<a routerLink="" (click)=toggleNav()>Fort Collins</a>
-				            </li> -->
 				    	</ul>
 				    </div>
 				</nav> 

@@ -13,7 +13,7 @@ export class CommentLocationComponent implements OnInit {
 
 allLocations = [];
 newComment;
-oneLocation;
+oneLocation = null; //-------changed
   deleteComment(deletedComment) {
     this.commentsService.deleteComment(deletedComment)
     .subscribe(response => {
@@ -33,8 +33,9 @@ oneLocation;
   	this.route.params.forEach(param => {
   		this.commentsService.getOneLocation(param.id)
   		.subscribe(response=>{
-  			console.log(response.json());
+  			// console.log(response.json());
   			this.oneLocation = response.json();
+        console.log(this.oneLocation);
   		});
   	});
   }
@@ -46,7 +47,7 @@ oneLocation;
           .subscribe(response => {
         console.log(response.json());
         let comment = response.json();
-        window.location.href = "/user-page/" + newComment.locationId;
+        window.location.href = "/users-page/" + newComment.locationId;
       })
     }
 

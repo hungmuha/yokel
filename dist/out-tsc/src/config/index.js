@@ -43,7 +43,7 @@ router.get('/callback', passport.authenticate('auth0', {
         }));
         console.log(created);
     });
-    res.redirect(req.session.returnTo || '/users-page');
+    res.redirect(req.session.returnTo || '/users-page/1');
 });
 router.get('/failure', function (req, res) {
     var error = req.flash("error");
@@ -54,8 +54,8 @@ router.get('/failure', function (req, res) {
         error_description: error_description[0],
     });
 });
-router.get('/users-page/', location_1.locationController.index);
-router.get('/users-page/:id', location_1.locationController.show);
+router.get('/user', location_1.locationController.index);
+router.get('/user/:id', location_1.locationController.show);
 router.post('/users-page/:id', comment_1.commentController.create);
 router.delete('/users-page/:id', comment_1.commentController.destroy);
 //# sourceMappingURL=index.js.map

@@ -50,7 +50,7 @@ router.get('/callback',
     }))
     console.log(created);})
 
-    res.redirect(req.session.returnTo || '/users-page');
+    res.redirect(req.session.returnTo || '/users-page/1');
   }
 );
 
@@ -65,9 +65,9 @@ router.get('/failure', function(req, res) {
 });
 
 
-router.get('/users-page/', locationController.index);
+router.get('/user', locationController.index);
 
-router.get('/users-page/:id', locationController.show);
+router.get('/user/:id', locationController.show);
 
 router.post('/users-page/:id', commentController.create);
 

@@ -20,7 +20,7 @@ var styles_UsersPageComponent = [i0.styles];
 exports.RenderType_UsersPageComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_UsersPageComponent, data: {} });
 function View_UsersPageComponent_2(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 9, 'ul', [['id', 'shownNav']], null, null, null, null, null)), (_l()(),
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 8, 'ul', [['id', 'shownNav']], null, null, null, null, null)), (_l()(),
             i1.ɵted(null, ['\n				            '])), (_l()(), i1.ɵeld(0, null, null, 5, 'li', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, [' \n				              '])),
         (_l()(), i1.ɵeld(0, null, null, 2, 'a', [], [[1, 'target',
                 0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
@@ -35,16 +35,16 @@ function View_UsersPageComponent_2(_l) {
                 ad = (pd_1 && ad);
             }
             return ad;
-        }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n				            '])), (_l()(), i1.ɵted(null, ['\n				           '])),
-        (_l()(), i1.ɵted(null, ['\n				    	']))], function (_ck, _v) {
-        var currVal_2 = i1.ɵinlineInterpolate(1, '/user-page/', _v.context.$implicit.id, '');
+        }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['', ',', ''])), (_l()(), i1.ɵted(null, ['\n				            '])), (_l()(), i1.ɵted(null, ['\n				    	']))], function (_ck, _v) {
+        var currVal_2 = i1.ɵinlineInterpolate(1, '/users-page/', _v.context.$implicit.id, '');
         _ck(_v, 5, 0, currVal_2);
     }, function (_ck, _v) {
         var currVal_0 = i1.ɵnov(_v, 5).target;
         var currVal_1 = i1.ɵnov(_v, 5).href;
         _ck(_v, 4, 0, currVal_0, currVal_1);
-        var currVal_3 = _v.context.$implicit.name;
-        _ck(_v, 6, 0, currVal_3);
+        var currVal_3 = _v.context.$implicit.city;
+        var currVal_4 = _v.context.$implicit.state;
+        _ck(_v, 6, 0, currVal_3, currVal_4);
     });
 }
 function View_UsersPageComponent_1(_l) {
@@ -89,7 +89,7 @@ function View_UsersPageComponent_0(_l) {
                 ad = (pd_0 && ad);
             }
             return ad;
-        }, null, null)), (_l()(), i1.ɵted(null, ['where ya ging?'])),
+        }, null, null)), (_l()(), i1.ɵted(null, ['where ya going?'])),
         (_l()(), i1.ɵted(null, ['\n				    '])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_UsersPageComponent_1)), i1.ɵdid(16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, 'ngIf'] }, null), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵted(null, [' \n\n			'])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n\n					\n		'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	\n'])),
         (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 1, 'comment-location', [], null, null, null, i7.View_CommentLocationComponent_0, i7.RenderType_CommentLocationComponent)),

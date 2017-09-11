@@ -17,13 +17,13 @@ var styles_CommentLocationComponent = [i0.styles];
 exports.RenderType_CommentLocationComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_CommentLocationComponent, data: {} });
 function View_CommentLocationComponent_1(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 13, 'div', [['class',
-                'col-lg-12']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n        		'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ',', ''])),
-        (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 4, 'span', [['class', 'date sub-text']], [[2, 'ng-untouched', null], [2,
-                'ng-touched', null], [2, 'ng-pristine', null], [2, 'ng-dirty',
-                null], [2, 'ng-valid', null], [2, 'ng-invalid', null],
-            [2, 'ng-pending', null]], [[null, 'ngModel']], function (_v, en, $event) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 20, 'div', [['class',
+                'container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 17, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵeld(0, null, null, 13, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n        		'])), (_l()(),
+            i1.ɵeld(0, null, null, 1, 'h2', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ',', ''])), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 4, 'span', [['class', 'date sub-text']], [[2, 'ng-untouched',
+                null], [2, 'ng-touched', null], [2, 'ng-pristine', null],
+            [2, 'ng-dirty', null], [2, 'ng-valid', null], [2, 'ng-invalid',
+                null], [2, 'ng-pending', null]], [[null, 'ngModel']], function (_v, en, $event) {
             var ad = true;
             var _co = _v.component;
             if (('ngModel' === en)) {
@@ -33,24 +33,25 @@ function View_CommentLocationComponent_1(_l) {
             return ad;
         }, null, null)), i1.ɵdid(671744, null, 0, i2.NgModel, [[8, null], [8, null], [8, null], [8, null]], null, null), i1.ɵprd(2048, null, i2.NgControl, null, [i2.NgModel]), i1.ɵdid(16384, null, 0, i2.NgControlStatus, [i2.NgControl], null, null), (_l()(), i1.ɵted(null, ['', ''])), (_l()(),
             i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Today there\'s a high of 68° and sunny'])),
-        (_l()(), i1.ɵted(null, ['\n			']))], null, function (_ck, _v) {
+        (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])),
+        (_l()(), i1.ɵted(null, ['\n	']))], null, function (_ck, _v) {
         var _co = _v.component;
         var currVal_0 = _co.oneLocation.city;
         var currVal_1 = _co.oneLocation.state;
-        _ck(_v, 3, 0, currVal_0, currVal_1);
-        var currVal_2 = i1.ɵnov(_v, 8).ngClassUntouched;
-        var currVal_3 = i1.ɵnov(_v, 8).ngClassTouched;
-        var currVal_4 = i1.ɵnov(_v, 8).ngClassPristine;
-        var currVal_5 = i1.ɵnov(_v, 8).ngClassDirty;
-        var currVal_6 = i1.ɵnov(_v, 8).ngClassValid;
-        var currVal_7 = i1.ɵnov(_v, 8).ngClassInvalid;
-        var currVal_8 = i1.ɵnov(_v, 8).ngClassPending;
-        _ck(_v, 5, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8);
-        var currVal_9 = _co.oneLocation.locationId;
-        _ck(_v, 9, 0, currVal_9);
+        _ck(_v, 8, 0, currVal_0, currVal_1);
+        var currVal_2 = i1.ɵnov(_v, 13).ngClassUntouched;
+        var currVal_3 = i1.ɵnov(_v, 13).ngClassTouched;
+        var currVal_4 = i1.ɵnov(_v, 13).ngClassPristine;
+        var currVal_5 = i1.ɵnov(_v, 13).ngClassDirty;
+        var currVal_6 = i1.ɵnov(_v, 13).ngClassValid;
+        var currVal_7 = i1.ɵnov(_v, 13).ngClassInvalid;
+        var currVal_8 = i1.ɵnov(_v, 13).ngClassPending;
+        _ck(_v, 10, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8);
+        var currVal_9 = _co.oneLocation.id;
+        _ck(_v, 14, 0, currVal_9);
     });
 }
-function View_CommentLocationComponent_2(_l) {
+function View_CommentLocationComponent_3(_l) {
     return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 21, 'li', [], null, null, null, null, null)), (_l()(),
             i1.ɵted(null, ['\n					        '])), (_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class', 'commentText']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n					          '])),
         (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, [' \n					          '])), (_l()(),
@@ -94,25 +95,31 @@ function View_CommentLocationComponent_2(_l) {
         _ck(_v, 12, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8);
     });
 }
-function View_CommentLocationComponent_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['	'])), (_l()(), i1.ɵeld(0, null, null, 8, 'div', [['class', 'container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(),
-            i1.ɵeld(0, null, null, 5, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n        	'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_CommentLocationComponent_1)),
-        i1.ɵdid(16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0,
-                'ngIf'] }, null), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(),
-            i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])),
-        (_l()(), i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n\n\n\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 23, 'div', [['class', 'container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 1, 'label', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['Comments'])), (_l()(), i1.ɵted(null, ['\n		'])),
-        (_l()(), i1.ɵeld(0, null, null, 17, 'div', [['class', 'detailBox']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n		'])),
+function View_CommentLocationComponent_2(_l) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 21, 'div', [['class',
+                'container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 1, 'label', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Comments'])), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class',
+                'detailBox']], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n	\n			'])), (_l()(), i1.ɵeld(0, null, null, 12, 'div', [['class', 'container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n				'])), (_l()(), i1.ɵeld(0, null, null, 9, 'div', [['class',
                 'actionBox']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n					'])), (_l()(), i1.ɵeld(0, null, null, 6, 'ul', [['class', 'commentList']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n						'])), (_l()(), i1.ɵted(null, ['\n						'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_CommentLocationComponent_2)),
+        (_l()(), i1.ɵted(null, ['\n					'])), (_l()(), i1.ɵeld(0, null, null, 6, 'ul', [['class', 'commentList']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n						'])), (_l()(), i1.ɵted(null, ['\n						'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_CommentLocationComponent_3)),
         i1.ɵdid(802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef,
             i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n			      '])), (_l()(), i1.ɵted(null, ['   	\n			    	'])), (_l()(),
             i1.ɵted(null, ['\n			  '])), (_l()(), i1.ɵted(null, ['\n			'])),
-        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	'])),
-        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])),
-        (_l()(), i1.ɵeld(0, null, null, 30, 'div', [['class', 'container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	']))], function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = _co.oneLocation.comments;
+        _ck(_v, 15, 0, currVal_0);
+    }, null);
+}
+function View_CommentLocationComponent_0(_l) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['	'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_CommentLocationComponent_1)),
+        i1.ɵdid(16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0,
+                'ngIf'] }, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(),
+            i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n	\n	'])),
+        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_CommentLocationComponent_2)), i1.ɵdid(16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, 'ngIf'] }, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 30, 'div', [['class',
+                'container']], null, null, null, null, null)),
         (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 27, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 24, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	    		'])), (_l()(), i1.ɵeld(0, null, null, 21, 'div', [['class',
                 'input-group']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	    			'])), (_l()(), i1.ɵeld(0, null, null, 18, 'form', [['novalidate', '']], [[2, 'ng-untouched',
                 null], [2, 'ng-touched', null], [2, 'ng-pristine', null],
@@ -122,11 +129,11 @@ function View_CommentLocationComponent_0(_l) {
             var ad = true;
             var _co = _v.component;
             if (('submit' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 50).onSubmit($event) !== false);
+                var pd_0 = (i1.ɵnov(_v, 24).onSubmit($event) !== false);
                 ad = (pd_0 && ad);
             }
             if (('reset' === en)) {
-                var pd_1 = (i1.ɵnov(_v, 50).onReset() !== false);
+                var pd_1 = (i1.ɵnov(_v, 24).onReset() !== false);
                 ad = (pd_1 && ad);
             }
             if (('ngSubmit' === en)) {
@@ -146,19 +153,19 @@ function View_CommentLocationComponent_0(_l) {
                 var ad = true;
                 var _co = _v.component;
                 if (('input' === en)) {
-                    var pd_0 = (i1.ɵnov(_v, 55)._handleInput($event.target.value) !== false);
+                    var pd_0 = (i1.ɵnov(_v, 29)._handleInput($event.target.value) !== false);
                     ad = (pd_0 && ad);
                 }
                 if (('blur' === en)) {
-                    var pd_1 = (i1.ɵnov(_v, 55).onTouched() !== false);
+                    var pd_1 = (i1.ɵnov(_v, 29).onTouched() !== false);
                     ad = (pd_1 && ad);
                 }
                 if (('compositionstart' === en)) {
-                    var pd_2 = (i1.ɵnov(_v, 55)._compositionStart() !== false);
+                    var pd_2 = (i1.ɵnov(_v, 29)._compositionStart() !== false);
                     ad = (pd_2 && ad);
                 }
                 if (('compositionend' === en)) {
-                    var pd_3 = (i1.ɵnov(_v, 55)._compositionEnd($event.target.value) !== false);
+                    var pd_3 = (i1.ɵnov(_v, 29)._compositionEnd($event.target.value) !== false);
                     ad = (pd_3 && ad);
                 }
                 if (('ngModelChange' === en)) {
@@ -178,28 +185,31 @@ function View_CommentLocationComponent_0(_l) {
         (_l()(), i1.ɵted(null, ['\n	\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
         var _co = _v.component;
         var currVal_0 = _co.oneLocation;
-        _ck(_v, 7, 0, currVal_0);
-        var currVal_1 = _co.oneLocation.comments;
-        _ck(_v, 31, 0, currVal_1);
-        var currVal_16 = _co.newComment.comment_field;
-        _ck(_v, 57, 0, currVal_16);
+        _ck(_v, 2, 0, currVal_0);
+        var currVal_2 = _co.oneLocation;
+        _ck(_v, 11, 0, currVal_2);
+        var currVal_17 = _co.newComment.comment_field;
+        _ck(_v, 31, 0, currVal_17);
     }, function (_ck, _v) {
-        var currVal_2 = i1.ɵnov(_v, 52).ngClassUntouched;
-        var currVal_3 = i1.ɵnov(_v, 52).ngClassTouched;
-        var currVal_4 = i1.ɵnov(_v, 52).ngClassPristine;
-        var currVal_5 = i1.ɵnov(_v, 52).ngClassDirty;
-        var currVal_6 = i1.ɵnov(_v, 52).ngClassValid;
-        var currVal_7 = i1.ɵnov(_v, 52).ngClassInvalid;
-        var currVal_8 = i1.ɵnov(_v, 52).ngClassPending;
-        _ck(_v, 48, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8);
-        var currVal_9 = i1.ɵnov(_v, 59).ngClassUntouched;
-        var currVal_10 = i1.ɵnov(_v, 59).ngClassTouched;
-        var currVal_11 = i1.ɵnov(_v, 59).ngClassPristine;
-        var currVal_12 = i1.ɵnov(_v, 59).ngClassDirty;
-        var currVal_13 = i1.ɵnov(_v, 59).ngClassValid;
-        var currVal_14 = i1.ɵnov(_v, 59).ngClassInvalid;
-        var currVal_15 = i1.ɵnov(_v, 59).ngClassPending;
-        _ck(_v, 54, 0, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15);
+        var _co = _v.component;
+        var currVal_1 = _co.oneLocation;
+        _ck(_v, 7, 0, currVal_1);
+        var currVal_3 = i1.ɵnov(_v, 26).ngClassUntouched;
+        var currVal_4 = i1.ɵnov(_v, 26).ngClassTouched;
+        var currVal_5 = i1.ɵnov(_v, 26).ngClassPristine;
+        var currVal_6 = i1.ɵnov(_v, 26).ngClassDirty;
+        var currVal_7 = i1.ɵnov(_v, 26).ngClassValid;
+        var currVal_8 = i1.ɵnov(_v, 26).ngClassInvalid;
+        var currVal_9 = i1.ɵnov(_v, 26).ngClassPending;
+        _ck(_v, 22, 0, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9);
+        var currVal_10 = i1.ɵnov(_v, 33).ngClassUntouched;
+        var currVal_11 = i1.ɵnov(_v, 33).ngClassTouched;
+        var currVal_12 = i1.ɵnov(_v, 33).ngClassPristine;
+        var currVal_13 = i1.ɵnov(_v, 33).ngClassDirty;
+        var currVal_14 = i1.ɵnov(_v, 33).ngClassValid;
+        var currVal_15 = i1.ɵnov(_v, 33).ngClassInvalid;
+        var currVal_16 = i1.ɵnov(_v, 33).ngClassPending;
+        _ck(_v, 28, 0, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16);
     });
 }
 exports.View_CommentLocationComponent_0 = View_CommentLocationComponent_0;

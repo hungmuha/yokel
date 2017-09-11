@@ -118,7 +118,7 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
           i0.ɵmpd(1024,i19.ROUTES,() => {
             return [[{path:'',component:i21.LandingPageComponent},{path:'login-page',
                 component:i22.LoginPageComponent},{path:'sign-up',component:i23.SignUpComponent},
-                {path:'about-page',component:i24.AboutPageComponent},{path:'users-page',
+                {path:'about-page',component:i24.AboutPageComponent},{path:'users-page/:id',
                     component:i25.UsersPageComponent},{path:'profile-page',component:i26.ProfilePageComponent}]];
           },([] as any[])),i0.ɵmpd(1024,i19.Router,i19.ɵe,[i0.ApplicationRef,i19.UrlSerializer,
               i19.ChildrenOutletContexts,i13.Location,i0.Injector,i0.NgModuleFactoryLoader,

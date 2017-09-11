@@ -5,12 +5,12 @@ import { Http } from '@angular/http';
 export class CommentsService {
 baseUrl = 'http://localhost:3000';
 	getAllLocation(){
-		return this.http.get(`${this.baseUrl}/user-page`);
+		return this.http.get(`${this.baseUrl}/user`);
 	}
 
 	getOneLocation(locationId) {
 		console.log(locationId);
-		return this.http.get(`${this.baseUrl}/user-page/${locationId}`);	
+		return this.http.get(`${this.baseUrl}/user/${locationId}`);	
 	}
 
 	deleteComment(comment) {

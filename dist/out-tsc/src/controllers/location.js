@@ -4,6 +4,7 @@ var models_1 = require("../models");
 var Location = models_1.db.models.Location;
 var Comment = models_1.db.models.Comment;
 function index(req, res) {
+    console.log("hit this route");
     Location.findAll().then(function (location) {
         res.json(location);
     });

@@ -92,7 +92,7 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
           i0.ɵmpd(1024,i14.ROUTES,() => {
             return [[{path:'',component:i16.LandingPageComponent},{path:'login-page',
                 component:i17.LoginPageComponent},{path:'sign-up',component:i18.SignUpComponent},
-                {path:'about-page',component:i19.AboutPageComponent},{path:'users-page',
+                {path:'about-page',component:i19.AboutPageComponent},{path:'users-page/:id',
                     component:i20.UsersPageComponent},{path:'profile-page',component:i21.ProfilePageComponent}]];
           },([] as any[])),i0.ɵmpd(1024,i14.Router,i14.ɵe,[i0.ApplicationRef,i14.UrlSerializer,
               i14.ChildrenOutletContexts,i10.Location,i0.Injector,i0.NgModuleFactoryLoader,

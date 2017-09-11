@@ -1,31 +1,27 @@
-	<div class="container">
+	<div class="container" *ngIf="oneLocation">
 		<div class="row">
 			<!-- 12 column width -->
-        	<div class="col-lg-12" *ngIf="oneLocation">
+        	<div class="col-lg-12" >
         		<h2>{{oneLocation.city}},{{ oneLocation.state}}</h2>
-				<span class="date sub-text" (ngModel)="newComment.locationId">{{oneLocation.locationId}}</span>
+				<span class="date sub-text" (ngModel)="newComment.locationId">{{oneLocation.id}}</span>
 				<p>Today there's a high of 68&deg; and sunny</p>
 			</div>
 		</div>
 	</div>
 	<br>
 
-
-
+	<h1>{{oneLocation}}</h1>
+	
 	<!-- comments header -->
-	<div class="container">
+	<div class="container" *ngIf="oneLocation">
 		<label>Comments</label>
 		<div class="detailBox">
-		<!-- comment text -->
-		<!-- <div class="commentBox">
-			<h5 class="taskDescription">The most AMAZING spot in Aspen is the Maroon Bells. You have to check it out, and make sure to bring your camera!</h5>
-		</div> -->
 	
 			<div class="container">
-				<div class="actionBox">
+				<div class="actionBox" >
 					<ul class="commentList">
 						<!-- comment 1 -->
-						<li *ngFor = "let comment of oneLocation.comments">
+						<li *ngFor="let comment of oneLocation.comments">
 					        <div class="commentText">
 					          <p >{{comment.comment_field}}</p> 
 					          <span class="date sub-text"> <strong>{{comment.userId}}</strong></span>
@@ -41,7 +37,7 @@
 		</div>
 	</div>
 	<!-- leave comment form -->
-	<div class="container">
+	<div class="container" >
 		<div class="row">
 			<div class="col-lg-12">
 	    		<div class="input-group">

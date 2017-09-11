@@ -11,11 +11,11 @@ var CommentsService = (function () {
         this.baseUrl = 'http://localhost:3000';
     }
     CommentsService.prototype.getAllLocation = function () {
-        return this.http.get(this.baseUrl + "/user-page");
+        return this.http.get(this.baseUrl + "/user");
     };
     CommentsService.prototype.getOneLocation = function (locationId) {
         console.log(locationId);
-        return this.http.get(this.baseUrl + "/user-page/" + locationId);
+        return this.http.get(this.baseUrl + "/user/" + locationId);
     };
     CommentsService.prototype.deleteComment = function (comment) {
         console.log(comment);

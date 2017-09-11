@@ -3,6 +3,7 @@ var Location = db.models.Location;
 var Comment = db.models.Comment;
 
 function index(req, res) {
+  console.log("hit this route");
 	Location.findAll().then(function(location) {
 		res.json(location);
 	});
@@ -20,7 +21,8 @@ function show(req, res) {
   Location.findById(req.params.id,{include: Comment})
   .then(function(location){
     if(!location) res.send(res, "not found");
-    else res.json(location);
+    else
+      res.json(location);
   });	
 }
 

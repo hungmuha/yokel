@@ -26,6 +26,7 @@ export class UsersPageComponent implements OnInit {
     } else {
       this.navExpanded = false;
     }
+    
   }
 
 

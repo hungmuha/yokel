@@ -8,6 +8,7 @@ var CommentLocationComponent = (function () {
         this.route = route;
         this.commentsService = commentsService;
         this.allLocations = [];
+        this.oneLocation = null; //-------changed
     }
     CommentLocationComponent.prototype.deleteComment = function (deletedComment) {
         var _this = this;
@@ -22,8 +23,9 @@ var CommentLocationComponent = (function () {
         this.route.params.forEach(function (param) {
             _this.commentsService.getOneLocation(param.id)
                 .subscribe(function (response) {
-                console.log(response.json());
+                // console.log(response.json());
                 _this.oneLocation = response.json();
+                console.log(_this.oneLocation);
             });
         });
     };
@@ -34,7 +36,7 @@ var CommentLocationComponent = (function () {
             .subscribe(function (response) {
             console.log(response.json());
             var comment = response.json();
-            window.location.href = "/user-page/" + newComment.locationId;
+            window.location.href = "/users-page/" + newComment.locationId;
         });
     };
     return CommentLocationComponent;
