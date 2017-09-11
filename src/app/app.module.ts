@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 
@@ -17,6 +17,12 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { CommentLocationComponent } from './comment-location/comment-location.component';
 
 import { CommentsService } from './users-page/comments.service';
+import { AspenComponent } from './aspen/aspen.component';
+import { BeaverCreekComponent } from './beaver-creek/beaver-creek.component';
+import { DenverComponent } from './denver/denver.component';
+import { FortCollinsComponent } from './fort-collins/fort-collins.component';
+import { TellurideComponent } from './telluride/telluride.component';
+import { VailComponent } from './vail/vail.component';
 
 
 
@@ -27,7 +33,13 @@ const appRoutes: Routes = [
   { path: 'sign-up', component: SignUpComponent},
   { path: 'about-page', component: AboutPageComponent },
   { path: 'users-page', component: UsersPageComponent},
-  { path: 'profile-page', component: ProfilePageComponent }
+  { path: 'profile-page', component: ProfilePageComponent },
+  { path: 'vail',         component: VailComponent },
+  { path: 'telluride',   component: TellurideComponent},
+  { path: 'beaver-creek', component: BeaverCreekComponent },
+  { path: 'fort-collins', component: FortCollinsComponent },
+  { path: 'denver',      component: DenverComponent},
+  { path: 'aspen',      component: AspenComponent}
 
 ];
 
@@ -41,7 +53,13 @@ const appRoutes: Routes = [
     LoginPageComponent,
     LandingPageComponent,
     ProfilePageComponent,
-    CommentLocationComponent
+    CommentLocationComponent,
+    AspenComponent,
+    BeaverCreekComponent,
+    DenverComponent,
+    FortCollinsComponent,
+    TellurideComponent,
+    VailComponent
   ],
   imports: [
   BrowserModule.withServerTransition({appId: 'cli-universal-demo'}),

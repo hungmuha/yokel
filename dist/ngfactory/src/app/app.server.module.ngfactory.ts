@@ -15,119 +15,137 @@ import * as i5 from './sign-up/sign-up.component.ngfactory';
 import * as i6 from './about-page/about-page.component.ngfactory';
 import * as i7 from './users-page/users-page.component.ngfactory';
 import * as i8 from './profile-page/profile-page.component.ngfactory';
-import * as i9 from './app.component.ngfactory';
-import * as i10 from '@angular/http';
-import * as i11 from '@angular/platform-server';
-import * as i12 from '@angular/common/http';
-import * as i13 from '@angular/common';
-import * as i14 from '@angular/platform-browser';
-import * as i15 from '@angular/animations/browser';
-import * as i16 from '@angular/platform-browser/animations';
-import * as i17 from '@angular/animations';
-import * as i18 from '@angular/forms';
-import * as i19 from '@angular/router';
-import * as i20 from '../../../../src/app/users-page/comments.service';
-import * as i21 from '../../../../src/app/landing-page/landing-page.component';
-import * as i22 from '../../../../src/app/login-page/login-page.component';
-import * as i23 from '../../../../src/app/sign-up/sign-up.component';
-import * as i24 from '../../../../src/app/about-page/about-page.component';
-import * as i25 from '../../../../src/app/users-page/users-page.component';
-import * as i26 from '../../../../src/app/profile-page/profile-page.component';
-import * as i27 from '../../../../src/app/app.module';
+import * as i9 from './vail/vail.component.ngfactory';
+import * as i10 from './telluride/telluride.component.ngfactory';
+import * as i11 from './beaver-creek/beaver-creek.component.ngfactory';
+import * as i12 from './fort-collins/fort-collins.component.ngfactory';
+import * as i13 from './denver/denver.component.ngfactory';
+import * as i14 from './aspen/aspen.component.ngfactory';
+import * as i15 from './app.component.ngfactory';
+import * as i16 from '@angular/http';
+import * as i17 from '@angular/platform-server';
+import * as i18 from '@angular/common/http';
+import * as i19 from '@angular/common';
+import * as i20 from '@angular/platform-browser';
+import * as i21 from '@angular/animations/browser';
+import * as i22 from '@angular/platform-browser/animations';
+import * as i23 from '@angular/animations';
+import * as i24 from '@angular/forms';
+import * as i25 from '@angular/router';
+import * as i26 from '../../../../src/app/users-page/comments.service';
+import * as i27 from '../../../../src/app/landing-page/landing-page.component';
+import * as i28 from '../../../../src/app/login-page/login-page.component';
+import * as i29 from '../../../../src/app/sign-up/sign-up.component';
+import * as i30 from '../../../../src/app/about-page/about-page.component';
+import * as i31 from '../../../../src/app/users-page/users-page.component';
+import * as i32 from '../../../../src/app/profile-page/profile-page.component';
+import * as i33 from '../../../../src/app/vail/vail.component';
+import * as i34 from '../../../../src/app/telluride/telluride.component';
+import * as i35 from '../../../../src/app/beaver-creek/beaver-creek.component';
+import * as i36 from '../../../../src/app/fort-collins/fort-collins.component';
+import * as i37 from '../../../../src/app/denver/denver.component';
+import * as i38 from '../../../../src/app/aspen/aspen.component';
+import * as i39 from '../../../../src/app/app.module';
 export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i0.ɵcmf(i1.AppServerModule,
     [i2.AppComponent],(_l:any) => {
       return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
           [[8,[i3.LandingPageComponentNgFactory,i4.LoginPageComponentNgFactory,i5.SignUpComponentNgFactory,
               i6.AboutPageComponentNgFactory,i7.UsersPageComponentNgFactory,i8.ProfilePageComponentNgFactory,
-              i9.AppComponentNgFactory]],[3,i0.ComponentFactoryResolver],i0.NgModuleRef]),
-          i0.ɵmpd(4608,i10.BrowserXhr,i11.ɵc,([] as any[])),i0.ɵmpd(4608,i10.ResponseOptions,
-              i10.BaseResponseOptions,([] as any[])),i0.ɵmpd(4608,i10.XSRFStrategy,
-              i11.ɵd,([] as any[])),i0.ɵmpd(4608,i10.XHRBackend,i10.XHRBackend,[i10.BrowserXhr,
-              i10.ResponseOptions,i10.XSRFStrategy]),i0.ɵmpd(4608,i10.RequestOptions,
-              i10.BaseRequestOptions,([] as any[])),i0.ɵmpd(5120,i10.Http,i11.ɵe,[i10.XHRBackend,
-              i10.RequestOptions]),i0.ɵmpd(4608,i12.HttpXsrfTokenExtractor,i12.ɵg,
-              [i13.DOCUMENT,i0.PLATFORM_ID,i12.ɵe]),i0.ɵmpd(4608,i12.ɵh,i12.ɵh,[i12.HttpXsrfTokenExtractor,
-              i12.ɵf]),i0.ɵmpd(5120,i12.HTTP_INTERCEPTORS,(p0_0:any) => {
+              i9.VailComponentNgFactory,i10.TellurideComponentNgFactory,i11.BeaverCreekComponentNgFactory,
+              i12.FortCollinsComponentNgFactory,i13.DenverComponentNgFactory,i14.AspenComponentNgFactory,
+              i15.AppComponentNgFactory]],[3,i0.ComponentFactoryResolver],i0.NgModuleRef]),
+          i0.ɵmpd(4608,i16.BrowserXhr,i17.ɵc,([] as any[])),i0.ɵmpd(4608,i16.ResponseOptions,
+              i16.BaseResponseOptions,([] as any[])),i0.ɵmpd(4608,i16.XSRFStrategy,
+              i17.ɵd,([] as any[])),i0.ɵmpd(4608,i16.XHRBackend,i16.XHRBackend,[i16.BrowserXhr,
+              i16.ResponseOptions,i16.XSRFStrategy]),i0.ɵmpd(4608,i16.RequestOptions,
+              i16.BaseRequestOptions,([] as any[])),i0.ɵmpd(5120,i16.Http,i17.ɵe,[i16.XHRBackend,
+              i16.RequestOptions]),i0.ɵmpd(4608,i18.HttpXsrfTokenExtractor,i18.ɵg,
+              [i19.DOCUMENT,i0.PLATFORM_ID,i18.ɵe]),i0.ɵmpd(4608,i18.ɵh,i18.ɵh,[i18.HttpXsrfTokenExtractor,
+              i18.ɵf]),i0.ɵmpd(5120,i18.HTTP_INTERCEPTORS,(p0_0:any) => {
             return [p0_0];
-          },[i12.ɵh]),i0.ɵmpd(4608,i12.XhrFactory,i11.ɵc,([] as any[])),i0.ɵmpd(4608,
-              i12.HttpXhrBackend,i12.HttpXhrBackend,[i12.XhrFactory]),i0.ɵmpd(6144,
-              i12.HttpBackend,(null as any),[i12.HttpXhrBackend]),i0.ɵmpd(5120,i12.HttpHandler,
-              i11.ɵf,[i12.HttpBackend,[2,i12.HTTP_INTERCEPTORS]]),i0.ɵmpd(4608,i12.HttpClient,
-              i12.HttpClient,[i12.HttpHandler]),i0.ɵmpd(4608,i12.ɵd,i12.ɵd,([] as any[])),
-          i0.ɵmpd(5120,i0.LOCALE_ID,i0.ɵm,[[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i13.NgLocalization,
-              i13.NgLocaleLocalization,[i0.LOCALE_ID]),i0.ɵmpd(5120,i0.IterableDiffers,
+          },[i18.ɵh]),i0.ɵmpd(4608,i18.XhrFactory,i17.ɵc,([] as any[])),i0.ɵmpd(4608,
+              i18.HttpXhrBackend,i18.HttpXhrBackend,[i18.XhrFactory]),i0.ɵmpd(6144,
+              i18.HttpBackend,(null as any),[i18.HttpXhrBackend]),i0.ɵmpd(5120,i18.HttpHandler,
+              i17.ɵf,[i18.HttpBackend,[2,i18.HTTP_INTERCEPTORS]]),i0.ɵmpd(4608,i18.HttpClient,
+              i18.HttpClient,[i18.HttpHandler]),i0.ɵmpd(4608,i18.ɵd,i18.ɵd,([] as any[])),
+          i0.ɵmpd(5120,i0.LOCALE_ID,i0.ɵm,[[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i19.NgLocalization,
+              i19.NgLocaleLocalization,[i0.LOCALE_ID]),i0.ɵmpd(5120,i0.IterableDiffers,
               i0.ɵk,([] as any[])),i0.ɵmpd(5120,i0.KeyValueDiffers,i0.ɵl,([] as any[])),
-          i0.ɵmpd(4608,i14.DomSanitizer,i14.ɵe,[i13.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,
-              (null as any),[i14.DomSanitizer]),i0.ɵmpd(4608,i14.HAMMER_GESTURE_CONFIG,
-              i14.HammerGestureConfig,([] as any[])),i0.ɵmpd(5120,i14.EVENT_MANAGER_PLUGINS,
+          i0.ɵmpd(4608,i20.DomSanitizer,i20.ɵe,[i19.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,
+              (null as any),[i20.DomSanitizer]),i0.ɵmpd(4608,i20.HAMMER_GESTURE_CONFIG,
+              i20.HammerGestureConfig,([] as any[])),i0.ɵmpd(5120,i20.EVENT_MANAGER_PLUGINS,
               (p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
-                return [new i14.ɵDomEventsPlugin(p0_0),new i14.ɵKeyEventsPlugin(p1_0),
-                    new i14.ɵHammerGesturesPlugin(p2_0,p2_1)];
-              },[i13.DOCUMENT,i13.DOCUMENT,i13.DOCUMENT,i14.HAMMER_GESTURE_CONFIG]),
-          i0.ɵmpd(4608,i14.EventManager,i14.EventManager,[i14.EVENT_MANAGER_PLUGINS,
-              i0.NgZone]),i0.ɵmpd(135680,i14.ɵDomSharedStylesHost,i14.ɵDomSharedStylesHost,
-              [i13.DOCUMENT]),i0.ɵmpd(4608,i14.ɵDomRendererFactory2,i14.ɵDomRendererFactory2,
-              [i14.EventManager,i14.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i11.ɵb,i11.ɵb,
-              [i14.DOCUMENT,[2,i14.ɵTRANSITION_ID]]),i0.ɵmpd(6144,i14.ɵSharedStylesHost,
-              (null as any),[i11.ɵb]),i0.ɵmpd(4608,i11.ɵServerRendererFactory2,i11.ɵServerRendererFactory2,
-              [i0.NgZone,i14.DOCUMENT,i14.ɵSharedStylesHost]),i0.ɵmpd(4608,i15.AnimationDriver,
-              i15.ɵNoopAnimationDriver,([] as any[])),i0.ɵmpd(5120,i15.ɵAnimationStyleNormalizer,
-              i16.ɵd,([] as any[])),i0.ɵmpd(4608,i15.ɵAnimationEngine,i16.ɵb,[i15.AnimationDriver,
-              i15.ɵAnimationStyleNormalizer]),i0.ɵmpd(5120,i0.RendererFactory2,i11.ɵa,
-              [i11.ɵServerRendererFactory2,i15.ɵAnimationEngine,i0.NgZone]),i0.ɵmpd(4352,
-              i0.Testability,(null as any),([] as any[])),i0.ɵmpd(4608,i14.Meta,i14.Meta,
-              [i13.DOCUMENT]),i0.ɵmpd(4608,i14.Title,i14.Title,[i13.DOCUMENT]),i0.ɵmpd(4608,
-              i17.AnimationBuilder,i16.ɵBrowserAnimationBuilder,[i0.RendererFactory2,
-                  i14.DOCUMENT]),i0.ɵmpd(4608,i18.ɵi,i18.ɵi,([] as any[])),i0.ɵmpd(5120,
-              i19.ActivatedRoute,i19.ɵf,[i19.Router]),i0.ɵmpd(4608,i19.NoPreloading,
-              i19.NoPreloading,([] as any[])),i0.ɵmpd(6144,i19.PreloadingStrategy,
-              (null as any),[i19.NoPreloading]),i0.ɵmpd(135680,i19.RouterPreloader,
-              i19.RouterPreloader,[i19.Router,i0.NgModuleFactoryLoader,i0.Compiler,
-                  i0.Injector,i19.PreloadingStrategy]),i0.ɵmpd(4608,i19.PreloadAllModules,
-              i19.PreloadAllModules,([] as any[])),i0.ɵmpd(5120,i19.ROUTER_INITIALIZER,
-              i19.ɵi,[i19.ɵg]),i0.ɵmpd(5120,i0.APP_BOOTSTRAP_LISTENER,(p0_0:any) => {
+                return [new i20.ɵDomEventsPlugin(p0_0),new i20.ɵKeyEventsPlugin(p1_0),
+                    new i20.ɵHammerGesturesPlugin(p2_0,p2_1)];
+              },[i19.DOCUMENT,i19.DOCUMENT,i19.DOCUMENT,i20.HAMMER_GESTURE_CONFIG]),
+          i0.ɵmpd(4608,i20.EventManager,i20.EventManager,[i20.EVENT_MANAGER_PLUGINS,
+              i0.NgZone]),i0.ɵmpd(135680,i20.ɵDomSharedStylesHost,i20.ɵDomSharedStylesHost,
+              [i19.DOCUMENT]),i0.ɵmpd(4608,i20.ɵDomRendererFactory2,i20.ɵDomRendererFactory2,
+              [i20.EventManager,i20.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i17.ɵb,i17.ɵb,
+              [i20.DOCUMENT,[2,i20.ɵTRANSITION_ID]]),i0.ɵmpd(6144,i20.ɵSharedStylesHost,
+              (null as any),[i17.ɵb]),i0.ɵmpd(4608,i17.ɵServerRendererFactory2,i17.ɵServerRendererFactory2,
+              [i0.NgZone,i20.DOCUMENT,i20.ɵSharedStylesHost]),i0.ɵmpd(4608,i21.AnimationDriver,
+              i21.ɵNoopAnimationDriver,([] as any[])),i0.ɵmpd(5120,i21.ɵAnimationStyleNormalizer,
+              i22.ɵd,([] as any[])),i0.ɵmpd(4608,i21.ɵAnimationEngine,i22.ɵb,[i21.AnimationDriver,
+              i21.ɵAnimationStyleNormalizer]),i0.ɵmpd(5120,i0.RendererFactory2,i17.ɵa,
+              [i17.ɵServerRendererFactory2,i21.ɵAnimationEngine,i0.NgZone]),i0.ɵmpd(4352,
+              i0.Testability,(null as any),([] as any[])),i0.ɵmpd(4608,i20.Meta,i20.Meta,
+              [i19.DOCUMENT]),i0.ɵmpd(4608,i20.Title,i20.Title,[i19.DOCUMENT]),i0.ɵmpd(4608,
+              i23.AnimationBuilder,i22.ɵBrowserAnimationBuilder,[i0.RendererFactory2,
+                  i20.DOCUMENT]),i0.ɵmpd(4608,i24.ɵi,i24.ɵi,([] as any[])),i0.ɵmpd(5120,
+              i25.ActivatedRoute,i25.ɵf,[i25.Router]),i0.ɵmpd(4608,i25.NoPreloading,
+              i25.NoPreloading,([] as any[])),i0.ɵmpd(6144,i25.PreloadingStrategy,
+              (null as any),[i25.NoPreloading]),i0.ɵmpd(135680,i25.RouterPreloader,
+              i25.RouterPreloader,[i25.Router,i0.NgModuleFactoryLoader,i0.Compiler,
+                  i0.Injector,i25.PreloadingStrategy]),i0.ɵmpd(4608,i25.PreloadAllModules,
+              i25.PreloadAllModules,([] as any[])),i0.ɵmpd(5120,i25.ROUTER_INITIALIZER,
+              i25.ɵi,[i25.ɵg]),i0.ɵmpd(5120,i0.APP_BOOTSTRAP_LISTENER,(p0_0:any) => {
             return [p0_0];
-          },[i19.ROUTER_INITIALIZER]),i0.ɵmpd(4608,i20.CommentsService,i20.CommentsService,
-              [i10.Http]),i0.ɵmpd(512,i10.HttpModule,i10.HttpModule,([] as any[])),
-          i0.ɵmpd(512,i12.HttpClientXsrfModule,i12.HttpClientXsrfModule,([] as any[])),
-          i0.ɵmpd(512,i12.HttpClientModule,i12.HttpClientModule,([] as any[])),i0.ɵmpd(512,
-              i13.CommonModule,i13.CommonModule,([] as any[])),i0.ɵmpd(1024,i0.ErrorHandler,
-              i14.ɵa,([] as any[])),i0.ɵmpd(1024,i0.NgProbeToken,() => {
-            return [i19.ɵb()];
+          },[i25.ROUTER_INITIALIZER]),i0.ɵmpd(4608,i26.CommentsService,i26.CommentsService,
+              [i16.Http]),i0.ɵmpd(512,i16.HttpModule,i16.HttpModule,([] as any[])),
+          i0.ɵmpd(512,i18.HttpClientXsrfModule,i18.HttpClientXsrfModule,([] as any[])),
+          i0.ɵmpd(512,i18.HttpClientModule,i18.HttpClientModule,([] as any[])),i0.ɵmpd(512,
+              i19.CommonModule,i19.CommonModule,([] as any[])),i0.ɵmpd(1024,i0.ErrorHandler,
+              i20.ɵa,([] as any[])),i0.ɵmpd(1024,i0.NgProbeToken,() => {
+            return [i25.ɵb()];
           },([] as any[])),i0.ɵmpd(256,i0.APP_ID,'cli-universal-demo',([] as any[])),
-          i0.ɵmpd(2048,i14.ɵTRANSITION_ID,(null as any),[i0.APP_ID]),i0.ɵmpd(512,i19.ɵg,
-              i19.ɵg,[i0.Injector]),i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,p0_1:any,
+          i0.ɵmpd(2048,i20.ɵTRANSITION_ID,(null as any),[i0.APP_ID]),i0.ɵmpd(512,i25.ɵg,
+              i25.ɵg,[i0.Injector]),i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,p0_1:any,
               p1_0:any,p1_1:any,p1_2:any,p2_0:any) => {
-            return [i14.ɵc(p0_0,p0_1),i14.ɵf(p1_0,p1_1,p1_2),i19.ɵh(p2_0)];
-          },[[2,i14.NgProbeToken],[2,i0.NgProbeToken],i14.ɵTRANSITION_ID,i13.DOCUMENT,
-              i0.Injector,i19.ɵg]),i0.ɵmpd(512,i0.ApplicationInitStatus,i0.ApplicationInitStatus,
+            return [i20.ɵc(p0_0,p0_1),i20.ɵf(p1_0,p1_1,p1_2),i25.ɵh(p2_0)];
+          },[[2,i20.NgProbeToken],[2,i0.NgProbeToken],i20.ɵTRANSITION_ID,i19.DOCUMENT,
+              i0.Injector,i25.ɵg]),i0.ɵmpd(512,i0.ApplicationInitStatus,i0.ApplicationInitStatus,
               [[2,i0.APP_INITIALIZER]]),i0.ɵmpd(131584,i0.ɵe,i0.ɵe,[i0.NgZone,i0.ɵConsole,
               i0.Injector,i0.ErrorHandler,i0.ComponentFactoryResolver,i0.ApplicationInitStatus]),
           i0.ɵmpd(2048,i0.ApplicationRef,(null as any),[i0.ɵe]),i0.ɵmpd(512,i0.ApplicationModule,
-              i0.ApplicationModule,[i0.ApplicationRef]),i0.ɵmpd(512,i14.BrowserModule,
-              i14.BrowserModule,[[3,i14.BrowserModule]]),i0.ɵmpd(512,i16.NoopAnimationsModule,
-              i16.NoopAnimationsModule,([] as any[])),i0.ɵmpd(512,i11.ServerModule,
-              i11.ServerModule,([] as any[])),i0.ɵmpd(1024,i19.ɵa,i19.ɵd,[[3,i19.Router]]),
-          i0.ɵmpd(512,i19.UrlSerializer,i19.DefaultUrlSerializer,([] as any[])),i0.ɵmpd(512,
-              i19.ChildrenOutletContexts,i19.ChildrenOutletContexts,([] as any[])),
-          i0.ɵmpd(256,i19.ROUTER_CONFIGURATION,{},([] as any[])),i0.ɵmpd(1024,i13.LocationStrategy,
-              i19.ɵc,[i13.PlatformLocation,[2,i13.APP_BASE_HREF],i19.ROUTER_CONFIGURATION]),
-          i0.ɵmpd(512,i13.Location,i13.Location,[i13.LocationStrategy]),i0.ɵmpd(512,
+              i0.ApplicationModule,[i0.ApplicationRef]),i0.ɵmpd(512,i20.BrowserModule,
+              i20.BrowserModule,[[3,i20.BrowserModule]]),i0.ɵmpd(512,i22.NoopAnimationsModule,
+              i22.NoopAnimationsModule,([] as any[])),i0.ɵmpd(512,i17.ServerModule,
+              i17.ServerModule,([] as any[])),i0.ɵmpd(1024,i25.ɵa,i25.ɵd,[[3,i25.Router]]),
+          i0.ɵmpd(512,i25.UrlSerializer,i25.DefaultUrlSerializer,([] as any[])),i0.ɵmpd(512,
+              i25.ChildrenOutletContexts,i25.ChildrenOutletContexts,([] as any[])),
+          i0.ɵmpd(256,i25.ROUTER_CONFIGURATION,{},([] as any[])),i0.ɵmpd(1024,i19.LocationStrategy,
+              i25.ɵc,[i19.PlatformLocation,[2,i19.APP_BASE_HREF],i25.ROUTER_CONFIGURATION]),
+          i0.ɵmpd(512,i19.Location,i19.Location,[i19.LocationStrategy]),i0.ɵmpd(512,
               i0.Compiler,i0.Compiler,([] as any[])),i0.ɵmpd(512,i0.NgModuleFactoryLoader,
               i0.SystemJsNgModuleLoader,[i0.Compiler,[2,i0.SystemJsNgModuleLoaderConfig]]),
-          i0.ɵmpd(1024,i19.ROUTES,() => {
-            return [[{path:'',component:i21.LandingPageComponent},{path:'login-page',
-                component:i22.LoginPageComponent},{path:'sign-up',component:i23.SignUpComponent},
-                {path:'about-page',component:i24.AboutPageComponent},{path:'users-page',
-                    component:i25.UsersPageComponent},{path:'profile-page',component:i26.ProfilePageComponent}]];
-          },([] as any[])),i0.ɵmpd(1024,i19.Router,i19.ɵe,[i0.ApplicationRef,i19.UrlSerializer,
-              i19.ChildrenOutletContexts,i13.Location,i0.Injector,i0.NgModuleFactoryLoader,
-              i0.Compiler,i19.ROUTES,i19.ROUTER_CONFIGURATION,[2,i19.UrlHandlingStrategy],
-              [2,i19.RouteReuseStrategy]]),i0.ɵmpd(512,i19.RouterModule,i19.RouterModule,
-              [[2,i19.ɵa],[2,i19.Router]]),i0.ɵmpd(512,i18.ɵba,i18.ɵba,([] as any[])),
-          i0.ɵmpd(512,i18.FormsModule,i18.FormsModule,([] as any[])),i0.ɵmpd(512,i27.AppModule,
-              i27.AppModule,([] as any[])),i0.ɵmpd(512,i1.AppServerModule,i1.AppServerModule,
-              ([] as any[])),i0.ɵmpd(256,i12.ɵe,'XSRF-TOKEN',([] as any[])),i0.ɵmpd(256,
-              i12.ɵf,'X-XSRF-TOKEN',([] as any[]))]);
+          i0.ɵmpd(1024,i25.ROUTES,() => {
+            return [[{path:'',component:i27.LandingPageComponent},{path:'login-page',
+                component:i28.LoginPageComponent},{path:'sign-up',component:i29.SignUpComponent},
+                {path:'about-page',component:i30.AboutPageComponent},{path:'users-page',
+                    component:i31.UsersPageComponent},{path:'profile-page',component:i32.ProfilePageComponent},
+                {path:'vail',component:i33.VailComponent},{path:'telluride',component:i34.TellurideComponent},
+                {path:'beaver-creek',component:i35.BeaverCreekComponent},{path:'fort-collins',
+                    component:i36.FortCollinsComponent},{path:'denver',component:i37.DenverComponent},
+                {path:'aspen',component:i38.AspenComponent}]];
+          },([] as any[])),i0.ɵmpd(1024,i25.Router,i25.ɵe,[i0.ApplicationRef,i25.UrlSerializer,
+              i25.ChildrenOutletContexts,i19.Location,i0.Injector,i0.NgModuleFactoryLoader,
+              i0.Compiler,i25.ROUTES,i25.ROUTER_CONFIGURATION,[2,i25.UrlHandlingStrategy],
+              [2,i25.RouteReuseStrategy]]),i0.ɵmpd(512,i25.RouterModule,i25.RouterModule,
+              [[2,i25.ɵa],[2,i25.Router]]),i0.ɵmpd(512,i24.ɵba,i24.ɵba,([] as any[])),
+          i0.ɵmpd(512,i24.FormsModule,i24.FormsModule,([] as any[])),i0.ɵmpd(512,i39.AppModule,
+              i39.AppModule,([] as any[])),i0.ɵmpd(512,i1.AppServerModule,i1.AppServerModule,
+              ([] as any[])),i0.ɵmpd(256,i18.ɵe,'XSRF-TOKEN',([] as any[])),i0.ɵmpd(256,
+              i18.ɵf,'X-XSRF-TOKEN',([] as any[]))]);
     });
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2h1bmdtdWhhbWF0aC9Ib21lV29yay9wcm9qZWN0My95b2tlbC9zcmMvYXBwL2FwcC5zZXJ2ZXIubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2h1bmdtdWhhbWF0aC9Ib21lV29yay9wcm9qZWN0My95b2tlbC9zcmMvYXBwL2FwcC5zZXJ2ZXIubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL3phY2htYXJheml0aS9EZXNrdG9wL3dkaS13b3JrL3Byb2plY3RzL3lva2VsL3NyYy9hcHAvYXBwLnNlcnZlci5tb2R1bGUubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vVXNlcnMvemFjaG1hcmF6aXRpL0Rlc2t0b3Avd2RpLXdvcmsvcHJvamVjdHMveW9rZWwvc3JjL2FwcC9hcHAuc2VydmVyLm1vZHVsZS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIgIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=
