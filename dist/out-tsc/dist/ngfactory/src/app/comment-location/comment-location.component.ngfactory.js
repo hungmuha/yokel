@@ -116,24 +116,23 @@ function View_CommentLocationComponent_0(_l) {
     return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['	'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_CommentLocationComponent_1)),
         i1.ɵdid(16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0,
                 'ngIf'] }, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(),
-            i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'h1', [], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n	\n	'])),
-        (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_CommentLocationComponent_2)), i1.ɵdid(16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, 'ngIf'] }, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 30, 'div', [['class',
-                'container']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵeld(0, null, null, 27, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 24, 'div', [['class', 'col-lg-12']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	    		'])), (_l()(), i1.ɵeld(0, null, null, 21, 'div', [['class',
-                'input-group']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	    			'])), (_l()(), i1.ɵeld(0, null, null, 18, 'form', [['novalidate', '']], [[2, 'ng-untouched',
-                null], [2, 'ng-touched', null], [2, 'ng-pristine', null],
-            [2, 'ng-dirty', null], [2, 'ng-valid', null], [2, 'ng-invalid',
-                null], [2, 'ng-pending', null]], [[null, 'ngSubmit'],
-            [null, 'submit'], [null, 'reset']], function (_v, en, $event) {
+            i1.ɵeld(0, null, null, 0, 'br', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n\n	\n	\n	'])), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_CommentLocationComponent_2)),
+        i1.ɵdid(16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0,
+                'ngIf'] }, null), (_l()(), i1.ɵted(null, ['\n	'])), (_l()(),
+            i1.ɵted(null, ['\n	'])), (_l()(), i1.ɵeld(0, null, null, 31, 'div', [['class', 'container']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n		'])), (_l()(),
+            i1.ɵeld(0, null, null, 28, 'div', [['class', 'row']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵeld(0, null, null, 25, 'div', [['class',
+                'col-lg-12']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n	    		'])), (_l()(), i1.ɵeld(0, null, null, 22, 'div', [['class', 'input-group']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n	    			'])), (_l()(), i1.ɵeld(0, null, null, 19, 'form', [['novalidate', '']], [[2, 'ng-untouched', null], [2, 'ng-touched', null],
+            [2, 'ng-pristine', null], [2, 'ng-dirty', null], [2, 'ng-valid',
+                null], [2, 'ng-invalid', null], [2, 'ng-pending', null]], [[null, 'ngSubmit'], [null, 'submit'], [null, 'reset']], function (_v, en, $event) {
             var ad = true;
             var _co = _v.component;
             if (('submit' === en)) {
-                var pd_0 = (i1.ɵnov(_v, 24).onSubmit($event) !== false);
+                var pd_0 = (i1.ɵnov(_v, 21).onSubmit($event) !== false);
                 ad = (pd_0 && ad);
             }
             if (('reset' === en)) {
-                var pd_1 = (i1.ɵnov(_v, 24).onReset() !== false);
+                var pd_1 = (i1.ɵnov(_v, 21).onReset() !== false);
                 ad = (pd_1 && ad);
             }
             if (('ngSubmit' === en)) {
@@ -143,7 +142,7 @@ function View_CommentLocationComponent_0(_l) {
             return ad;
         }, null, null)), i1.ɵdid(16384, null, 0, i2.ɵbf, [], null, null), i1.ɵdid(16384, null, 0, i2.NgForm, [[8,
                 null], [8, null]], null, { ngSubmit: 'ngSubmit' }), i1.ɵprd(2048, null, i2.ControlContainer, null, [i2.NgForm]), i1.ɵdid(16384, null, 0, i2.NgControlStatusGroup, [i2.ControlContainer], null, null), (_l()(), i1.ɵted(null, ['\n			      		'])), (_l()(),
-            i1.ɵeld(0, null, null, 5, 'input', [['class', 'form-control'],
+            i1.ɵeld(0, null, null, 6, 'input', [['class', 'form-control'],
                 ['placeholder', 'Add a comment'], ['type', 'text']], [[2, 'ng-untouched',
                     null], [2, 'ng-touched', null], [2, 'ng-pristine', null],
                 [2, 'ng-dirty', null], [2, 'ng-valid', null], [2, 'ng-invalid',
@@ -153,23 +152,23 @@ function View_CommentLocationComponent_0(_l) {
                 var ad = true;
                 var _co = _v.component;
                 if (('input' === en)) {
-                    var pd_0 = (i1.ɵnov(_v, 29)._handleInput($event.target.value) !== false);
+                    var pd_0 = (i1.ɵnov(_v, 26)._handleInput($event.target.value) !== false);
                     ad = (pd_0 && ad);
                 }
                 if (('blur' === en)) {
-                    var pd_1 = (i1.ɵnov(_v, 29).onTouched() !== false);
+                    var pd_1 = (i1.ɵnov(_v, 26).onTouched() !== false);
                     ad = (pd_1 && ad);
                 }
                 if (('compositionstart' === en)) {
-                    var pd_2 = (i1.ɵnov(_v, 29)._compositionStart() !== false);
+                    var pd_2 = (i1.ɵnov(_v, 26)._compositionStart() !== false);
                     ad = (pd_2 && ad);
                 }
                 if (('compositionend' === en)) {
-                    var pd_3 = (i1.ɵnov(_v, 29)._compositionEnd($event.target.value) !== false);
+                    var pd_3 = (i1.ɵnov(_v, 26)._compositionEnd($event.target.value) !== false);
                     ad = (pd_3 && ad);
                 }
                 if (('ngModelChange' === en)) {
-                    var pd_4 = ((_co.newComment.comment_field = $event) !== false);
+                    var pd_4 = ((_co.newComment = $event) !== false);
                     ad = (pd_4 && ad);
                 }
                 return ad;
@@ -177,39 +176,37 @@ function View_CommentLocationComponent_0(_l) {
             return [p0_0];
         }, [i2.DefaultValueAccessor]), i1.ɵdid(671744, null, 0, i2.NgModel, [[2, i2.ControlContainer],
             [8, null], [8, null], [2, i2.NG_VALUE_ACCESSOR]], { model: [0,
-                'model'] }, { update: 'ngModelChange' }), i1.ɵprd(2048, null, i2.NgControl, null, [i2.NgModel]), i1.ɵdid(16384, null, 0, i2.NgControlStatus, [i2.NgControl], null, null), (_l()(), i1.ɵted(null, ['\n			      		'])), (_l()(), i1.ɵeld(0, null, null, 4, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			        	'])),
-        (_l()(), i1.ɵeld(0, null, null, 1, 'button', [['class', 'btn btn-secondary'],
-            ['type', 'button']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Add'])), (_l()(), i1.ɵted(null, ['\n			      		'])), (_l()(), i1.ɵted(null, ['\n			      	'])), (_l()(),
-            i1.ɵted(null, ['\n	    		'])), (_l()(), i1.ɵted(null, ['\n	  		'])),
-        (_l()(), i1.ɵted(null, ['\n			'])), (_l()(), i1.ɵted(null, ['\n		'])),
-        (_l()(), i1.ɵted(null, ['\n	\n\n	'])), (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
+                'model'], options: [1, 'options'] }, { update: 'ngModelChange' }), i1.ɵpod({ standalone: 0 }),
+        i1.ɵprd(2048, null, i2.NgControl, null, [i2.NgModel]), i1.ɵdid(16384, null, 0, i2.NgControlStatus, [i2.NgControl], null, null),
+        (_l()(), i1.ɵted(null, ['\n			      		'])), (_l()(), i1.ɵeld(0, null, null, 4, 'span', [['class', 'input-group-btn']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n			        	'])), (_l()(), i1.ɵeld(0, null, null, 1, 'button', [['class', 'btn btn-secondary'], ['type', 'button']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Add'])), (_l()(), i1.ɵted(null, ['\n			      		'])), (_l()(), i1.ɵted(null, ['\n			      	'])), (_l()(), i1.ɵted(null, ['\n	    		'])), (_l()(),
+            i1.ɵted(null, ['\n	  		'])), (_l()(), i1.ɵted(null, ['\n			'])),
+        (_l()(), i1.ɵted(null, ['\n		'])), (_l()(), i1.ɵted(null, ['\n	\n\n	'])),
+        (_l()(), i1.ɵeld(0, null, null, 0, 'hr', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
         var _co = _v.component;
         var currVal_0 = _co.oneLocation;
         _ck(_v, 2, 0, currVal_0);
-        var currVal_2 = _co.oneLocation;
-        _ck(_v, 11, 0, currVal_2);
-        var currVal_17 = _co.newComment.comment_field;
-        _ck(_v, 31, 0, currVal_17);
-    }, function (_ck, _v) {
-        var _co = _v.component;
         var currVal_1 = _co.oneLocation;
-        _ck(_v, 7, 0, currVal_1);
-        var currVal_3 = i1.ɵnov(_v, 26).ngClassUntouched;
-        var currVal_4 = i1.ɵnov(_v, 26).ngClassTouched;
-        var currVal_5 = i1.ɵnov(_v, 26).ngClassPristine;
-        var currVal_6 = i1.ɵnov(_v, 26).ngClassDirty;
-        var currVal_7 = i1.ɵnov(_v, 26).ngClassValid;
-        var currVal_8 = i1.ɵnov(_v, 26).ngClassInvalid;
-        var currVal_9 = i1.ɵnov(_v, 26).ngClassPending;
-        _ck(_v, 22, 0, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8, currVal_9);
-        var currVal_10 = i1.ɵnov(_v, 33).ngClassUntouched;
-        var currVal_11 = i1.ɵnov(_v, 33).ngClassTouched;
-        var currVal_12 = i1.ɵnov(_v, 33).ngClassPristine;
-        var currVal_13 = i1.ɵnov(_v, 33).ngClassDirty;
-        var currVal_14 = i1.ɵnov(_v, 33).ngClassValid;
-        var currVal_15 = i1.ɵnov(_v, 33).ngClassInvalid;
-        var currVal_16 = i1.ɵnov(_v, 33).ngClassPending;
-        _ck(_v, 28, 0, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15, currVal_16);
+        _ck(_v, 8, 0, currVal_1);
+        var currVal_16 = _co.newComment;
+        var currVal_17 = _ck(_v, 29, 0, true);
+        _ck(_v, 28, 0, currVal_16, currVal_17);
+    }, function (_ck, _v) {
+        var currVal_2 = i1.ɵnov(_v, 23).ngClassUntouched;
+        var currVal_3 = i1.ɵnov(_v, 23).ngClassTouched;
+        var currVal_4 = i1.ɵnov(_v, 23).ngClassPristine;
+        var currVal_5 = i1.ɵnov(_v, 23).ngClassDirty;
+        var currVal_6 = i1.ɵnov(_v, 23).ngClassValid;
+        var currVal_7 = i1.ɵnov(_v, 23).ngClassInvalid;
+        var currVal_8 = i1.ɵnov(_v, 23).ngClassPending;
+        _ck(_v, 19, 0, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6, currVal_7, currVal_8);
+        var currVal_9 = i1.ɵnov(_v, 31).ngClassUntouched;
+        var currVal_10 = i1.ɵnov(_v, 31).ngClassTouched;
+        var currVal_11 = i1.ɵnov(_v, 31).ngClassPristine;
+        var currVal_12 = i1.ɵnov(_v, 31).ngClassDirty;
+        var currVal_13 = i1.ɵnov(_v, 31).ngClassValid;
+        var currVal_14 = i1.ɵnov(_v, 31).ngClassInvalid;
+        var currVal_15 = i1.ɵnov(_v, 31).ngClassPending;
+        _ck(_v, 25, 0, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14, currVal_15);
     });
 }
 exports.View_CommentLocationComponent_0 = View_CommentLocationComponent_0;
