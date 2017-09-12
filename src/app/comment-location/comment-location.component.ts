@@ -13,7 +13,7 @@ export class CommentLocationComponent implements OnInit {
 
 allLocations = [];
 newComment;
-oneLocation = null; //-------changed
+oneLocation; //-------changed
   deleteComment(deletedComment) {
     this.commentsService.deleteComment(deletedComment)
     .subscribe(response => {
