@@ -8,7 +8,6 @@ var CommentLocationComponent = (function () {
         this.route = route;
         this.commentsService = commentsService;
         this.allLocations = [];
-        this.oneLocation = null; //-------changed
     }
     CommentLocationComponent.prototype.deleteComment = function (deletedComment) {
         var _this = this;
