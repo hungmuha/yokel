@@ -1,3 +1,4 @@
+
 	<div class="container" *ngIf="oneLocation">
 		<div class="row">
 			<!-- 12 column width -->
@@ -10,20 +11,20 @@
 	</div>
 	<br>
 
-	<h1>{{oneLocation}}</h1>
+	
 	
 	<!-- comments header -->
-	<div class="container" *ngIf="oneLocation">
+	<div class="container" >
 		<label>Comments</label>
 		<div class="detailBox">
 	
 			<div class="container">
-				<div class="actionBox" >
+				<div class="actionBox" *ngIf="oneLocation">
 					<ul class="commentList">
 						<!-- comment 1 -->
 						<li *ngFor="let comment of oneLocation.comments">
 					        <div class="commentText">
-					          <p >{{comment.comment_field}}</p> 
+					          <p> {{comment.comment_field}} </p> 
 					          <span class="date sub-text"> <strong>{{comment.userId}}</strong></span>
 					          <form (ngSubmit)="deleteComment(comment)">
 			          			<input type="submit" value="Delete"/>
@@ -32,10 +33,13 @@
 			     		 </li>
 			      <!-- comments 2 -->   	
 			    	</ul>
-			  </div>
+			    </div>
 			</div>
 		</div>
 	</div>
+	
+	{{oneLocation}}
+
 	<!-- leave comment form -->
 	<div class="container" >
 		<div class="row">
@@ -49,8 +53,8 @@
 			      	</form>
 	    		</div>
 	  		</div>
-			</div>
 		</div>
+	</div>
 	
 
 	<hr>
