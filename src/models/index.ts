@@ -1,6 +1,6 @@
 import * as Sequelize from 'sequelize';
 
-var sequelize = new Sequelize('postgres://zachmaraziti@localhost:5432/yokel');
+var sequelize = new Sequelize('postgres://hungmuhamath@localhost:5432/yokel');
 
 var User = sequelize.import('./users');
 var Comment = sequelize.import('./comments');

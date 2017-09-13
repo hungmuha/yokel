@@ -12,7 +12,7 @@ export class CommentLocationComponent implements OnInit {
 
 
 allLocations = [];
-newComment;
+newComment = <any> {};
 oneLocation; //-------changed
   deleteComment(deletedComment) {
     this.commentsService.deleteComment(deletedComment)
@@ -21,8 +21,6 @@ oneLocation; //-------changed
       this.allLocations.splice(commentIndex, 1);
     });
   }
-
-
 
   constructor(
   	private route : ActivatedRoute,
@@ -42,6 +40,8 @@ oneLocation; //-------changed
 
    saveComment(newComment) {
       console.log("saving comment");
+      newComment.locationId = this.oneLocation.id;
+      newComment.userId = 2;
       console.log(newComment);
       this.commentsService.saveComment(newComment)
           .subscribe(response => {

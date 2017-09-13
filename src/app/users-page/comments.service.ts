@@ -14,13 +14,13 @@ baseUrl = 'http://localhost:3000';
 	}
 
 	deleteComment(comment) {
-		console.log(comment);
-		return this.http.delete(`${this.baseUrl}/user-page/${comment.comment_id}`);
+		console.log(comment.id);
+		return this.http.delete(`${this.baseUrl}/users-page/${comment.id}`);
 	}
 
 	saveComment(newComment) {
 		console.log(newComment);
-		return this.http.post(`${this.baseUrl}/user-page`, newComment);
+		return this.http.post(`${this.baseUrl}/users-page`, newComment);
 	}
 
 	// updateArtist(locationId,updatedComment) {

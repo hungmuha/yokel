@@ -69,7 +69,7 @@ router.get('/user', locationController.index);
 
 router.get('/user/:id', locationController.show);
 
-router.post('/users-page/:id', commentController.create);
+router.post('/users-page', commentController.create);
 
 router.delete('/users-page/:id', commentController.destroy);
 
