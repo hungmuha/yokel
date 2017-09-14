@@ -16,6 +16,7 @@ var CommentLocationComponent = (function () {
             .subscribe(function (response) {
             var commentIndex = _this.allLocations.indexOf(deletedComment);
             _this.allLocations.splice(commentIndex, 1);
+            window.location.href = "/users-page/" + deletedComment.locationId;
         });
     };
     CommentLocationComponent.prototype.ngOnInit = function () {

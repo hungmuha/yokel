@@ -51,8 +51,9 @@ function destroy(req, res) {
         else
             return comment.destroy();
     })
-        .then(function () {
-        res.redirect(303, "/comment");
+        .then(function (comment) {
+        // res.json(comment);
+        res.redirect(303, "/users-page/1");
     });
 }
 var commentController = {};

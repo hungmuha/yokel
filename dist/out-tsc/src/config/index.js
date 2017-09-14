@@ -30,6 +30,7 @@ router.get('/logout', function (req, res) {
 router.get('/callback', passport.authenticate('auth0', {
     failureRedirect: '/failure'
 }), function (req, res) {
+    var userid;
     console.log(req.user._json.name);
     console.log(req.user);
     var name = req.user._json.name;
@@ -41,8 +42,10 @@ router.get('/callback', passport.authenticate('auth0', {
         console.log(user.get({
             plain: true
         }));
-        console.log(created);
+        userid = created.id,
+            console.log(created);
     });
+    console.log("The user id is " + userid);
     res.redirect(req.session.returnTo || '/users-page/1');
 });
 router.get('/failure', function (req, res) {

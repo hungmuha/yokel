@@ -19,7 +19,7 @@ var CommentsService = (function () {
     };
     CommentsService.prototype.deleteComment = function (comment) {
         console.log(comment.id);
-        return this.http.delete(this.baseUrl + "/user-page/" + comment.id);
+        return this.http.delete(this.baseUrl + "/users-page/" + comment.id);
     };
     CommentsService.prototype.saveComment = function (newComment) {
         console.log(newComment);

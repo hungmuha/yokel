@@ -36,6 +36,7 @@ router.get('/callback',
     failureRedirect: '/failure'
   }),
   function(req, res) {
+    var userid;
     console.log(req.user._json.name);
     console.log(req.user);
     var name = req.user._json.name;
@@ -45,10 +46,14 @@ router.get('/callback',
         }
 
       }).spread((user, created) => {
-    console.log(user.get({
-      plain: true
-    }))
-    console.log(created);})
+      
+      console.log(user.get({
+        plain: true
+      }))
+      userid = created.id,
+      console.log(created);
+    })
+      console.log("The user id is " + userid);
 
     res.redirect(req.session.returnTo || '/users-page/1');
   }

@@ -47,8 +47,9 @@ function destroy(req, res) {
     if(!comment) res.send(res, "not found");
     else return comment.destroy();
   })
-  .then(function(){
-    res.redirect(303, "/comment");
+  .then(function(comment){
+    // res.json(comment);
+    res.redirect(303, "/users-page/1");
   });  
 }
 

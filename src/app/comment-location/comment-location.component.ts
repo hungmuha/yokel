@@ -19,6 +19,7 @@ oneLocation; //-------changed
     .subscribe(response => {
       let commentIndex = this.allLocations.indexOf(deletedComment);
       this.allLocations.splice(commentIndex, 1);
+      window.location.href = "/users-page/" + deletedComment.locationId;
     });
   }
 
