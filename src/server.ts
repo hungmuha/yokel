@@ -16,7 +16,7 @@ import { router as yokelRoutes } from './config/index';
 
 // const home = require('./config/main');
 
-// const PORT = 3000;
+ const PORT = process.env.PORT || 3000;
 
 enableProdMode();
 
@@ -80,6 +80,6 @@ app.get('*', (req, res) => {
   res.render('index', { req });
 });
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(PORT, function () {
   console.log('Express server is running on http://localhost:3000/');
 });
