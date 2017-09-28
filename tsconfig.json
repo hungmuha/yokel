@@ -20,8 +20,5 @@
   "angularCompilerOptions": {
     "genDir": "./dist/ngfactory",
     "entryModule": "./src/app/app.module#AppModule"
-  },
-  "production": {
-    "use_env_variable": "DATABASE_URL"
   }
 }
