@@ -4,7 +4,7 @@ require("reflect-metadata");
 require("zone.js/dist/zone-node");
 var platform_server_1 = require("@angular/platform-server");
 var core_1 = require("@angular/core");
-var app_server_module_ngfactory_1 = require("../dist/ngfactory/src/app/app.server.module.ngfactory");
+var app_server_module_ngfactory_1 = require("./dist/ngfactory/src/app/app.server.module.ngfactory");
 var express = require("express");
 var bodyParser = require("body-parser");
 var fs_1 = require("fs");
@@ -14,7 +14,7 @@ var Auth0Strategy = require("passport-auth0");
 var passport = require("passport");
 var index_1 = require("./config/index");
 // const home = require('./config/main');
-// const PORT = 3000;
+var port = process.env.PORT || 3000;
 core_1.enableProdMode();
 var app = express();
 // This will configure Passport to use Auth0
@@ -44,7 +44,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(index_1.router);
 // app.use('/home', home);
-var template = fs_1.readFileSync(path_1.join(__dirname, '..', 'dist', 'index.html')).toString();
+var template = fs_1.readFileSync(path_1.join(__dirname, '.', 'dist', 'index.html')).toString();
 app.engine('html', function (_, options, callback) {
     console.log(options);
     var opts = { document: template, url: options.req.url };
@@ -53,11 +53,11 @@ app.engine('html', function (_, options, callback) {
 });
 app.set('view engine', 'html');
 app.set('views', 'src');
-app.get('*.*', express.static(path_1.join(__dirname, '..', 'dist')));
+app.get('*.*', express.static(path_1.join(__dirname, '.', 'dist')));
 app.get('*', function (req, res) {
     res.render('index', { req: req });
 });
-app.listen(process.env.PORT || 3000, function () {
+app.listen(port, function () {
     console.log('Express server is running on http://localhost:3000/');
 });
 //# sourceMappingURL=server.js.map
