@@ -40,7 +40,8 @@
     "sequelize": "^4.7.5",
     "typings": "^2.1.1",
     "ts-node": "^3.3.0",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "typescript": "~2.3.3"
   },
   "devDependencies": {
     "@angular/cli": "1.2.7",
