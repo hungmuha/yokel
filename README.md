@@ -18,7 +18,7 @@ Easy to contact guides
 **interviews and analysis on ToursByLocals.com here:** https://docs.google.com/document/d/1iOQcKprwXVuT8dDWwufyI8fmGqibpzRgY4oKKfMxzzc/edit
 
 ## Link to Heroku hosted project
-https://yokel-app.herokuapp.com/
+https://pacific-plains-62083.herokuapp.com/
 
 ## Technologies (languages, external libraries, APIs)
 **Tech:** PSQL database, Oauth login authentication, heroku for hosting, Angular 2 & 4, CSS3 animations, bootstrap library styling, https://www.wunderground.com/ API, Google geolocation and a Pinterest account.
