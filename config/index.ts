@@ -11,7 +11,7 @@ import { userController } from '../controllers/user';
 const env = {
   AUTH0_CLIENT_ID: 'znIJFscwW72J_60g2eoLhWKkwP4NozrU',
   AUTH0_DOMAIN: 'hungmuha.auth0.com',
-  AUTH0_CALLBACK_URL:'http://localhost:3000/callback'
+  AUTH0_CALLBACK_URL:'https://pacific-plains-62083.herokuapp.com/callback'
 };
 
 
