@@ -11,8 +11,13 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "engines": {
+    "node": "6.11.1",
+    "npm": "3.10.9"
+  },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.2.7",
     "@angular/animations": "^4.3.6",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
