@@ -14,9 +14,7 @@ import * as passport from 'passport';
 
 import { router as yokelRoutes } from './config/index';
 
-// const home = require('./config/main');
-
- const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 enableProdMode();
 
@@ -29,6 +27,7 @@ const strategy = new Auth0Strategy(
     clientID: 'znIJFscwW72J_60g2eoLhWKkwP4NozrU',
     clientSecret: 'Y5iu8s8fs6h2pSFnH4Nf82biu7LHIyu7Ej9vjX7-D5J90XfcxhV9NFGLr_8igKUp',
     callbackURL:'https://pacific-plains-62083.herokuapp.com/callback'
+    // callbackURL:'http://localhost:3000/callback'
   },
   function(accessToken, refreshToken, extraParams, profile, done) {
     // accessToken is the token to call Auth0 API (not needed in the most cases)

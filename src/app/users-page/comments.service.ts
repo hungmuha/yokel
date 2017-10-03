@@ -3,7 +3,8 @@ import { Http } from '@angular/http';
 
 @Injectable()
 export class CommentsService {
-baseUrl = 'http://localhost:3000';
+// baseUrl = 'http://localhost:3000';
+baseUrl = 'https://pacific-plains-62083.herokuapp.com';
 	getAllLocation(){
 		return this.http.get(`${this.baseUrl}/user`);
 	}
