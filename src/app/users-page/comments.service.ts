@@ -11,6 +11,7 @@ baseUrl = 'https://pacific-plains-62083.herokuapp.com';
 	}
 
 	getOneLocation(locationId) {
+		console.log('hitting getonelocation');
 		console.log(`${this.baseUrl}/user/${locationId}`);
 		return this.http.get(`${this.baseUrl}/user/${locationId}`);	
 	}
