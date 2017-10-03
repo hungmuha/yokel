@@ -20,16 +20,16 @@ enableProdMode();
 
 const app = express();
 
-const forceSSL = function() {
-  return function (req, res, next) {
-    if (req.headers['x-forwarded-proto'] !== 'https') {
-      return res.redirect(
-       ['https://', req.get('Host'), req.url].join('')
-      );
-    }
-    next();
-  }
-}
+// const forceSSL = function() {
+//   return function (req, res, next) {
+//     if (req.headers['x-forwarded-proto'] !== 'https') {
+//       return res.redirect(
+//        ['https://', req.get('Host'), req.url].join('')
+//       );
+//     }
+//     next();
+//   }
+// }
 
 
 // This will configure Passport to use Auth0
@@ -61,10 +61,8 @@ passport.deserializeUser(function(user, done) {
   done(null, user);
 });
 
-// Instruct the app
-// to use the forceSSL
-// middleware
-app.use(forceSSL());
+
+// app.use(forceSSL());
 
 app.use(passport.initialize());
 app.use(passport.session());

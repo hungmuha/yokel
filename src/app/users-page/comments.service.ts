@@ -26,9 +26,6 @@ baseUrl = 'https://pacific-plains-62083.herokuapp.com';
 		return this.http.post(`${this.baseUrl}/users-page`, newComment);
 	}
 
-	// updateArtist(locationId,updatedComment) {
-	// 	return this.http.put(`${this.baseUrl}/user-page/${locationId}`, updatedComment);		
-	// }
 
   constructor(private http: Http) { }
 

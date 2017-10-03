@@ -3,18 +3,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var CommentsService = (function () {
-    // updateArtist(locationId,updatedComment) {
-    // 	return this.http.put(`${this.baseUrl}/user-page/${locationId}`, updatedComment);		
-    // }
     function CommentsService(http) {
         this.http = http;
-        this.baseUrl = 'http://localhost:3000';
+        // baseUrl = 'http://localhost:3000';
+        this.baseUrl = 'https://pacific-plains-62083.herokuapp.com';
     }
     CommentsService.prototype.getAllLocation = function () {
         return this.http.get(this.baseUrl + "/user");
     };
     CommentsService.prototype.getOneLocation = function (locationId) {
-        console.log(locationId);
+        console.log('hitting getonelocation');
+        console.log(this.baseUrl + "/user/" + locationId);
         return this.http.get(this.baseUrl + "/user/" + locationId);
     };
     CommentsService.prototype.deleteComment = function (comment) {

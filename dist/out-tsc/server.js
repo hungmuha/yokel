@@ -13,17 +13,24 @@ var cookieParser = require("cookie-parser");
 var Auth0Strategy = require("passport-auth0");
 var passport = require("passport");
 var index_1 = require("./config/index");
-// const home = require('./config/main');
 var port = process.env.PORT || 3000;
 core_1.enableProdMode();
 var app = express();
+var forceSSL = function () {
+    return function (req, res, next) {
+        if (req.headers['x-forwarded-proto'] !== 'https') {
+            return res.redirect(['https://', req.get('Host'), req.url].join(''));
+        }
+        next();
+    };
+};
 // This will configure Passport to use Auth0
 var strategy = new Auth0Strategy({
     domain: 'hungmuha.auth0.com',
     clientID: 'znIJFscwW72J_60g2eoLhWKkwP4NozrU',
     clientSecret: 'Y5iu8s8fs6h2pSFnH4Nf82biu7LHIyu7Ej9vjX7-D5J90XfcxhV9NFGLr_8igKUp',
-    // callbackURL:'https://pacific-plains-62083.herokuapp.com/callback'
-    callbackURL: 'http://localhost:3000/callback'
+    callbackURL: 'https://pacific-plains-62083.herokuapp.com/callback'
+    // callbackURL:'http://localhost:3000/callback'
 }, function (accessToken, refreshToken, extraParams, profile, done) {
     // accessToken is the token to call Auth0 API (not needed in the most cases)
     // extraParams.id_token has the JSON Web Token
@@ -38,6 +45,10 @@ passport.serializeUser(function (user, done) {
 passport.deserializeUser(function (user, done) {
     done(null, user);
 });
+// Instruct the app
+// to use the forceSSL
+// middleware
+app.use(forceSSL());
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.json());

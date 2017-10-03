@@ -62,7 +62,7 @@ webpackJsonp([1], { "++UV": function (n, l, t) {
         "use strict";
         var u = t("CPp0");
         t.d(l, "a", function () { return o; });
-        var o = function () { function n(n) { this.http = n, this.baseUrl = "http://localhost:3000"; } return n.prototype.getAllLocation = function () { return this.http.get(this.baseUrl + "/user"); }, n.prototype.getOneLocation = function (n) { return console.log(n), this.http.get(this.baseUrl + "/user/" + n); }, n.prototype.deleteComment = function (n) { return console.log(n.id), this.http.delete(this.baseUrl + "/users-page/" + n.id); }, n.prototype.saveComment = function (n) { return console.log(n), this.http.post(this.baseUrl + "/users-page", n); }, n.ctorParameters = function () { return [{ type: u.i }]; }, n; }();
+        var o = function () { function n(n) { this.http = n, this.baseUrl = "https://pacific-plains-62083.herokuapp.com"; } return n.prototype.getAllLocation = function () { return this.http.get(this.baseUrl + "/user"); }, n.prototype.getOneLocation = function (n) { return console.log("hitting getonelocation"), console.log(this.baseUrl + "/user/" + n), this.http.get(this.baseUrl + "/user/" + n); }, n.prototype.deleteComment = function (n) { return console.log(n.id), this.http.delete(this.baseUrl + "/users-page/" + n.id); }, n.prototype.saveComment = function (n) { return console.log(n), this.http.post(this.baseUrl + "/users-page", n); }, n.ctorParameters = function () { return [{ type: u.i }]; }, n; }();
     }, EwwN: function (n, l, t) {
         "use strict";
         function u(n) { return c._25(0, [(n()(), c._27(0, null, null, 17, "li", [], null, null, null, null, null)), (n()(), c._26(null, ["\n\t\t\t\t\t        "])), (n()(), c._27(0, null, null, 14, "div", [["class", "commentText"]], null, null, null, null, null)), (n()(), c._26(null, ["\n\t\t\t\t\t          "])), (n()(), c._27(0, null, null, 1, "p", [], null, null, null, null, null)), (n()(), c._26(null, [" ", " "])), (n()(), c._26(null, [" \n\t\t\t\t\t          "])), (n()(), c._26(null, ["\n\t\t\t\t\t          "])), (n()(), c._27(0, null, null, 7, "form", [["novalidate", ""]], [[2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngSubmit"], [null, "submit"], [null, "reset"]], function (n, l, t) { var u = !0, o = n.component; if ("submit" === l) {
@@ -212,4 +212,4 @@ webpackJsonp([1], { "++UV": function (n, l, t) {
         t.d(l, "a", function () { return u; });
         var u = function () { function n() { } return n.prototype.ngOnInit = function () { }, n.ctorParameters = function () { return []; }, n; }();
     } }, [0]);
-//# sourceMappingURL=main.b93df2e6ffd286a02ac9.bundle.js.map
+//# sourceMappingURL=main.a4938ff84d3e400b68df.bundle.js.map
