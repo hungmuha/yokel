@@ -29,7 +29,6 @@ export class UsersPageComponent implements OnInit {
     
   }
 
-
   
 	allLocations;
   updateText;

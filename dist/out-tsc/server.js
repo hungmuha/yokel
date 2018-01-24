@@ -16,14 +16,16 @@ var index_1 = require("./config/index");
 var port = process.env.PORT || 3000;
 core_1.enableProdMode();
 var app = express();
-var forceSSL = function () {
-    return function (req, res, next) {
-        if (req.headers['x-forwarded-proto'] !== 'https') {
-            return res.redirect(['https://', req.get('Host'), req.url].join(''));
-        }
-        next();
-    };
-};
+// const forceSSL = function() {
+//   return function (req, res, next) {
+//     if (req.headers['x-forwarded-proto'] !== 'https') {
+//       return res.redirect(
+//        ['https://', req.get('Host'), req.url].join('')
+//       );
+//     }
+//     next();
+//   }
+// }
 // This will configure Passport to use Auth0
 var strategy = new Auth0Strategy({
     domain: 'hungmuha.auth0.com',
@@ -45,10 +47,7 @@ passport.serializeUser(function (user, done) {
 passport.deserializeUser(function (user, done) {
     done(null, user);
 });
-// Instruct the app
-// to use the forceSSL
-// middleware
-app.use(forceSSL());
+// app.use(forceSSL());
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.json());

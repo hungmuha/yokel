@@ -24,6 +24,7 @@ https://pacific-plains-62083.herokuapp.com/
 **Tech:** PSQL database, Oauth login authentication, heroku for hosting, Angular 2 & 4, CSS3 animations, bootstrap library styling, https://www.wunderground.com/ API, Google geolocation and a Pinterest account.
 
 ## Wish List / Future Development
+
 Currently we have a dropdown linking to the city forum pages that we've populated, but in the future we would like a search bar so the user can search any city in the world.
 
 ## Contributors (with links to their GitHub profiles)
