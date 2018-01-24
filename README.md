@@ -2,6 +2,9 @@
 yokel - Be a local in every city you visit.
 At yokel we believe life is all about connecting with people and creating individualized, memorable travel experiences. Through our location forums you can message with real locals on things to do and see, or browse previous threads to get some ideas. Get yokel and bring local’s experiences to you and the entire community.
 
+## Instruction: 
+To start the app locally, type in "npm run start" in the terminal in root file of the project
+
 ## Wireframes and user stories
 **Wireframe:** https://github.com/hungmuha/yokel/blob/master/Yokel_wireframe.png
 **Trello:** https://trello.com/b/cOnxleIC/wdi-project-3-local-yokel
