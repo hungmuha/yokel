@@ -5,9 +5,9 @@ var http_1 = require("@angular/http");
 var CommentsService = (function () {
     function CommentsService(http) {
         this.http = http;
-        // baseUrl = 'http://localhost:3000';
-        this.baseUrl = 'https://pacific-plains-62083.herokuapp.com';
+        this.baseUrl = 'http://localhost:3000';
     }
+    // baseUrl = 'https://pacific-plains-62083.herokuapp.com';
     CommentsService.prototype.getAllLocation = function () {
         return this.http.get(this.baseUrl + "/user");
     };

@@ -5,6 +5,10 @@ body	{
   /*width: 50%;*/
 }
 
+.mainBoard{
+	background-color: #62C196;
+}
+
 .input-group	{
     padding-bottom: 30px;
 }
